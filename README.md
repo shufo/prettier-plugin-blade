@@ -46,7 +46,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 
 ## Limitation
 
-This plugin does not generate ASTs with lexer, so it might not be able to format complex blade properly.
+This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) that does not generate ASTs with lexer, so it might not be able to format complex blade properly.
 
 Like:
 
