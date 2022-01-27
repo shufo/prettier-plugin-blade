@@ -14,13 +14,13 @@ Format your blade template using Prettier
 ```bash
 $ npm install --save-dev @shufo/prettier-plugin-blade prettier
 # yarn
-$ yarn add -D @shufo/prettier-plugin-blade
+$ yarn add -D @shufo/prettier-plugin-blade prettier
 ```
 
 ## Usage (CLI)
 
 ```bash
-$ prettier --write resources/**/*.blade.php
+$ ./node_modules/.bin/prettier --write resources/**/*.blade.php
 ```
 
 ## Options
