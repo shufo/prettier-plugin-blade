@@ -23,6 +23,9 @@ $ yarn add -D @shufo/prettier-plugin-blade prettier
 $ ./node_modules/.bin/prettier --write resources/**/*.blade.php
 ```
 
+https://user-images.githubusercontent.com/1641039/151354641-6305805e-8e0c-4226-8331-64195f85160e.mp4
+
+
 ## Options
 
 You can use these options for prettier blade plugin in prettier CLI.
