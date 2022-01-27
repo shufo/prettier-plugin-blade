@@ -26,7 +26,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "NODE_ENV=production node esbuild.js",
+    "build": "cross-env NODE_ENV=production node esbuild.js",
     "watch": "node esbuild.js",
     "test": "yarn build && jest",
     "lint": "eslint . --ext .ts",
