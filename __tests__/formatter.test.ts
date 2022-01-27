@@ -14,9 +14,9 @@ describe('formatter test', () => {
     test.concurrent(`can format fixture ${fixture}`, function () {
       const content = fs.readFileSync(path.resolve(fixturesDir, fixture)).toString('utf-8');
       const result = prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../../")],
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../../")],
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
       });
       const expected = fs.readFileSync(path.resolve(formattedFixturesDir, `formatted.${fixture}`)).toString('utf-8');
       expect(result).toEqual(expected);
@@ -31,9 +31,9 @@ describe('broken text test', () => {
     const content = fs.readFileSync(path.resolve(fixturesDir, "syntax.error.blade.php")).toString('utf-8');
     const f = () => {
       prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../../")],
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../../")],
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
       })
     };
     expect(f).toThrowError("SyntaxError");
@@ -47,9 +47,9 @@ describe('option test', () => {
   test.concurrent(`can format fixture with options`, function () {
     const content = fs.readFileSync(path.resolve(fixturesDir, "index.blade.php")).toString('utf-8');
     const result = prettier.format(content, {
-      plugins: [path.resolve(__dirname, "../../")],
+      plugins: [path.resolve(__dirname, "../")],
       parser: "blade",
-      pluginSearchDirs: [path.resolve(__dirname, "../../")],
+      pluginSearchDirs: [path.resolve(__dirname, "../")],
       tabWidth: 2,
     });
     const expected = fs.readFileSync(path.resolve(formattedFixturesDir, `index.blade.php`)).toString('utf-8');
