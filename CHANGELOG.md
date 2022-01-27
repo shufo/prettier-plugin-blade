@@ -1,5 +1,18 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.1...v1.0.2) (2022-01-27)
+
+
+### Miscellaneous
+
+* 🤖 add synckit to dependencies ([9515a19](https://www.github.com/shufo/prettier-plugin-blade/commit/9515a19265313158fdc37fb15c6be38e0b26635f))
+* 🤖 drop execa from dependencies ([ed39de9](https://www.github.com/shufo/prettier-plugin-blade/commit/ed39de90d5c4b5b343bd1a48fc00bef0a5a153b2))
+
+
+### Performance
+
+* ⚡️ use synckit worker to gain throuhput on format ([c9c0839](https://www.github.com/shufo/prettier-plugin-blade/commit/c9c0839bfb3ed46a0e2f4ecfc7e683e3c87a8872))
+
 ### [1.0.1](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.0...v1.0.1) (2022-01-27)
 
 
