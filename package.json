@@ -1,5 +1,8 @@
 {
   "name": "@shufo/prettier-plugin-blade",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
   "version": "0.1.0",
   "dependencies": {
     "blade-formatter": "^1.17.1",
