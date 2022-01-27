@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.0...v1.0.1) (2022-01-27)
+
+
+### Miscellaneous
+
+* release 1.0.1 ([7f6c7c2](https://www.github.com/shufo/prettier-plugin-blade/commit/7f6c7c270e734557e82d36b55729f3d1e47f290d))
+
 ## 1.0.0 (2022-01-27)
 
 
