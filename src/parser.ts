@@ -1,50 +1,26 @@
 import { Parser, ParserOptions } from "prettier";
-import execa from 'execa';
 import { FormatterOption } from "blade-formatter";
-
-interface IFormatterOption {
-  printWidth: number,
-  tabWidth: number,
-  wrapAttributes?: string,
-  endWithNewLine?: boolean,
-}
-
-function formatTextWithBladeFormat(text: string, opts: IFormatterOption): execa.ExecaSyncReturnValue {
-  const printWidthOption = ["--wrap-line-length", opts.printWidth.toString()];
-  const tabWidthOption = ["--indent-size", opts.tabWidth.toString()];
-  const wrapAttributesOption = ["--wrap-attributes", opts.wrapAttributes ?? "auto"]
-  const endWithNewLineOption = opts.endWithNewLine ? ["--endWithNewLine"] : [];
-
-  return execa.sync("blade-formatter", [
-    "--stdin",
-    ...printWidthOption,
-    ...tabWidthOption,
-    ...wrapAttributesOption,
-    ...endWithNewLineOption
-  ], {
-    input: text,
-    preferLocal: true,
-    localDir: __dirname,
-    stripFinalNewline: false,
-  });
-}
+import { createSyncFn } from 'synckit';
 
 export const parse = (
   text: string,
   parsers: { [parserName: string]: Parser },
   opts: ParserOptions & FormatterOption,
 ) => {
-  // extract formatted text from blade-formatter
-  const executionResult = formatTextWithBladeFormat(text, {
-    printWidth: opts.printWidth,
-    tabWidth: opts.tabWidth,
+  const formatterOptions: FormatterOption = {
+    indentSize: opts.tabWidth,
+    wrapLineLength: opts.printWidth,
     wrapAttributes: opts.wrapAttributes,
-    endWithNewLine: opts.endWithNewline
-  });
+    endWithNewline: opts.endWithNewline,
+    useTabs: opts.useTabs,
+  }
+
+  const syncFn = createSyncFn(require.resolve('./worker'));
+  const result = syncFn(text, formatterOptions);
 
   return {
     type: "blade-formatter",
-    body: executionResult.stdout,
+    body: result,
     end: text.length,
     source: text,
     start: 0,
