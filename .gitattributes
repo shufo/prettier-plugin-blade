@@ -1,0 +1,3 @@
+*.blade.php -linguist-detectable linguist-documentation
+*.js linguist-detectable=true
+*.ts linguist-detectable=true
