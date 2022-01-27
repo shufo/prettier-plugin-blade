@@ -120,13 +120,13 @@ You can use these options for prettier blade plugin in prettier CLI.
 
 ## Limitation
 
-This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) that does not generate ASTs with lexer, so it might not be able to format complex blade properly.
+This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) that does not generate ASTs with lexer, so it might be break indentation on complex blade.
 
 Like:
 
 - The mix of open/closed HTML tag and directives
 
-❌ Example of **unformattable** code
+❌ Example of **unexpected** code
 
 ```blade
 @if ($user)
@@ -136,7 +136,7 @@ Like:
 @endif
 ```
 
-⭕ Example of **formattable** code
+⭕ Example of **expected** code
 
 ```blade
 @if ($user)
@@ -150,7 +150,7 @@ Like:
 
 blade-formatter is line based formatter so multiline expression often causes unexpected behaviour.
 
-❌ Example of **unformattable** code
+❌ Example of **unexpected** code
 
 ```blade
 <div>
@@ -161,7 +161,7 @@ blade-formatter is line based formatter so multiline expression often causes une
 </div>
 ```
 
-⭕ Example of **formattable** code
+⭕ Example of **expected** code
 
 ```blade
 <div>
@@ -173,13 +173,13 @@ blade-formatter is line based formatter so multiline expression often causes une
 
 - Deeply nested expression
 
-❌ Example of **unformattable** code
+❌ Example of **unexpected** code
 
 ```blade
 {{ asset(auth()->user()->getUserMedia('first', 'second')) }}
 ```
 
-⭕ Example of **formattable** code
+⭕ Example of **expected** code
 
 ```php
 # controller
