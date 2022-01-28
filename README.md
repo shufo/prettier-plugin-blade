@@ -118,11 +118,33 @@ You can use these options for prettier blade plugin in prettier CLI.
 }
 ```
 
-## VSCode Integration
+## Editor Integration
+
+Below editors are confirmed working with this plugin.
+
+### VSCode
 
 You can use [Prettier extension for VSCode](https://github.com/prettier/prettier-vscode) to format blade within VSCode. You must install this plugin as local dependencies. see https://github.com/prettier/prettier-vscode#prettier-resolution
 
 If you want to use formatter without Prettier, please consider to using [vscode-blade-formatter](https://github.com/shufo/vscode-blade-formatter)
+
+### Vim
+
+You can use [coc-prettier](https://github.com/neoclide/coc-prettier) plugin on [coc.nvim](https://github.com/neoclide/coc.nvim)
+
+If you want to use formater without Prettier, please consider to using [coc-blade](https://github.com/yaegassy/coc-blade)
+
+### JetBrains WebStorm, PHPStorm, PyCharm...
+
+You can use [Prettier Plugin](https://plugins.jetbrains.com/plugin/10456-prettier) for JetBrains IDE.
+
+Add extension setting `blade.php` to `File | Settings | Languages & Frameworks | JavaScript | Prettier | Run for files`:
+
+e.g.
+
+`{**/*,*}.{js,ts,jsx,tsx,blade.php}`
+
+and turn on checkbox `On 'Reformat Code' action`
 
 ## Limitation
 
