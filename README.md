@@ -122,6 +122,8 @@ You can use these options for prettier blade plugin in prettier CLI.
 
 You can use [Prettier extension for VSCode](https://github.com/prettier/prettier-vscode) to format blade within VSCode. You must install this plugin as local dependencies. see https://github.com/prettier/prettier-vscode#prettier-resolution
 
+If you want to use formatter without Prettier, please consider to using [vscode-blade-formatter](https://github.com/shufo/vscode-blade-formatter)
+
 ## Limitation
 
 This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) that does not generate ASTs with lexer, so it might be break indentation on complex blade.
