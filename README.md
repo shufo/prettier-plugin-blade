@@ -199,24 +199,6 @@ blade-formatter is line based formatter so multiline expression often causes une
 </div>
 ```
 
-- Deeply nested expression
-
-❌ Example of **unexpected** code
-
-```blade
-{{ asset(auth()->user()->getUserMedia('first', 'second')) }}
-```
-
-⭕ Example of **expected** code
-
-```php
-# controller
-return view('foo', ['media' => auth()->user()->getUserMedia('first', 'second')]);
-
-# view
-{{ asset($media) }}
-```
-
 Please make blade template as simple as possible for better formatting.
 
 ## API
