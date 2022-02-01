@@ -1,6 +1,6 @@
-import { AstPath } from "prettier";
+import { AstPath, Doc } from "prettier";
 
-export const print = (path: AstPath): string | Error => {
+export const print = (path: AstPath): Doc => {
   const node = path.getValue();
 
   switch (node.type) {
