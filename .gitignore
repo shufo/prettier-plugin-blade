@@ -3,4 +3,4 @@ yarn-error.log
 *.ipynb
 /types
 /dist
-
+coverage
