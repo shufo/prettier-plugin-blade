@@ -1,4 +1,19 @@
-# prettier-plugin-blade
+<div align="center">
+<img alt="Prettier"
+  src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-light.png">
+<img alt="PHP" height="180" hspace="25" vspace="15"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/500px-Laravel.svg.png">
+</div>
+
+<h2 align="center">Prettier Blade Plugin</h2>
+<p align="center">
+  <a href="https://github.com/shufo/prettier-plugin-blade/actions">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/shufo/prettier-plugin-blade/Node CI?style=flat-square">
+  </a>
+  <a href="https://www.npmjs.com/package/@prettier/plugin-php">
+    <img alt="npm version" src="https://img.shields.io/npm/v/@shufo/prettier-plugin-blade.svg?style=flat-square">
+  </a>
+</p>
 
 Format your blade template using Prettier
 
