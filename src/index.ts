@@ -1,9 +1,10 @@
 import { parse } from "./parser";
 import { print } from "./printer";
 import { options, defaultOptions } from "./options";
+import { Parser, Printer, SupportLanguage } from "prettier";
 
 
-export const languages = [
+export const languages: SupportLanguage[] = [
   {
     name: "Blade",
     parsers: ["blade"],
@@ -16,7 +17,7 @@ export const languages = [
   },
 ];
 
-export const parsers = {
+export const parsers: { [k: string]: Parser } = {
   blade: {
     parse,
     astFormat: "blade-format",
@@ -29,7 +30,7 @@ export const parsers = {
   },
 };
 
-export const printers = {
+export const printers: { [k: string]: Printer } = {
   "blade-format": {
     print,
   },
