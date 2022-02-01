@@ -34,3 +34,6 @@ jobs:
           yarn run test
         env:
           CI: true
+      - name: upload coverage
+        run: |
+          yarn run codecov
