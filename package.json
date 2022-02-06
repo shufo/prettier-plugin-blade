@@ -3,7 +3,7 @@
   "engines": {
     "node": ">= 14.0.0"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "blade-formatter": "^1.17.3",
     "prettier": "^2.5.1",
