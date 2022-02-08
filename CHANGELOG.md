@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.4](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.3...v1.0.4) (2022-02-06)
+
+
+### Miscellaneous
+
+* 🤖 add codecov to dev-dependencies ([9c247ed](https://www.github.com/shufo/prettier-plugin-blade/commit/9c247edfe8569a842d7bc1e5769f02acde40fbad))
+* 🤖 add ignore pattern ([982483b](https://www.github.com/shufo/prettier-plugin-blade/commit/982483bdfca20eec56e6476767458151e89691b9))
+* 🤖 bump blade-formatter to 1.17.3 ([e82c73e](https://www.github.com/shufo/prettier-plugin-blade/commit/e82c73e6395a50c714e1b5e1114a7d049573eff0))
+
 ### [1.0.3](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.2...v1.0.3) (2022-01-29)
 
 
