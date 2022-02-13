@@ -12,4 +12,6 @@
     /plant/details/{{ $plant->system_name }}
   @endslot
 @endcomponent
-@component('components.elements.button') @slot('href')/plant/details/{{ $plant->system_name }} @endslot @endcomponent
+@component('components.elements.button') 
+@slot('href')/plant/details/{{ $plant->system_name }} @endslot 
+@endcomponent
