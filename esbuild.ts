@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
       platform: "node",
       sourcemap: true,
       target: "node14",
-      external: ['./src/worker'],
+      external: ["./src/worker"],
       plugins: [nodeExternalsPlugin()],
     })
     .then(() => {
@@ -36,7 +36,7 @@ esbuild
     sourcemap: true,
     target: "node14",
     plugins: [nodeExternalsPlugin()],
-    external: ['./src/worker'],
+    external: ["./src/worker"],
     watch: {
       onRebuild(error, result) {
         if (error) console.error("watch build failed:", error);
