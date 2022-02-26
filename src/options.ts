@@ -19,3 +19,12 @@ export const options = {
     description: "End output with newline.",
     since: "1.0.0",
   },
+  sortTailwindcssClasses: {
+    type: "boolean",
+    category: "Blade",
+    default: false,
+    description: "Sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.",
+    since: "1.0.0",
+  },
+};
+

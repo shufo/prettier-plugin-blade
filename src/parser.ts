@@ -13,7 +13,8 @@ export const parse = (
     wrapAttributes: opts.wrapAttributes,
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
-  }
+    sortTailwindcssClasses: opts.sortTailwindcssClasses,
+  };
 
   const syncFn = createSyncFn(require.resolve("./worker"));
   const result = syncFn(text, formatterOptions);
