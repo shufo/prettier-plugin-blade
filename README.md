@@ -123,7 +123,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 |              `--print-width` |                                                                                                  The line length where Prettier will try wrap. default: `120` |
 |          `--wrap-attributes` | The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto` |
 |        `--end-with-new-line` |                                                                                                                      End output with newline. default: `true` |
-| `--sort-tailwindcss-classes` |                                                        Sort Tailwind CSS classes. It will lookup and respects `tailwind.config.js` if exists. default: `true` |
+| `--sort-tailwindcss-classes` |                                                       Sort Tailwind CSS classes. It will lookup and respects `tailwind.config.js` if exists. default: `false` |
 
 ### `.prettierrc` example
 
