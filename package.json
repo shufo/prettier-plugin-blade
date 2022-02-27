@@ -5,7 +5,7 @@
   },
   "version": "1.0.11",
   "dependencies": {
-    "blade-formatter": "^1.19.0",
+    "blade-formatter": "^1.20.1",
     "prettier": "^2.5.1",
     "synckit": "^0.6.0"
   },
@@ -30,7 +30,8 @@
     "watch": "node esbuild.ts",
     "test": "yarn build && jest",
     "lint": "eslint . --ext .ts",
-    "fix": "eslint . --ext .ts --fix"
+    "fix": "eslint . --ext .ts --fix",
+    "prettier": "prettier --plugin . --plugin-search-dir ."
   },
   "license": "MIT",
   "publishConfig": {

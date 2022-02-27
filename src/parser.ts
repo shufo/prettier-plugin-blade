@@ -1,11 +1,11 @@
 import { Parser, ParserOptions } from "prettier";
 import { FormatterOption } from "blade-formatter";
-import { createSyncFn } from 'synckit';
+import { createSyncFn } from "synckit";
 
 export const parse = (
   text: string,
   parsers: { [parserName: string]: Parser },
-  opts: ParserOptions & FormatterOption,
+  opts: ParserOptions & FormatterOption
 ) => {
   const formatterOptions: FormatterOption = {
     indentSize: opts.tabWidth,
@@ -13,9 +13,10 @@ export const parse = (
     wrapAttributes: opts.wrapAttributes,
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
-  }
+    sortTailwindcssClasses: opts.sortTailwindcssClasses,
+  };
 
-  const syncFn = createSyncFn(require.resolve('./worker'));
+  const syncFn = createSyncFn(require.resolve("./worker"));
   const result = syncFn(text, formatterOptions);
 
   return {

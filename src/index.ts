@@ -3,7 +3,6 @@ import { print } from "./printer";
 import { options, defaultOptions } from "./options";
 import { Parser, Printer, SupportLanguage } from "prettier";
 
-
 export const languages: SupportLanguage[] = [
   {
     name: "Blade",
