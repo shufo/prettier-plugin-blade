@@ -4,7 +4,7 @@
 @section('title') bar @endsection
 @section('content')
     <section id="content">
-        <div class="mod-user-pd-h container">
+        <div class="container mod-user-pd-h">
             <div class="pf-user-header">
                 <div></div>
                 <p>@lang('user.edit')</p>

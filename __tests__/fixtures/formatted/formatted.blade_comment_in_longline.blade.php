@@ -27,7 +27,7 @@
                     <div class="col-sm-8">
                         <div class="well">
                             <h3>@lang('bon.exchange')</h3>
-                            <table class="table-condensed table-striped table">
+                            <table class="table table-condensed table-striped">
                                 <thead>
                                     <tr>
                                         <th>@lang('bon.item')</th>
@@ -113,12 +113,12 @@
                     </div>
                     <div class="col-sm-4">
 
-                        <div class="well well-sm text-center text-blue">
+                        <div class="text-blue well well-sm text-center">
                             <h2><strong>@lang('bon.your-points'): <br></strong>{{ $userbon }}</h2>
                         </div>
 
                         <div class="well well-sm mt-20">
-                            <p class="lead text-center text-orange">@lang('bon.exchange-warning')
+                            <p class="lead text-orange text-center">@lang('bon.exchange-warning')
                                 <br><strong>@lang('bon.no-refund')</strong>
                             </p>
                         </div>

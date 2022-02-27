@@ -1,5 +1,5 @@
 <header class="face <?= isset($face_class) ? $face_class : '' ?>">
-    <div class="d-flex container">
+    <div class="container d-flex">
         @if (isset($face_class) && $face_class === 'face-narrow')
             <div class="col-md-7 face__wrapper">
             @else

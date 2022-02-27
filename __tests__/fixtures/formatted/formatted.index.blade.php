@@ -5,7 +5,7 @@
 @endsection
 @section('content')
     <section id="content">
-        <div class="mod-users-pd-h container">
+        <div class="container mod-users-pd-h">
             <div class="pf-user-header">
                 <div></div>
                 <p>@lang('users.index')</p>
