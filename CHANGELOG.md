@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.11...v1.1.0) (2022-02-27)
+
+
+### Features
+
+* 🎸 add automatic Tailwind Css class sorting option ([87a2a1f](https://www.github.com/shufo/prettier-plugin-blade/commit/87a2a1f3a6bd363c37ebbc91dedccbb9e12628e0))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.20.1 ([f02df0b](https://www.github.com/shufo/prettier-plugin-blade/commit/f02df0bb1181a0bda96970c6501a2ffd23c331d2))
+* 🤖 enable tailwindcss class sort behaviour by default ([6608c9e](https://www.github.com/shufo/prettier-plugin-blade/commit/6608c9eed713ab4b73e811de734d7d56942808ca))
+
 ### [1.0.11](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.0.10...v1.0.11) (2022-02-23)
 
 
