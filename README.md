@@ -23,6 +23,7 @@ Format your blade template using Prettier
 - Automatically add spacing to blade templating markers
 - PHP 8 syntax support (null safe operator, named arguments)
 - Compliant to PSR-2 coding standard (PHP code inside directives)
+- Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
 
 ## Installation
 
@@ -116,12 +117,13 @@ https://user-images.githubusercontent.com/1641039/151354641-6305805e-8e0c-4226-8
 
 You can use these options for prettier blade plugin in prettier CLI.
 
-|                   key |                                                                                                                                                   description |
-| --------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|         `--tab-width` |                                                                                                          Number of spaces per indentation level. default: `4` |
-|       `--print-width` |                                                                                                  The line length where Prettier will try wrap. default: `120` |
-|   `--wrap-attributes` | The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto` |
-| `--end-with-new-line` |                                                                                                                      End output with newline. default: `true` |
+|                          key |                                                                                                                                                   description |
+| ---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                `--tab-width` |                                                                                                          Number of spaces per indentation level. default: `4` |
+|              `--print-width` |                                                                                                  The line length where Prettier will try wrap. default: `120` |
+|          `--wrap-attributes` | The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto` |
+|        `--end-with-new-line` |                                                                                                                      End output with newline. default: `true` |
+| `--sort-tailwindcss-classes` |                                                        Sort Tailwind CSS classes. It will lookup and respects `tailwind.config.js` if exists. default: `true` |
 
 ### `.prettierrc` example
 
@@ -129,7 +131,8 @@ You can use these options for prettier blade plugin in prettier CLI.
 {
   "printWidth": 120,
   "tabWidth": 4,
-  "wrapAttributes": "auto"
+  "wrapAttributes": "auto",
+  "sortTailwindcssClasses": true
 }
 ```
 
