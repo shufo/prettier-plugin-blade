@@ -113,12 +113,12 @@
                     </div>
                     <div class="col-sm-4">
 
-                        <div class="text-blue well well-sm text-center">
+                        <div class="well well-sm text-center text-blue">
                             <h2><strong>@lang('bon.your-points'): <br></strong>{{ $userbon }}</h2>
                         </div>
 
                         <div class="well well-sm mt-20">
-                            <p class="lead text-orange text-center">@lang('bon.exchange-warning')
+                            <p class="lead text-center text-orange">@lang('bon.exchange-warning')
                                 <br><strong>@lang('bon.no-refund')</strong>
                             </p>
                         </div>
