@@ -1,4 +1,4 @@
-<div class="z-50 z-10 justify-center md:text-center container z-20 custom-class text-left">
+<div class="custom-class container z-50 z-10 z-20 justify-center text-left md:text-center">
 </div>
 @foreach ($items as $item)
     @switch($item->status)
