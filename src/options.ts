@@ -22,9 +22,9 @@ export const options = {
   sortTailwindcssClasses: {
     type: "boolean",
     category: "Blade",
-    default: false,
-    description: "Sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.",
+    default: true,
+    description:
+      "Sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.",
     since: "1.0.0",
   },
 };
-
