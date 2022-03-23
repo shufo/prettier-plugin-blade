@@ -264,6 +264,13 @@ $ yarn run test
             <br />
             <sub><b>Shuhei Hayashibara</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/ianjamieson">
+            <img src="https://avatars.githubusercontent.com/u/2786904?v=4" width="100;" alt="ianjamieson"/>
+            <br />
+            <sub><b>Ian Jamieson</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
