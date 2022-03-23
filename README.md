@@ -231,6 +231,13 @@ console.log(res);
 4.  Push to the branch (`git push origin my-new-feature`)
 5.  Create new Pull Request
 
+## Development
+
+```bash
+$ yarn install
+$ yarn run watch # watch changes
+```
+
 ## Testing
 
 ```bash
