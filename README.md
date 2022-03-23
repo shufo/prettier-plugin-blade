@@ -192,31 +192,6 @@ Like:
 @endif
 ```
 
-- Multiline expression
-
-blade-formatter is line based formatter so multiline expression often causes unexpected behaviour.
-
-❌ Example of **unexpected** code
-
-```blade
-<div>
-    @php
-    $myvar = "lorem
-       ipsum";
-    @endphp
-</div>
-```
-
-⭕ Example of **expected** code
-
-```blade
-<div>
-    @php
-    $myvar = "lorem\nipsum";
-    @endphp
-</div>
-```
-
 Please make blade template as simple as possible for better formatting.
 
 ## API
