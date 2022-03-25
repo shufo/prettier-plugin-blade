@@ -51,7 +51,7 @@ describe("broken text test", () => {
 });
 
 describe("option test", () => {
-  const fixturesDir = path.resolve(__dirname, "fixtures");
+  const fixturesDir = path.resolve(__dirname, "fixtures", "formattedWithOption");
   const formattedFixturesDir = path.resolve(
     __dirname,
     "fixtures",
@@ -91,6 +91,27 @@ describe("option test", () => {
     });
     const expected = fs
       .readFileSync(path.resolve(formattedFixturesDir, `formatted.tailwindcss.blade.php`))
+      .toString("utf-8");
+    expect(result).toEqual(expected);
+  });
+
+  test.concurrent(`can format fixture with singleAttributePerLine options`, function () {
+    const content = fs
+      .readFileSync(path.resolve(fixturesDir, "single_attribute_per_line.blade.php"))
+      .toString("utf-8");
+
+    const plugin = require(path.resolve(__dirname, "../"));
+
+    const result = prettier.format(content, {
+      plugins: [{ ...plugin }],
+      parser: "blade",
+      pluginSearchDirs: [path.resolve(__dirname, "../")],
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      singleAttributePerLine: true,
+    });
+    const expected = fs
+      .readFileSync(path.resolve(formattedFixturesDir, `formatted.single_attribute_per_line.blade.php`))
       .toString("utf-8");
     expect(result).toEqual(expected);
   });

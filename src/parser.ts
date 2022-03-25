@@ -10,7 +10,7 @@ export const parse = (
   const formatterOptions: FormatterOption = {
     indentSize: opts.tabWidth,
     wrapLineLength: opts.printWidth,
-    wrapAttributes: opts.wrapAttributes,
+    wrapAttributes: opts.singleAttributePerLine ? 'force-expand-multiline' : opts.wrapAttributes,
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,
