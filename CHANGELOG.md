@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.1.11...v1.2.0) (2022-03-25)
+
+
+### Features
+
+* 🎸 singleAttributePerLine option ([993cf77](https://www.github.com/shufo/prettier-plugin-blade/commit/993cf777e07cc5bfedf48137100b3aaa87961a37))
+
+
+### Miscellaneous
+
+* 🤖 bump @types/prettier to 2.4.4 ([d214534](https://www.github.com/shufo/prettier-plugin-blade/commit/d21453485aaae1222b67a53e40e5e98411bfaac2))
+
 ### [1.1.11](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.1.10...v1.1.11) (2022-03-23)
 
 
