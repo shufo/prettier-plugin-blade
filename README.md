@@ -43,7 +43,7 @@ Update your `.prettierrc.json` file to include the new plugin:
 
 ```json
 {
-    "plugins": ["@shufo/prettier-plugin-blade"]
+  "plugins": ["@shufo/prettier-plugin-blade"]
 }
 ```
 
