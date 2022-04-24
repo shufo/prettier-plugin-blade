@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.2.6...v1.3.0) (2022-04-24)
+
+
+### Features
+
+* 🎸 bracketSameLine option ([6b89032](https://www.github.com/shufo/prettier-plugin-blade/commit/6b89032f18641785547d9c74b36d5e0bdde4f535))
+
 ### [1.2.6](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.2.5...v1.2.6) (2022-04-17)
 
 
