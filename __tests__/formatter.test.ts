@@ -115,4 +115,32 @@ describe("option test", () => {
       .toString("utf-8");
     expect(result).toEqual(expected);
   });
+  test.concurrent(
+    `can format fixture with bracketSameLine option`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "bracket_same_line.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        bracketSameLine: true,
+      });
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            formattedFixturesDir,
+            `formatted.bracket_same_line.blade.php`
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
 });
