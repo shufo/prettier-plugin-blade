@@ -1037,10 +1037,10 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@^1.23.7:
-  version "1.23.7"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.23.7.tgz#22dae6550ac8b83cf691bfa00dd55c276f5f87fc"
-  integrity sha512-zexxUL1qxSn7MofMuzvdjYfthTjMDMnFklxmWZK6XYYtrt78aLMzOs0Ul8weHImAj833gmgqPAsek28dJk8e9w==
+blade-formatter@^1.23.8:
+  version "1.23.8"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.23.8.tgz#7545527b08d33ab80f24b0149ad0be90b04e3c1c"
+  integrity sha512-UZKKWcteAmkLMt6qrXG/CqTGWq5sVu3zdnCqzBOBf6GTbCaRrQHvhnynCF5OjePZhPwV50iCauo/FBeqleYHZg==
   dependencies:
     "@prettier/plugin-php" "^0.18.0"
     "@shufo/tailwindcss-class-sorter" "^1.0.3"
