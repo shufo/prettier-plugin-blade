@@ -34,6 +34,6 @@ jobs:
           yarn run test
         env:
           CI: true
-      - name: upload coverage
-        run: |
-          yarn run codecov
+      - uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
