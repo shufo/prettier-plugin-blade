@@ -39,7 +39,9 @@ $ yarn add -D @shufo/prettier-plugin-blade prettier
 $ ./node_modules/.bin/prettier --write resources/**/*.blade.php
 ```
 
-Update your `.prettierrc.json` file to include the new plugin:
+### Troubleshooting
+
+If you get something error like can not find plugins, update your `.prettierrc.json` file to include the new plugin:
 
 ```json
 {
