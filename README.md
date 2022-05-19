@@ -146,6 +146,36 @@ You can use these options for prettier blade plugin in prettier CLI.
 }
 ```
 
+## Disabling format in file
+
+To disable formatting in your file, you can use blade/html comments in the following format:
+
+```blade
+{{-- prettier-ignore-start --}}
+    {{ $foo }}
+    {{ $bar }}
+{{-- prettier-ignore-end --}}
+
+or
+
+<!-- prettier-ignore-start -->
+    {{ $foo }}
+    {{ $bar }}
+<!-- prettier-ignore-end -->
+```
+
+To disable format on a specific line, you can use comment in the following format:
+
+```blade
+{{-- prettier-ignore --}}
+    {{ $foo }}
+
+or
+
+<!-- prettier-ignore -->
+    {{ $foo }}
+```
+
 ## Editor Integration
 
 Below editors are confirmed working with this plugin.
