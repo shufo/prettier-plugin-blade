@@ -1,5 +1,15 @@
 # Changelog
 
+### [1.4.14](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.4.13...v1.4.14) (2022-06-18)
+
+
+### Miscellaneous
+
+* **deps:** update actions/cache action to v3 ([307d33e](https://www.github.com/shufo/prettier-plugin-blade/commit/307d33e28e49bc7fa318460537a33db5af0a0a8d))
+* **deps:** update actions/checkout action to v3 ([6c69006](https://www.github.com/shufo/prettier-plugin-blade/commit/6c69006b8107a12f3483490295bc162e4a0f8101))
+* **deps:** update actions/setup-node action to v3 ([12b6415](https://www.github.com/shufo/prettier-plugin-blade/commit/12b6415dcc7035ae8f8f6d5e39c8d54dd297835b))
+* **deps:** update cirrus-actions/rebase action to v1.7 ([5da5d80](https://www.github.com/shufo/prettier-plugin-blade/commit/5da5d809816262cec9b6b7241ad4e5d1a78fcf3e))
+
 ### [1.4.13](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.4.12...v1.4.13) (2022-06-18)
 
 
