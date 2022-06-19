@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.4.14](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.13...v1.4.14) (2022-06-19)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.26.9 ([2361324](https://github.com/shufo/prettier-plugin-blade/commit/236132443702b909d5a7aa0e085e434a45601fca))
+* **deps:** update actions/cache action to v3 ([307d33e](https://github.com/shufo/prettier-plugin-blade/commit/307d33e28e49bc7fa318460537a33db5af0a0a8d))
+* **deps:** update actions/checkout action to v3 ([6c69006](https://github.com/shufo/prettier-plugin-blade/commit/6c69006b8107a12f3483490295bc162e4a0f8101))
+* **deps:** update actions/setup-node action to v3 ([12b6415](https://github.com/shufo/prettier-plugin-blade/commit/12b6415dcc7035ae8f8f6d5e39c8d54dd297835b))
+* **deps:** update cirrus-actions/rebase action to v1.7 ([5da5d80](https://github.com/shufo/prettier-plugin-blade/commit/5da5d809816262cec9b6b7241ad4e5d1a78fcf3e))
+* **deps:** update codecov/codecov-action action to v3 ([694f668](https://github.com/shufo/prettier-plugin-blade/commit/694f66861b4b1e5891317e3a25a79a1ebbf7e635))
+* **deps:** update googlecloudplatform/release-please-action action to v3 ([4d2db4a](https://github.com/shufo/prettier-plugin-blade/commit/4d2db4a9c1286b3c5e4f18f269c595035f624465))
+* **deps:** update jest monorepo to v28 ([edc4174](https://github.com/shufo/prettier-plugin-blade/commit/edc4174e3acb79a9cc94f3bfae7bf6522f850a83))
+* **deps:** update pozil/auto-assign-issue action to v1.7.0 ([5bb7c0a](https://github.com/shufo/prettier-plugin-blade/commit/5bb7c0a795b934264d7ec1043e172f857d3764ad))
+
 ### [1.4.13](https://www.github.com/shufo/prettier-plugin-blade/compare/v1.4.12...v1.4.13) (2022-06-18)
 
 
