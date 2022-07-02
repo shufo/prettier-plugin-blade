@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.16](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.15...v1.4.16) (2022-07-02)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.26.11 ([042a75d](https://github.com/shufo/prettier-plugin-blade/commit/042a75dd530f80532a57e1c50753d32dad03278d))
+* **deps-dev:** bump @typescript-eslint/parser from 5.10.1 to 5.11.0 ([4198cfc](https://github.com/shufo/prettier-plugin-blade/commit/4198cfc4902b21853ec362846bd4f53fc17f14fe))
+* **deps:** update pozil/auto-assign-issue action to v1.7.3 ([8a4aabc](https://github.com/shufo/prettier-plugin-blade/commit/8a4aabc062a03cbbae2916923930748885d2c4d0))
+
 ## [1.4.15](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.14...v1.4.15) (2022-06-21)
 
 
