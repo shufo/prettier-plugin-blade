@@ -7,7 +7,7 @@
   "dependencies": {
     "blade-formatter": "^1.26.12",
     "prettier": "^2.6.2",
-    "synckit": "^0.7.1"
+    "synckit": "^0.7.2"
   },
   "devDependencies": {
     "@types/jest": "^28.0.0",
