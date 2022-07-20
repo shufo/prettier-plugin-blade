@@ -3568,10 +3568,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-synckit@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.0.tgz#4923259e79deb6b6c4ce79ffc2365f8ed095738b"
-  integrity sha512-J0zJagdaRPhc2q5pA/IlN1ohJY4lPsyiv4YqNflztCSsRQSISdece9jCe622OurrBqttC23VPYrKiX4/DnuKVw==
+synckit@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.1.tgz#697111240114a15a393fcb92786a4218bfead47f"
+  integrity sha512-rJEeygO5PNmcZICmrgnbOd2usi5zWE1ESc0Gn5tTmJlongoU8zCTwMFQtar2UgMSiR68vK9afPQ+uVs2lURSIA==
   dependencies:
     "@pkgr/utils" "^2.3.0"
     tslib "^2.4.0"
