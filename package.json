@@ -5,7 +5,7 @@
   },
   "version": "1.4.18",
   "dependencies": {
-    "blade-formatter": "^1.26.13",
+    "blade-formatter": "^1.26.14",
     "prettier": "^2.6.2",
     "synckit": "^0.8.0"
   },
