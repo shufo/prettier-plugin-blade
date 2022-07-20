@@ -41,11 +41,19 @@ $ ./node_modules/.bin/prettier --write resources/**/*.blade.php
 
 ### Troubleshooting
 
-If you get something error like can not find plugins, update your `.prettierrc.json` file to include the new plugin:
+If you get something error like can not find plugins, update your `.prettierrc.json` file to specify parser:
 
 ```json
 {
-  "plugins": ["@shufo/prettier-plugin-blade"]
+    "overrides": [
+        {
+            "files": ["*.blade.php"],
+            "options": {
+                "tabWidth": 4,
+                "parser": "blade"
+            }
+        }
+    ]
 }
 ```
 
