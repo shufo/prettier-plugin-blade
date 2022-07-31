@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.23](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.22...v1.4.23) (2022-07-31)
+
+
+### Miscellaneous
+
+* **deps:** update akhilmhdh/contributors-readme-action action to v2.3.5 ([4e713ad](https://github.com/shufo/prettier-plugin-blade/commit/4e713adf11e2f39b42c21a8b599a0adceda21a82))
+
 ## [1.4.22](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.21...v1.4.22) (2022-07-31)
 
 
