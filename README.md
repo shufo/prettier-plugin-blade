@@ -135,22 +135,24 @@ https://user-images.githubusercontent.com/1641039/151354641-6305805e-8e0c-4226-8
 
 You can use these options for prettier blade plugin in prettier CLI.
 
-|                          key |                                                                                                                                                   description |
-| ---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                `--tab-width` |                                                                                                          Number of spaces per indentation level. default: `4` |
-|              `--print-width` |                                                                                                  The line length where Prettier will try wrap. default: `120` |
-|          `--wrap-attributes` | The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto` |
-|        `--end-with-new-line` |                                                                                                                      End output with newline. default: `true` |
-| `--sort-tailwindcss-classes` |                                                       Sort Tailwind CSS classes. It will lookup and respects `tailwind.config.js` if exists. default: `false` |
+|                          key |                                                                                                                                                                                                                                               description |
+| ---------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                `--tab-width` |                                                                                                                                                                                                      Number of spaces per indentation level. default: `4` |
+|              `--print-width` |                                                                                                                                                                                              The line length where Prettier will try wrap. default: `120` |
+|          `--wrap-attributes` |                                                                                             The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto` |
+|        `--end-with-new-line` |                                                                                                                                                                                                                  End output with newline. default: `true` |
+| `--sort-tailwindcss-classes` |                                                                                                                                                   Sort Tailwind CSS classes. It will lookup and respects `tailwind.config.js` if exists. default: `false` |
+|     `--sort-html-attributes` | Sort HTML attributes. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `false` |
 
 ### `.prettierrc` example
 
 ```json
 {
-  "printWidth": 120,
-  "tabWidth": 4,
-  "wrapAttributes": "auto",
-  "sortTailwindcssClasses": true
+    "printWidth": 120,
+    "tabWidth": 4,
+    "wrapAttributes": "auto",
+    "sortTailwindcssClasses": true,
+    "sortHtmlAttributes": "none"
 }
 ```
 
