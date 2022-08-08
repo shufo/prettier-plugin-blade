@@ -26,5 +26,12 @@ export const options = {
     description: "Sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.",
     since: "1.0.0",
   },
+  sortHtmlAttributes: {
+    type: "string",
+    category: "Blade",
+    default: "none",
+    description: "Sort HTML Attributes. [none|alphabetical|code-guide|idiomatic|vuejs]",
+    since: "1.5.0",
+  },
 };
 

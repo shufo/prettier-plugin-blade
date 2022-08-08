@@ -14,6 +14,8 @@ export const parse = (
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,
+    sortHtmlAttributes: opts.sortHtmlAttributes,
+    noMultipleEmptyLines: true,
   };
 
   const syncFn = createSyncFn(require.resolve("./worker"));
