@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.5.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.22...v1.5.0) (2022-08-08)
+
+
+### Features
+
+* 🎸 sort html attributes option ([e43c6e2](https://github.com/shufo/prettier-plugin-blade/commit/e43c6e2f2e5dcb7ab431cb90c647ea18aae36168))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.27.0 ([c00a43e](https://github.com/shufo/prettier-plugin-blade/commit/c00a43e5a469659a0de035e5aa22e4da642f64ac))
+* **deps:** update akhilmhdh/contributors-readme-action action to v2.3.5 ([4e713ad](https://github.com/shufo/prettier-plugin-blade/commit/4e713adf11e2f39b42c21a8b599a0adceda21a82))
+* **deps:** update akhilmhdh/contributors-readme-action action to v2.3.6 ([8f4c5b1](https://github.com/shufo/prettier-plugin-blade/commit/8f4c5b11383b9a67c89cbf881d8fa82f530201a1))
+* **deps:** update pozil/auto-assign-issue action to v1.9.0 ([e012784](https://github.com/shufo/prettier-plugin-blade/commit/e01278439a4f530217c2a40cd43897bf15b0b3f9))
+
+
+### Fixes
+
+* 🐛 support prettier's no multiple empty lines behaviour ([fb64b85](https://github.com/shufo/prettier-plugin-blade/commit/fb64b85f14eedeb4552929a3f70115c551b09b00))
+
 ## [1.4.22](https://github.com/shufo/prettier-plugin-blade/compare/v1.4.21...v1.4.22) (2022-07-31)
 
 
