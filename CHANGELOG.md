@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.1...v1.5.2) (2022-08-09)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.27.2 ([801858b](https://github.com/shufo/prettier-plugin-blade/commit/801858bea4c5194a094187b67ad5109d4f765ec1))
+
 ## [1.5.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.0...v1.5.1) (2022-08-08)
 
 
