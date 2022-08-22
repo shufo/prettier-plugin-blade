@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.4](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.3...v1.5.4) (2022-08-22)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.27.5 ([bae10a7](https://github.com/shufo/prettier-plugin-blade/commit/bae10a7b69f6f39aec3bc9c47d3bc12d019ce2d5))
+* **deps:** bump synckit from 0.8.1 to 0.8.3 ([3659513](https://github.com/shufo/prettier-plugin-blade/commit/365951323cec9f6112ecb1ffcdc87cd248ab33f2))
+* **deps:** update pozil/auto-assign-issue action to v1.10.0 ([40a5376](https://github.com/shufo/prettier-plugin-blade/commit/40a53762fcabcc5b2fa9b16ba22803e136946b5b))
+
 ## [1.5.3](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.2...v1.5.3) (2022-08-13)
 
 
