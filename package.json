@@ -1,56 +1,56 @@
 {
-  "name": "@shufo/prettier-plugin-blade",
-  "engines": {
-    "node": ">= 14.0.0"
-  },
-  "version": "1.5.4",
-  "dependencies": {
-    "blade-formatter": "^1.27.5",
-    "prettier": "^2.6.2",
-    "synckit": "^0.8.3"
-  },
-  "devDependencies": {
-    "@types/jest": "^28.0.0",
-    "@types/prettier": "^2.4.4",
-    "@typescript-eslint/eslint-plugin": "^5.28.0",
-    "@typescript-eslint/parser": "^5.30.0",
-    "codecov": "^3.8.3",
-    "cross-env": "^7.0.3",
-    "esbuild": "^0.15.0",
-    "esbuild-node-externals": "^1.4.1",
-    "eslint": "^8.15.0",
-    "jest": "^28.0.0",
-    "ts-jest": "^28.0.0",
-    "ts-node": "^10.5.0",
-    "typescript": "^4.5.5"
-  },
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "cross-env NODE_ENV=production node esbuild.ts",
-    "watch": "node esbuild.ts",
-    "test": "yarn build && jest",
-    "lint": "eslint . --ext .ts",
-    "fix": "eslint . --ext .ts --fix",
-    "prettier": "prettier --plugin . --plugin-search-dir ."
-  },
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shufo/prettier-plugin-blade.git"
-  },
-  "files": [
-    "dist",
-    "src",
-    "CHANGELOG.md"
-  ],
-  "keywords": [
-    "prettier",
-    "blade",
-    "formatter",
-    "laravel"
-  ],
-  "author": "Shuhei Hayashibara"
+    "name": "@shufo/prettier-plugin-blade",
+    "engines": {
+        "node": ">= 14.0.0"
+    },
+    "version": "1.5.4",
+    "dependencies": {
+        "blade-formatter": "^1.27.5",
+        "prettier": "^2.6.2",
+        "synckit": "^0.8.3"
+    },
+    "devDependencies": {
+        "@types/jest": "^28.0.0",
+        "@types/prettier": "^2.4.4",
+        "@typescript-eslint/eslint-plugin": "^5.28.0",
+        "@typescript-eslint/parser": "^5.30.0",
+        "codecov": "^3.8.3",
+        "cross-env": "^7.0.3",
+        "esbuild": "^0.15.0",
+        "esbuild-node-externals": "^1.4.1",
+        "eslint": "^8.15.0",
+        "jest": "^28.0.0",
+        "ts-jest": "^28.0.0",
+        "ts-node": "^10.5.0",
+        "typescript": "^4.5.5"
+    },
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "cross-env NODE_ENV=production node esbuild.ts",
+        "watch": "node esbuild.ts",
+        "test": "yarn build && jest",
+        "lint": "eslint . --ext .ts",
+        "fix": "eslint . --ext .ts --fix",
+        "prettier": "prettier --plugin . --plugin-search-dir ."
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shufo/prettier-plugin-blade.git"
+    },
+    "files": [
+        "dist",
+        "src",
+        "CHANGELOG.md"
+    ],
+    "keywords": [
+        "prettier",
+        "blade",
+        "formatter",
+        "laravel"
+    ],
+    "author": "Shuhei Hayashibara"
 }
