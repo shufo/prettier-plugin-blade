@@ -310,6 +310,13 @@ $ yarn run test
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/howdu">
+            <img src="https://avatars.githubusercontent.com/u/533658?v=4" width="100;" alt="howdu"/>
+            <br />
+            <sub><b>Beej</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ianjamieson">
             <img src="https://avatars.githubusercontent.com/u/2786904?v=4" width="100;" alt="ianjamieson"/>
             <br />
