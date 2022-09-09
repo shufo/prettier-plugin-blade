@@ -214,6 +214,8 @@ e.g.
 
 and turn on checkbox `On 'Reformat Code' action`
 
+Restart your IDE if you get error: 'Prettier: File *.php has unsupported type'
+
 ## Limitation
 
 This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) that does not generate ASTs with lexer, so it might be break indentation on complex blade.
