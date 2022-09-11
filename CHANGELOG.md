@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.7](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.6...v1.5.7) (2022-09-11)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.28.0 ([1393f3f](https://github.com/shufo/prettier-plugin-blade/commit/1393f3f6dbf90c87586b4ee4343d6201afa1f53a))
+* **deps:** update dependency ts-jest to v29 ([c5a9f99](https://github.com/shufo/prettier-plugin-blade/commit/c5a9f991ec10652145cef5eb20d0d164d663b12d))
+
 ## [1.5.6](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.5...v1.5.6) (2022-09-03)
 
 
