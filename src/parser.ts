@@ -1,6 +1,7 @@
 import { Parser, ParserOptions } from "prettier";
 import { FormatterOption } from "blade-formatter";
 import { createSyncFn } from "synckit";
+import path from 'path';
 
 export const parse = (
   text: string,
@@ -14,7 +15,7 @@ export const parse = (
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,
-    tailwindcssConfigPath: opts.tailwindcssConfigPath,
+    tailwindcssConfigPath: path.resolve(path.dirname(opts.filepath ?? ''), opts.tailwindcssConfigPath ?? ''),
     sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
   };
