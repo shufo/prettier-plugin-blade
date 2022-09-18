@@ -160,4 +160,35 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
+
+  test.concurrent(
+    `can format fixture with tailwind config path option`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "tailwind", "index.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        sortTailwindcssClasses: true,
+        tailwindcssConfigPath: path.resolve(fixturesDir, "tailwind", "tailwind.config.example.js"),
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            formattedFixturesDir,
+            "tailwind", "formatted.index.blade.php"
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
 });
