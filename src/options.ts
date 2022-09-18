@@ -30,7 +30,7 @@ export const options = {
     type: "string",
     category: "Blade",
     default: '',
-    description: "Path to custom Tailwindcss config",
+    description: "Path to custom Tailwindcss config. This option is available only when `sortTailwindcssClasses` is present.",
     since: "1.5.7",
   },
   sortHtmlAttributes: {
