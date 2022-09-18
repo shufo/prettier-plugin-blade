@@ -19,11 +19,11 @@ Format your blade template using Prettier
 
 ## Features
 
-- Automatically Indents markup inside directives
-- Automatically add spacing to blade templating markers
-- PHP 8 syntax support (null safe operator, named arguments)
-- Compliant to PSR-2 coding standard (PHP code inside directives)
-- Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
+-   Automatically Indents markup inside directives
+-   Automatically add spacing to blade templating markers
+-   PHP 8 syntax support (null safe operator, named arguments)
+-   Compliant to PSR-2 coding standard (PHP code inside directives)
+-   Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
 
 ## Installation
 
@@ -68,29 +68,29 @@ https://user-images.githubusercontent.com/1641039/151354641-6305805e-8e0c-4226-8
 @section('title') foo
 @endsection
 @section('content')
-<section id="content">
-<div class="container mod-users-pd-h">
-    <div class="pf-user-header">
-    <div></div>
-    <p>@lang('users.index')</p>
-    </div>
-        <div class="pf-users-branch">
-            <ul class="pf-users-branch__list">
-                @foreach($users as $user)
-        <li>
-            <img src="{{ asset('img/frontend/icon/branch-arrow.svg') }}" alt="branch_arrow">
-            {{ link_to_route("frontend.users.user.show",$users["name"],$users['_id']) }}
-        </li>
-        @endforeach
-      </ul>
-      <div class="pf-users-branch__btn">
-      @can('create', App\Models\User::class)
-            {!! link_to_route("frontend.users.user.create",__('users.create'),[1,2,3],['class' => 'btn']) !!}
-            @endcan
+    <section id="content">
+        <div class="container mod-users-pd-h">
+            <div class="pf-user-header">
+                <div></div>
+                <p>@lang('users.index')</p>
+            </div>
+            <div class="pf-users-branch">
+                <ul class="pf-users-branch__list">
+                    @foreach ($users as $user)
+                        <li>
+                            <img src="{{ asset('img/frontend/icon/branch-arrow.svg') }}" alt="branch_arrow">
+                            {{ link_to_route('frontend.users.user.show', $users['name'], $users['_id']) }}
+                        </li>
+                    @endforeach
+                </ul>
+                <div class="pf-users-branch__btn">
+                    @can('create', App\Models\User::class)
+                        {!! link_to_route('frontend.users.user.create', __('users.create'), [1, 2, 3], ['class' => 'btn']) !!}
+                    @endcan
+                </div>
+            </div>
         </div>
-  </div>
-    </div>
-</section>
+    </section>
 @endsection
 @section('footer')
 @stop
@@ -215,7 +215,7 @@ e.g.
 
 and turn on checkbox `On 'Reformat Code' action`
 
-Restart your IDE if you get error: 'Prettier: File *.php has unsupported type'
+Restart your IDE if you get error: 'Prettier: File \*.php has unsupported type'
 
 ## Limitation
 
@@ -223,15 +223,15 @@ This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatt
 
 Like:
 
-- The mix of open/closed HTML tag and directives
+-   The mix of open/closed HTML tag and directives
 
 ❌ Example of **unexpected** code
 
 ```blade
 @if ($user)
-  <div>
-@else
-  </div>
+    <div>
+    @else
+    </div>
 @endif
 ```
 
@@ -239,9 +239,9 @@ Like:
 
 ```blade
 @if ($user)
-  <div>foo</div>
+    <div>foo</div>
 @else
-  <div>bar</div>
+    <div>bar</div>
 @endif
 ```
 
