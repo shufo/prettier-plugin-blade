@@ -26,6 +26,13 @@ export const options = {
     description: "Sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.",
     since: "1.0.0",
   },
+  tailwindcssConfigPath: {
+    type: "string",
+    category: "Blade",
+    default: '',
+    description: "A path to custom Tailwindcss config",
+    since: "1.5.7",
+  },
   sortHtmlAttributes: {
     type: "string",
     category: "Blade",

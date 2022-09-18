@@ -14,6 +14,7 @@ export const parse = (
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,
+    tailwindcssConfigPath: opts.tailwindcssConfigPath,
     sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
   };
