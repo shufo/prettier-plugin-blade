@@ -21,6 +21,13 @@ describe('CLI test', () => {
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind'),
             to: 'formatted.index.blade.php',
         },
+        {
+            name: '.prettierrc.json with tailwind config path exists above given path',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind', 'subdirectory'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind'),
+            to: 'formatted.index.blade.php',
+        },
     ];
 
     targets.forEach(target => {
