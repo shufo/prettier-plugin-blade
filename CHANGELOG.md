@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.6.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.7...v1.6.0) (2022-09-19)
+
+
+### Features
+
+* 🎸 add option `--tailwindcss-config-path` ([d27adcc](https://github.com/shufo/prettier-plugin-blade/commit/d27adcc1d90c57461bfe3b12727613720aa364aa))
+
+
+### Miscellaneous
+
+* 🤖 add concat-stream to dev-dependencies ([b23cef4](https://github.com/shufo/prettier-plugin-blade/commit/b23cef4ec4849769298efb9c85fbe88fbeb6c68d))
+* 🤖 bump blade-formatter to 1.29.0 ([27ccc95](https://github.com/shufo/prettier-plugin-blade/commit/27ccc9546ae1eb60d8bcebbd7aeeb9f565e54cb4))
+* 🤖 bump blade-formatter to 1.29.2 ([9c713b2](https://github.com/shufo/prettier-plugin-blade/commit/9c713b2e84c50f716148bc1c4bf90ddeaafcf0f3))
+
+
+### Fixes
+
+* 🐛 config path is not calculated relative to .prettierrc ([0f7d959](https://github.com/shufo/prettier-plugin-blade/commit/0f7d959235ae5ef09eb9ddd3d5ff697165b8affa))
+* 🐛 support for cases where prettierrc.json needs lookup ([84d2b66](https://github.com/shufo/prettier-plugin-blade/commit/84d2b66709cff9092d5abe0bffc01fbd50e51a32))
+
 ## [1.5.7](https://github.com/shufo/prettier-plugin-blade/compare/v1.5.6...v1.5.7) (2022-09-11)
 
 
