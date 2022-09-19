@@ -1,4 +1,4 @@
-import { Parser, ParserOptions } from "prettier";
+import { Parser, ParserOptions, resolveConfigFile } from "prettier";
 import { FormatterOption } from "blade-formatter";
 import { createSyncFn } from "synckit";
 import path from 'path';
@@ -15,7 +15,7 @@ export const parse = (
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,
-    tailwindcssConfigPath: path.resolve(path.dirname(opts.filepath ?? ''), opts.tailwindcssConfigPath ?? ''),
+    tailwindcssConfigPath: resolveTailwindConfigPath(opts.filepath, opts.tailwindcssConfigPath),
     sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
   };
@@ -31,3 +31,17 @@ export const parse = (
     start: 0,
   };
 };
+
+function resolveTailwindConfigPath(filepath: string | undefined, optionPath: string | undefined): string | undefined {
+  if (!optionPath) {
+    return;
+  }
+
+  if (path.isAbsolute(optionPath ?? '')) {
+    return optionPath;
+  }
+
+  const prettierRcPath = resolveConfigFile.sync(filepath);
+
+  return path.resolve(path.dirname(prettierRcPath ?? ''), optionPath ?? '')
+}
