@@ -788,10 +788,10 @@
     mem "^8.0.0"
     php-parser "3.1.0"
 
-"@shufo/tailwindcss-class-sorter@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@shufo/tailwindcss-class-sorter/-/tailwindcss-class-sorter-1.0.11.tgz#03093bae1288acdd25fb05ae919a3dd8a8e40c27"
-  integrity sha512-WIzt2etnwHTblECmvEKNxFsqjSmhZKtur+FZBcaZpo6b5M5neu46YzMLvAs892I6VS1HGO0ttQ/i99HZhYB4SA==
+"@shufo/tailwindcss-class-sorter@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@shufo/tailwindcss-class-sorter/-/tailwindcss-class-sorter-1.0.12.tgz#21ed70ef157ad23ae69f8ae462812e7b4d4e9cda"
+  integrity sha512-dGyIdWGAPG7sMbZb/Q/RgR60DpyxZ3772mQCy1hb72ILBFYcqpOzjGt7tsR5HrV8apo4IV1j/Ako17bkbnQewA==
   dependencies:
     escalade "^3.1.1"
     object-hash "^3.0.0"
@@ -1290,13 +1290,13 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@^1.29.5:
-  version "1.29.5"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.29.5.tgz#e50d22012dc349246c4eba1320800fb84071af65"
-  integrity sha512-KUQko0BBRODFEHCdbRsU33zfy7K1yT8otlLObdwJzO38awYZzioYYYuuImg2v/eXSc1Ni5KwboU0S/5W75gPlw==
+blade-formatter@^1.29.7:
+  version "1.29.7"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.29.7.tgz#818ba2f3b4fb27a76c52b77f29b2fd935580352f"
+  integrity sha512-oFGpb/VOv9EuDxl4JMtygEuc1tRRTOd9ctEm00CuQsdCIxl08IDUDPfwnfHxETv6N9uS0YnFrdbB85yRHVkV9w==
   dependencies:
     "@prettier/plugin-php" "^0.19.0"
-    "@shufo/tailwindcss-class-sorter" "^1.0.11"
+    "@shufo/tailwindcss-class-sorter" "^1.0.12"
     aigle "^1.14.1"
     ajv "^8.9.0"
     chalk "^4.1.0"
