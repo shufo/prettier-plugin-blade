@@ -144,6 +144,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 | `--sort-tailwindcss-classes` | Sort Tailwind CSS classes. It will automatically lookup and respects `tailwind.config.js` if exists. default: `false`                                                                                                                                                           |
 |  `--tailwindcss-config-path` | Path to custom Tailwind config. This option is available only when `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                                       |
 |     `--sort-html-attributes` | Sort HTML Attributes in the specified order. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `none` |
+|      `--no-php-syntax-check` | Disable PHP Syntax checking. default: `false`                                                                                                                                                                                                                                   |
 
 ### `.prettierrc` example
 
@@ -153,7 +154,8 @@ You can use these options for prettier blade plugin in prettier CLI.
     "tabWidth": 4,
     "wrapAttributes": "auto",
     "sortTailwindcssClasses": true,
-    "sortHtmlAttributes": "none"
+    "sortHtmlAttributes": "none",
+    "noPhpSyntaxCheck": false
 }
 ```
 
