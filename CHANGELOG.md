@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.6.3...v1.7.0) (2022-10-09)
+
+
+### Features
+
+* 🎸 add option `--no-php-syntax-check` ([f710459](https://github.com/shufo/prettier-plugin-blade/commit/f7104593c4316d8ca7742b74c516fc3611e26536))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.30.0 ([6bf2b50](https://github.com/shufo/prettier-plugin-blade/commit/6bf2b50ec622574f378855a5826c48a670538275))
+* **deps:** update pozil/auto-assign-issue action to v1.10.1 ([7775bdb](https://github.com/shufo/prettier-plugin-blade/commit/7775bdb0541d656ddd26b3932401d5e33ff5abc3))
+
 ## [1.6.3](https://github.com/shufo/prettier-plugin-blade/compare/v1.6.2...v1.6.3) (2022-10-01)
 
 
