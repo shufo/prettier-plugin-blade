@@ -40,5 +40,12 @@ export const options = {
     description: "Sort HTML Attributes. [none|alphabetical|code-guide|idiomatic|vuejs]",
     since: "1.5.0",
   },
+  noPhpSyntaxCheck: {
+    type: "boolean",
+    category: "Blade",
+    default: false,
+    description: "Disable PHP syntax checking",
+    since: "1.7.0",
+  },
 };
 

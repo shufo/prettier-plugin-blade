@@ -18,6 +18,7 @@ export const parse = (
     tailwindcssConfigPath: resolveTailwindConfigPath(opts.filepath, opts.tailwindcssConfigPath),
     sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
+    noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
   };
 
   const syncFn = createSyncFn(require.resolve("./worker"));
