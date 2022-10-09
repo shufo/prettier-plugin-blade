@@ -28,6 +28,13 @@ describe('CLI test', () => {
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind'),
             to: 'formatted.index.blade.php',
         },
+        {
+            name: '.prettierrc.json with no php syntax check option',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'noPhpSyntaxCheck'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'noPhpSyntaxCheck'),
+            to: 'formatted.index.blade.php',
+        },
     ];
 
     targets.forEach(target => {
