@@ -235,6 +235,7 @@ describe("option test", () => {
         plugins: [{ ...plugin }],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         sortHtmlAttributes: 'custom',
         customHtmlAttributesOrder: 'id, aria-.+, class, src',
