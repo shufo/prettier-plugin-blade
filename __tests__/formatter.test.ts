@@ -221,4 +221,34 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
+
+  test.concurrent(
+    `can format fixture with custom html attributes order option`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "custom_html_attributes_order.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // @ts-ignore
+        sortHtmlAttributes: 'custom',
+        customHtmlAttributesOrder: 'id, aria-.+, class, src',
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            formattedFixturesDir,
+            "formatted.custom_html_attributes_order.blade.php"
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
 });

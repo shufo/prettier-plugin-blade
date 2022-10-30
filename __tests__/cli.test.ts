@@ -35,6 +35,13 @@ describe('CLI test', () => {
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'noPhpSyntaxCheck'),
             to: 'formatted.index.blade.php',
         },
+        {
+            name: '.prettierrc.json with custom html attributes order option',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'customHtmlAttributesOrder'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'customHtmlAttributesOrder'),
+            to: 'formatted.index.blade.php',
+        },
     ];
 
     targets.forEach(target => {
