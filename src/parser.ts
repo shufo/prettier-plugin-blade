@@ -19,6 +19,7 @@ export const parse = (
     sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
     noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
+    customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
   };
 
   const syncFn = createSyncFn(require.resolve("./worker"));

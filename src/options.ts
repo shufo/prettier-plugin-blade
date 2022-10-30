@@ -37,8 +37,15 @@ export const options = {
     type: "string",
     category: "Blade",
     default: "none",
-    description: "Sort HTML Attributes. [none|alphabetical|code-guide|idiomatic|vuejs]",
+    description: "Sort HTML Attributes. [none|alphabetical|code-guide|idiomatic|vuejs|custom]",
     since: "1.5.0",
+  },
+  customHtmlAttributesOrder: {
+    type: "string",
+    category: "Blade",
+    default: "",
+    description: "Comma separated custom HTML attributes order. e.g. \"id, aria-.+, class, src\". To enable this you must specify sort html attributes option as `custom`. You can use regex for attribute names.",
+    since: "1.8.0",
   },
   noPhpSyntaxCheck: {
     type: "boolean",
