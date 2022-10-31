@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.7.3...v1.8.0) (2022-10-30)
+
+
+### Features
+
+* 🎸 add option `--custom-html-attributes-order` ([97070f7](https://github.com/shufo/prettier-plugin-blade/commit/97070f7754ef102481446477440bdbf895e21375))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.31.0 ([32291f6](https://github.com/shufo/prettier-plugin-blade/commit/32291f6b3aafdc2b01fc994aa7bf26bc915ec426))
+
 ## [1.7.3](https://github.com/shufo/prettier-plugin-blade/compare/v1.7.2...v1.7.3) (2022-10-23)
 
 
