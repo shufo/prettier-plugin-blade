@@ -252,4 +252,96 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
+
+  test.concurrent(
+    `force EOL character to LF if end of line option is not specified`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "endOfLine", "crlf.index.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            fixturesDir,
+            "endOfLine",
+            "lf.index.blade.php"
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
+
+  test.concurrent(
+    `specify LF to end of line option`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "endOfLine", "crlf.index.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        endOfLine: 'lf',
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            fixturesDir,
+            "endOfLine",
+            "lf.index.blade.php"
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
+
+  test.concurrent(
+    `specify CRLF to end of line option`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "endOfLine", "crlf.index.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        endOfLine: 'crlf',
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            fixturesDir,
+            "endOfLine",
+            "crlf.index.blade.php"
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
 });

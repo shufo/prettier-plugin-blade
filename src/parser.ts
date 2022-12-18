@@ -28,7 +28,7 @@ export const parse = (
 
   return {
     type: "blade-formatter",
-    body: result,
+    body: result.split(/\r\n|\n|\r/).join('\n'),
     end: text.length,
     source: text,
     start: 0,
