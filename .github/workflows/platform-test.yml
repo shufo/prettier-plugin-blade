@@ -34,5 +34,6 @@ jobs:
           yarn install
           yarn build
           ./node_modules/.bin/prettier __tests__/fixtures/index.blade.php --plugin .
+          yarn run test
         env:
           CI: true
