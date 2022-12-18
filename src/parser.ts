@@ -20,6 +20,7 @@ export const parse = (
     noMultipleEmptyLines: true,
     noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
     customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
+    endOfLine: opts.endOfLine === 'crlf' ? 'CRLF' : 'LF',
   };
 
   const syncFn = createSyncFn(require.resolve("./worker"));
