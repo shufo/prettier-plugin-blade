@@ -54,5 +54,12 @@ export const options = {
     description: "Disable PHP syntax checking",
     since: "1.7.0",
   },
+  endOfLine: {
+    type: "string",
+    category: "Blade",
+    default: 'lf',
+    description: "A character of EOL",
+    since: "1.8.2",
+  }
 };
 
