@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.2](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.1...v1.8.2) (2022-12-18)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.32.0 ([e4e843a](https://github.com/shufo/prettier-plugin-blade/commit/e4e843a525f19023e3f66fa52cecfe6f1e8575c8))
+* 🤖 bump blade-formatter to 1.32.1 ([efb2e1c](https://github.com/shufo/prettier-plugin-blade/commit/efb2e1cde2da721b03ad0fc47636e6428338951c))
+* **deps:** update cirrus-actions/rebase action to v1.8 ([ab1549d](https://github.com/shufo/prettier-plugin-blade/commit/ab1549def434e1a5956337f42947a87e6ccac67e))
+* **deps:** update dependency esbuild to ^0.16.0 ([6391e5e](https://github.com/shufo/prettier-plugin-blade/commit/6391e5edffd3fc8bea4ae5b27e2180aec4aa780c))
+
 ## [1.8.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.0...v1.8.1) (2022-11-20)
 
 
