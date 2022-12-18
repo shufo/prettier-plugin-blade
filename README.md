@@ -325,6 +325,13 @@ $ yarn run test
             <br />
             <sub><b>Ian Jamieson</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/mortenscheel">
+            <img src="https://avatars.githubusercontent.com/u/6514342?v=4" width="100;" alt="mortenscheel"/>
+            <br />
+            <sub><b>Morten Scheel</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
