@@ -252,4 +252,34 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
+
+  test.concurrent(
+    `can format fixture with sort html attributes option as vuejs`,
+    function () {
+      const content = fs
+        .readFileSync(path.resolve(fixturesDir, "vuejs_sort.blade.php"))
+        .toString("utf-8");
+
+      const plugin = require(path.resolve(__dirname, "../"));
+
+      const result = prettier.format(content, {
+        plugins: [{ ...plugin }],
+        parser: "blade",
+        pluginSearchDirs: [path.resolve(__dirname, "../")],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        sortHtmlAttributes: 'vuejs',
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            formattedFixturesDir,
+            "formatted.vuejs_sort.blade.php"
+          )
+        )
+        .toString("utf-8");
+      expect(result).toEqual(expected);
+    }
+  );
 });
