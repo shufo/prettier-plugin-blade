@@ -8,7 +8,7 @@
 <h2 align="center">Prettier Blade Plugin</h2>
 <p align="center">
   <a href="https://github.com/shufo/prettier-plugin-blade/actions">
-    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/shufo/prettier-plugin-blade/node.yml">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/shufo/prettier-plugin-blade/node.yml?style=flat-square">
   </a>
   <a href="https://www.npmjs.com/package/@prettier/plugin-php">
     <img alt="npm version" src="https://img.shields.io/npm/v/@shufo/prettier-plugin-blade.svg?style=flat-square">
