@@ -19,8 +19,8 @@ Format your blade template using Prettier
 
 ## Features
 
--   Automatically Indents markup inside directives
--   Automatically add spacing to blade templating markers
+-   Automatically indent markup inside directives
+-   Automatically add spacing to blade template markers
 -   PHP 8 syntax support (null safe operator, named arguments)
 -   Compliant to PSR-2 coding standard (PHP code inside directives)
 -   Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
@@ -41,7 +41,7 @@ $ ./node_modules/.bin/prettier --write resources/**/*.blade.php
 
 ### Troubleshooting
 
-If you get something error like can not find plugins, update your `.prettierrc.json` file to specify parser:
+If you get an error like `can't find plugins`, update your `.prettierrc.json` file to specify the parser:
 
 ```json
 {
@@ -141,10 +141,10 @@ You can use these options for prettier blade plugin in prettier CLI.
 |              `--print-width` | The line length where Prettier will try wrap. default: `120`                                                                                                                                                                                                                    |
 |          `--wrap-attributes` | The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto`                                                                                                                   |
 |        `--end-with-new-line` | End output with newline. default: `true`                                                                                                                                                                                                                                        |
-| `--sort-tailwindcss-classes` | Sort Tailwind CSS classes. It will automatically lookup and respects `tailwind.config.js` if exists. default: `false`                                                                                                                                                           |
-|  `--tailwindcss-config-path` | Path to custom Tailwind config. This option is available only when `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                                       |
+| `--sort-tailwindcss-classes` | Sort Tailwind CSS classes. It will automatically look for and respect `tailwind.config.js` if it exists. default: `false`                                                                                                                                                           |
+|  `--tailwindcss-config-path` | Path to your custom Tailwind configuration file. This option is only available if `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                                       |
 |     `--sort-html-attributes` | Sort HTML Attributes in the specified order. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `none` |
-|      `--no-php-syntax-check` | Disable PHP Syntax checking. default: `false`                                                                                                                                                                                                                                   |
+|      `--no-php-syntax-check` | Disable PHP syntax checking. default: `false`                                                                                                                                                                                                                                   |
 
 ### `.prettierrc` example
 
@@ -177,7 +177,7 @@ or
 <!-- prettier-ignore-end -->
 ```
 
-To disable format on a specific line, you can use comment in the following format:
+To disable formatting on a specific line, you can use comment in the following format:
 
 ```blade
 {{-- prettier-ignore --}}
@@ -191,13 +191,13 @@ or
 
 ## Editor Integration
 
-Below editors are confirmed working with this plugin.
+The editors below are confirmed to work with this plugin.
 
 ### VSCode
 
-You can use [Prettier extension for VSCode](https://github.com/prettier/prettier-vscode) to format blade within VSCode. You must install this plugin as local dependencies. see https://github.com/prettier/prettier-vscode#prettier-resolution
+You can use [Prettier extension for VSCode](https://github.com/prettier/prettier-vscode) to format blade in VSCode. You need to install this plugin as a local dependency. see https://github.com/prettier/prettier-vscode#prettier-resolution
 
-If you want to use formatter without Prettier, please consider to using [vscode-blade-formatter](https://github.com/shufo/vscode-blade-formatter)
+If you want to use a formatter without Prettier, please consider to use the [vscode-blade-formatter](https://github.com/shufo/vscode-blade-formatter) instead.
 
 ### Vim
 
@@ -207,7 +207,7 @@ If you want to use formater without Prettier, please consider to using [coc-blad
 
 ### JetBrains WebStorm, PHPStorm, PyCharm...
 
-You can use [Prettier Plugin](https://plugins.jetbrains.com/plugin/10456-prettier) for JetBrains IDE.
+You can use the [Prettier Plugin](https://plugins.jetbrains.com/plugin/10456-prettier) for JetBrains IDE.
 
 Add extension setting `blade.php` to `File | Settings | Languages & Frameworks | JavaScript | Prettier | Run for files`:
 
@@ -217,11 +217,11 @@ e.g.
 
 and turn on checkbox `On 'Reformat Code' action`
 
-Restart your IDE if you get error: 'Prettier: File \*.php has unsupported type'
+Restart your IDE if you get the error: 'Prettier: File \*.php has unsupported type'
 
 ## Limitation
 
-This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) that does not generate ASTs with lexer, so it might be break indentation on complex blade.
+This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) which does not generate ASTs with lexer, so it might break indentation on complex blade.
 
 Like:
 
@@ -247,11 +247,11 @@ Like:
 @endif
 ```
 
-Please make blade template as simple as possible for better formatting.
+Please keep the blade template as simple as possible for better formatting.
 
 ## API
 
-You can format blade text programmatically using prettier
+You can format the blade file programmatically using Prettier's API
 
 ```js
 const prettier = require("prettier");
