@@ -29,32 +29,37 @@ Format your blade template using Prettier
 
 ```bash
 $ npm install --save-dev @shufo/prettier-plugin-blade prettier
+
 # yarn
 $ yarn add -D @shufo/prettier-plugin-blade prettier
+
+# pnpm
+$ pnpm add -D @shufo/prettier-plugin-blade prettier
+```
+
+then, add in your [Prettier configuration](https://prettier.io/docs/en/configuration.html):
+
+```json
+{
+    "plugins": [
+        "@shufo/prettier-plugin-blade",
+    ],
+    "overrides": [
+        {
+            "files": ["*.blade.php"],
+            "options": {
+                "parser": "blade"
+                "tabWidth": 4,
+            }
+        }
+    ]
+}
 ```
 
 ## Usage (CLI)
 
 ```bash
 $ ./node_modules/.bin/prettier --write resources/**/*.blade.php
-```
-
-### Troubleshooting
-
-If you get an error like `can't find plugins`, update your `.prettierrc.json` file to specify the parser:
-
-```json
-{
-    "overrides": [
-        {
-            "files": ["*.blade.php"],
-            "options": {
-                "tabWidth": 4,
-                "parser": "blade"
-            }
-        }
-    ]
-}
 ```
 
 https://user-images.githubusercontent.com/1641039/151354641-6305805e-8e0c-4226-8331-64195f85160e.mp4
