@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.11](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.10...v1.8.11) (2023-03-22)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.32.10 ([5a4491e](https://github.com/shufo/prettier-plugin-blade/commit/5a4491ed8571dca25df8a6a830ca32f5dcf12479))
+* **deps:** update dependency typescript to v5 ([33d36f5](https://github.com/shufo/prettier-plugin-blade/commit/33d36f59400ded3172c3c5086815a417f61fc6c6))
+
 ## [1.8.10](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.9...v1.8.10) (2023-02-25)
 
 
