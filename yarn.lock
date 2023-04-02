@@ -1395,7 +1395,7 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@^1.32.12:
+blade-formatter@^1.32.11:
   version "1.32.12"
   resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.32.12.tgz#e06c31cc29ffd41f1e9709a385c9c0ec0cc53f80"
   integrity sha512-Xc1eEy/Adi6DnnUuh9IprD7Kyg2tq/ix3DFnr8AgN3wFg1Ews6vWpA44tuyoigqNHq59ss4JX2cgPkqbMLiurg==
