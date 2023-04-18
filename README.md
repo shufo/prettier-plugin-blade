@@ -42,14 +42,14 @@ then, add in your [Prettier configuration](https://prettier.io/docs/en/configura
 ```json
 {
     "plugins": [
-        "@shufo/prettier-plugin-blade",
+        "@shufo/prettier-plugin-blade"
     ],
     "overrides": [
         {
             "files": ["*.blade.php"],
             "options": {
-                "parser": "blade"
-                "tabWidth": 4,
+                "parser": "blade",
+                "tabWidth": 4
             }
         }
     ]
