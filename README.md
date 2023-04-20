@@ -337,6 +337,20 @@ $ yarn run test
             <br />
             <sub><b>Morten Scheel</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/nessimabadi">
+            <img src="https://avatars.githubusercontent.com/u/11637110?v=4" width="100;" alt="nessimabadi"/>
+            <br />
+            <sub><b>Nessim Abadi</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/vuolter">
+            <img src="https://avatars.githubusercontent.com/u/1221092?v=4" width="100;" alt="vuolter"/>
+            <br />
+            <sub><b>Walter Purcaro</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
