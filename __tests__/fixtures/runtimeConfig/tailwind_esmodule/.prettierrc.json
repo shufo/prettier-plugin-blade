@@ -1,0 +1,17 @@
+{
+    "overrides": [
+        {
+            "files": ["*.blade.php"],
+            "options": {
+                "tabWidth": 4,
+                "parser": "blade"
+            }
+        }
+    ],
+    "printWidth": 120,
+    "tabWidth": 4,
+    "wrapAttributes": "auto",
+    "sortTailwindcssClasses": true,
+    "tailwindcssConfigPath": "tailwind.config.example.js",
+    "sortHtmlAttributes": "none"
+}
