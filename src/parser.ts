@@ -11,7 +11,11 @@ export const parse = async (
   const formatterOptions: FormatterOption = {
     indentSize: opts.tabWidth,
     wrapLineLength: opts.printWidth,
-    wrapAttributes: opts.singleAttributePerLine ? 'force-expand-multiline' : opts.bracketSameLine ? 'force-aligned' : opts.wrapAttributes,
+    wrapAttributes: opts.singleAttributePerLine
+      ? "force-expand-multiline"
+      : opts.bracketSameLine
+      ? "force-aligned"
+      : opts.wrapAttributes,
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,
@@ -41,11 +45,11 @@ async function resolveTailwindConfigPath(
     return;
   }
 
-  if (path.isAbsolute(optionPath ?? '')) {
+  if (path.isAbsolute(optionPath ?? "")) {
     return optionPath;
   }
 
   const prettierRcPath = await resolveConfigFile(filepath);
 
-  return path.resolve(path.dirname(prettierRcPath ?? ''), optionPath ?? '')
+  return path.resolve(path.dirname(prettierRcPath ?? ""), optionPath ?? "");
 }
