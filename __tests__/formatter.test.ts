@@ -13,11 +13,11 @@ describe("formatter test", () => {
     .map((entry) => entry.name);
 
   fixtures.forEach((fixture) => {
-    test.concurrent(`can format fixture ${fixture}`, function () {
+    test.concurrent(`can format fixture ${fixture}`, async function () {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, fixture))
         .toString("utf-8");
-      const result = prettier.format(content, {
+      const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
@@ -35,18 +35,18 @@ describe("formatter test", () => {
 describe("broken text test", () => {
   const fixturesDir = path.resolve(__dirname, "error-fixtures");
 
-  test.concurrent(`can not format fixture`, function () {
+  test.concurrent(`can not format fixture`, async function () {
     const content = fs
       .readFileSync(path.resolve(fixturesDir, "syntax.error.blade.php"))
       .toString("utf-8");
-    const f = () => {
-      prettier.format(content, {
+    const f = async () => {
+      return await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
       });
     };
-    expect(f).toThrowError("SyntaxError");
+    expect(f).rejects.toThrow("Parse Error");
   });
 });
 
@@ -62,11 +62,11 @@ describe("option test", () => {
     "formattedWithOption"
   );
 
-  test.concurrent(`can format fixture with options`, function () {
+  test.concurrent(`can format fixture with options`, async function () {
     const content = fs
       .readFileSync(path.resolve(fixturesDir, "index.blade.php"))
       .toString("utf-8");
-    const result = prettier.format(content, {
+    const result = await prettier.format(content, {
       plugins: [path.resolve(__dirname, "../")],
       parser: "blade",
       pluginSearchDirs: [path.resolve(__dirname, "../")],
@@ -78,15 +78,13 @@ describe("option test", () => {
     expect(result).toEqual(expected);
   });
 
-  test.concurrent(`can format fixture with sort options`, function () {
+  test.concurrent(`can format fixture with sort options`, async function () {
     const content = fs
       .readFileSync(path.resolve(fixturesDir, "tailwindcss.blade.php"))
       .toString("utf-8");
 
-    const plugin = require(path.resolve(__dirname, "../"));
-
-    const result = prettier.format(content, {
-      plugins: [{ ...plugin }],
+    const result = await prettier.format(content, {
+      plugins: [path.resolve(__dirname, "../")],
       parser: "blade",
       pluginSearchDirs: [path.resolve(__dirname, "../")],
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -103,17 +101,15 @@ describe("option test", () => {
 
   test.concurrent(
     `can format fixture with singleAttributePerLine options`,
-    function () {
+    async function () {
       const content = fs
         .readFileSync(
           path.resolve(fixturesDir, "single_attribute_per_line.blade.php")
         )
         .toString("utf-8");
 
-      const plugin = require(path.resolve(__dirname, "../"));
-
-      const result = prettier.format(content, {
-        plugins: [{ ...plugin }],
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -134,15 +130,13 @@ describe("option test", () => {
 
   test.concurrent(
     `can format fixture with bracketSameLine option`,
-    function () {
+    async function () {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, "bracket_same_line.blade.php"))
         .toString("utf-8");
 
-      const plugin = require(path.resolve(__dirname, "../"));
-
-      const result = prettier.format(content, {
-        plugins: [{ ...plugin }],
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -163,15 +157,13 @@ describe("option test", () => {
 
   test.concurrent(
     `can format fixture with tailwind config path option`,
-    function () {
+    async function () {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, "tailwind", "index.blade.php"))
         .toString("utf-8");
 
-      const plugin = require(path.resolve(__dirname, "../"));
-
-      const result = prettier.format(content, {
-        plugins: [{ ...plugin }],
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -194,15 +186,13 @@ describe("option test", () => {
 
   test.concurrent(
     `can format fixture with no php syntax check option`,
-    function () {
+    async function () {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, "no_php_syntax_check.blade.php"))
         .toString("utf-8");
 
-      const plugin = require(path.resolve(__dirname, "../"));
-
-      const result = prettier.format(content, {
-        plugins: [{ ...plugin }],
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -224,15 +214,13 @@ describe("option test", () => {
 
   test.concurrent(
     `can format fixture with custom html attributes order option`,
-    function () {
+    async function () {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, "custom_html_attributes_order.blade.php"))
         .toString("utf-8");
 
-      const plugin = require(path.resolve(__dirname, "../"));
-
-      const result = prettier.format(content, {
-        plugins: [{ ...plugin }],
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -255,15 +243,13 @@ describe("option test", () => {
 
   test.concurrent(
     `can format fixture with sort html attributes option as vuejs`,
-    function () {
+    async function () {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, "vuejs_sort.blade.php"))
         .toString("utf-8");
 
-      const plugin = require(path.resolve(__dirname, "../"));
-
-      const result = prettier.format(content, {
-        plugins: [{ ...plugin }],
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
         pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment

@@ -1,10 +1,11 @@
 import * as cmd from './support/cmd';
 import path from 'path';
 import fs from 'fs';
+import { name as packageName } from '../package.json';
 
 describe('CLI test', () => {
     const prettierBin = path.resolve('node_modules', '.bin', 'prettier');
-    const prettierPluginArgs = ['--plugin', '.', '--plugin-search-dir', '.'];
+    const prettierPluginArgs = ['--plugin', packageName, '--plugin-search-dir', '.'];
 
     const targets = [
         {

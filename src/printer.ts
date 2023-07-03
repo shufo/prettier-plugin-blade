@@ -1,6 +1,6 @@
 import { AstPath, Doc } from "prettier";
 
-export const print = (path: AstPath): Doc => {
+export const print = async (path: AstPath): Promise<Doc> => {
   const node = path.getValue();
 
   switch (node.type) {
