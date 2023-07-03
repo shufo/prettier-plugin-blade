@@ -914,8 +914,8 @@
 
 "@shufo/tailwindcss-class-sorter@3.0.0":
   version "3.0.0"
-  resolved "https://npm.pkg.github.com/download/@shufo/tailwindcss-class-sorter/3.0.0/d5d964bd745b64577db804acc5a967a96745a930#d5d964bd745b64577db804acc5a967a96745a930"
-  integrity sha512-zMTkO4Oj4dtGqWXf9xWHEPXuBkff/T32ZXDcHamhMrXzqsdDKNqiK3oNcPOwBFHiZ2DmqqYqZBuaTnKfAIlguw==
+  resolved "https://registry.yarnpkg.com/@shufo/tailwindcss-class-sorter/-/tailwindcss-class-sorter-3.0.0.tgz#80eedb171039558521844cc81f8469b9a608a87d"
+  integrity sha512-bG2fdIFBunHK4r45ccM5x1CgGJ/aRbwkcY7/2uxUfPRDaRR05OdUteFfRDEWAlDWch3cg6rA+PsdNJIcBVBaHw==
   dependencies:
     escalade "^3.1.1"
     object-hash "^3.0.0"
