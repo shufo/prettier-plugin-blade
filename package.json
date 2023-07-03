@@ -26,11 +26,11 @@
         "ts-node": "^10.5.0",
         "typescript": "^5.0.0"
     },
-    "main": "dist/index.js",
+    "main": "dist/index.cjs",
     "scripts": {
-        "build": "cross-env NODE_ENV=production node esbuild.ts",
-        "watch": "node esbuild.ts",
-        "test": "yarn build && jest",
+        "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
+        "watch": "ESM_BUILD=true node build/build.js",
+        "test": "yarn run build && node --experimental-vm-modules node_modules/.bin/jest",
         "lint": "eslint . --ext .ts",
         "fix": "eslint . --ext .ts --fix",
         "prettier": "prettier --plugin . --plugin-search-dir ."
@@ -38,6 +38,15 @@
     "license": "MIT",
     "publishConfig": {
         "access": "public"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs",
+            "default": "./dist/index.js"
+        },
+        "./*": "./*"
     },
     "repository": {
         "type": "git",
