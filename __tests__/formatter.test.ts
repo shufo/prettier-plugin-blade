@@ -21,7 +21,6 @@ describe("formatter test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
       });
 
       const expected = fs
@@ -47,7 +46,6 @@ describe("broken text test", () => {
       return await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
       });
     };
 
@@ -76,7 +74,6 @@ describe("option test", () => {
     const result = await prettier.format(content, {
       plugins: [path.resolve(__dirname, "../")],
       parser: "blade",
-      pluginSearchDirs: [path.resolve(__dirname, "../")],
       tabWidth: 2,
     });
 
@@ -95,7 +92,6 @@ describe("option test", () => {
     const result = await prettier.format(content, {
       plugins: [path.resolve(__dirname, "../")],
       parser: "blade",
-      pluginSearchDirs: [path.resolve(__dirname, "../")],
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       sortTailwindcssClasses: true,
@@ -122,7 +118,6 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         singleAttributePerLine: true,
@@ -151,7 +146,6 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         bracketSameLine: true,
@@ -180,7 +174,6 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         sortTailwindcssClasses: true,
@@ -210,7 +203,6 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         noPhpSyntaxCheck: true,
@@ -239,7 +231,6 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         sortHtmlAttributes: 'custom',
@@ -269,7 +260,6 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
-        pluginSearchDirs: [path.resolve(__dirname, "../")],
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         sortHtmlAttributes: 'vuejs',
