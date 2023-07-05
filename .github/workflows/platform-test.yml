@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [20.x]
         os: [macos-latest, ubuntu-latest, windows-latest]
       fail-fast: false
 
@@ -33,6 +33,6 @@ jobs:
         run: |
           yarn install
           yarn build
-          ./node_modules/.bin/prettier __tests__/fixtures/index.blade.php --plugin .
+          yarn run prettier __tests__/fixtures/index.blade.php
         env:
           CI: true

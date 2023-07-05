@@ -1,10 +1,11 @@
 import * as cmd from './support/cmd';
 import path from 'path';
 import fs from 'fs';
+import { name as packageName } from '../package.json';
 
 describe('CLI test', () => {
     const prettierBin = path.resolve('node_modules', '.bin', 'prettier');
-    const prettierPluginArgs = ['--plugin', '.', '--plugin-search-dir', '.'];
+    const prettierPluginArgs = ['--plugin', packageName, '--plugin-search-dir', '.'];
 
     const targets = [
         {
@@ -19,6 +20,13 @@ describe('CLI test', () => {
             fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind'),
             from: 'index.blade.php',
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind'),
+            to: 'formatted.index.blade.php',
+        },
+        {
+            name: '.prettierrc.json with tailwind config (ESM) and path option',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind_esmodule'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'tailwind_esmodule'),
             to: 'formatted.index.blade.php',
         },
         {
