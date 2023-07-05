@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.9.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.9.0...v1.9.1) (2023-07-05)
+
+
+### Fixes
+
+* 🐛 invalid signature ([f5e48bc](https://github.com/shufo/prettier-plugin-blade/commit/f5e48bc66fc6148bb40c4ac3edb682cc2e6722b7))
+
+
+### Miscellaneous
+
+* 🤖 bump prettier to 3.0.0 ([69978dc](https://github.com/shufo/prettier-plugin-blade/commit/69978dcf15d73627ee43a7a96bbe87758e19395b))
+
 ## [1.8.13](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.12...v1.8.13) (2023-06-12)
 
 
