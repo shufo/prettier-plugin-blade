@@ -261,7 +261,8 @@ Please keep the blade template as simple as possible for better formatting.
 You can format the blade file programmatically using Prettier's API
 
 ```js
-const prettier = require("prettier");
+// CommonJS
+const prettier = require('prettier');
 
 const input = `
 <div>
@@ -273,7 +274,7 @@ const input = `
 </div>
 `;
 
-const res = prettier.format(input, { parser: "blade" });
+const res = await prettier.format(input, { parser: 'blade' });
 console.log(res);
 // =>
 //<div>
@@ -283,6 +284,21 @@ console.log(res);
 //        {{ $bar }}
 //    @endif
 //</div>
+
+// ES Module
+import * as prettier from 'prettier';
+
+const input = `
+<div>
+  @if ($user)
+  {{ $foo }}
+  @else
+  {{ $bar }}
+  @endif
+</div>
+`;
+const res = await prettier.format(input, { parser: 'blade' });
+console.log(res);
 ```
 
 ## Development
