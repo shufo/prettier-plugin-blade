@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.9.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.13...v1.9.0) (2023-07-05)
+
+
+### Features
+
+* 🎸 ESM support ([eb16ae8](https://github.com/shufo/prettier-plugin-blade/commit/eb16ae8ee510e169423c813cca04e811bb5e9232))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.33.0 ([7a4ede7](https://github.com/shufo/prettier-plugin-blade/commit/7a4ede72fa764ecd6d6bf56808a4ce19635d2f9d))
+* 🤖 bump prettier to 3.0.0-alpha.6 ([afa7b20](https://github.com/shufo/prettier-plugin-blade/commit/afa7b20f60539a62069c613fe271c49a2e5b75d4))
+* 🤖 follow prettier new behaviour ([571f29a](https://github.com/shufo/prettier-plugin-blade/commit/571f29a85c64501565f9dac4bc30ae0044aef946))
+* 🤖 update build script ([46ddd72](https://github.com/shufo/prettier-plugin-blade/commit/46ddd7233a32ec5e3c76d527f857ded8c3a9ec30))
+* 🤖 update dependencies lock ([e5e680b](https://github.com/shufo/prettier-plugin-blade/commit/e5e680b5eaa3cafd0238cd871cbc09b0587ca2a5))
+
 ## [1.8.13](https://github.com/shufo/prettier-plugin-blade/compare/v1.8.12...v1.8.13) (2023-06-12)
 
 
