@@ -56,6 +56,13 @@ then, add in your [Prettier configuration](https://prettier.io/docs/en/configura
 }
 ```
 
+## Prettier version Compatibilitiy
+
+| Prettier | Package |
+| -------: | ------: |
+|      3.x |   1.9.x |
+|      2.x |   1.8.x |
+
 ## Usage (CLI)
 
 ```bash
