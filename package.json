@@ -33,7 +33,7 @@
         "test": "yarn run build && node --experimental-vm-modules node_modules/.bin/jest",
         "lint": "eslint . --ext .ts",
         "fix": "eslint . --ext .ts --fix",
-        "prettier": "prettier --plugin @shufo/prettier-plugin-blade --plugin-search-dir ."
+        "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
     },
     "license": "MIT",
     "publishConfig": {
