@@ -277,4 +277,29 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
+
+  test.concurrent(
+    `can format fixture with single quote option`,
+    async function () {
+      const content = fs
+        .readFileSync(path.resolve(__dirname, "fixtures", "runtimeConfig", "singleQuote", "index.blade.php"))
+        .toString("utf-8");
+
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
+        parser: "blade",
+        singleQuote: false,
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            __dirname, "fixtures", "runtimeConfig", "singleQuote", "formatted.index.blade.php"
+          )
+        )
+        .toString("utf-8");
+
+      expect(result).toEqual(expected);
+    }
+  );
 });
