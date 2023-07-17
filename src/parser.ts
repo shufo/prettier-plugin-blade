@@ -23,6 +23,7 @@ export const parse = async (
     sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
     noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
+    noSingleQuote: !opts.singleQuote,
     customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
   };
 
