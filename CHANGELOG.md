@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.10.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.9.2...v1.10.0) (2023-07-17)
+
+
+### Features
+
+* 🎸 support `singleQuote` option [#196](https://github.com/shufo/prettier-plugin-blade/issues/196) ([57d4913](https://github.com/shufo/prettier-plugin-blade/commit/57d4913ce15cc13860b87c012b07a0bedcead7a1))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.34.0 ([b007d5c](https://github.com/shufo/prettier-plugin-blade/commit/b007d5c5504c9c2cc5da81623d0bb9d2517ad25e))
+
 ## [1.9.2](https://github.com/shufo/prettier-plugin-blade/compare/v1.9.1...v1.9.2) (2023-07-06)
 
 
