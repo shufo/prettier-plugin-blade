@@ -1,66 +1,66 @@
 {
-    "name": "@shufo/prettier-plugin-blade",
-    "engines": {
-        "node": ">= 14.0.0"
+  "name": "@shufo/prettier-plugin-blade",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "version": "1.10.1",
+  "dependencies": {
+    "blade-formatter": "1.37.0",
+    "prettier": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/concat-stream": "^2.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/prettier": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "codecov": "^3.8.3",
+    "concat-stream": "^2.0.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.18.0",
+    "esbuild-node-externals": "^1.4.1",
+    "eslint": "^8.15.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^5.0.0"
+  },
+  "main": "dist/index.cjs",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
+    "watch": "ESM_BUILD=true node build/build.js",
+    "test": "yarn run build && node --experimental-vm-modules node_modules/.bin/jest",
+    "lint": "eslint . --ext .ts",
+    "fix": "eslint . --ext .ts --fix",
+    "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
     },
-    "version": "1.10.1",
-    "dependencies": {
-        "blade-formatter": "1.37.0",
-        "prettier": "3.0.0"
-    },
-    "devDependencies": {
-        "@types/concat-stream": "^2.0.0",
-        "@types/jest": "^29.0.0",
-        "@types/prettier": "^2.4.4",
-        "@typescript-eslint/eslint-plugin": "^5.28.0",
-        "@typescript-eslint/parser": "^5.30.0",
-        "codecov": "^3.8.3",
-        "concat-stream": "^2.0.0",
-        "cross-env": "^7.0.3",
-        "esbuild": "^0.18.0",
-        "esbuild-node-externals": "^1.4.1",
-        "eslint": "^8.15.0",
-        "jest": "^29.0.0",
-        "ts-jest": "^29.0.0",
-        "ts-node": "^10.5.0",
-        "typescript": "^5.0.0"
-    },
-    "main": "dist/index.cjs",
-    "scripts": {
-        "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
-        "watch": "ESM_BUILD=true node build/build.js",
-        "test": "yarn run build && node --experimental-vm-modules node_modules/.bin/jest",
-        "lint": "eslint . --ext .ts",
-        "fix": "eslint . --ext .ts --fix",
-        "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
-    },
-    "license": "MIT",
-    "publishConfig": {
-        "access": "public"
-    },
-    "type": "module",
-    "exports": {
-        ".": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs",
-            "default": "./dist/index.js"
-        },
-        "./*": "./*"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/shufo/prettier-plugin-blade.git"
-    },
-    "files": [
-        "dist",
-        "src",
-        "CHANGELOG.md"
-    ],
-    "keywords": [
-        "prettier",
-        "blade",
-        "formatter",
-        "laravel"
-    ],
-    "author": "Shuhei Hayashibara"
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shufo/prettier-plugin-blade.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "prettier",
+    "blade",
+    "formatter",
+    "laravel"
+  ],
+  "author": "Shuhei Hayashibara"
 }
