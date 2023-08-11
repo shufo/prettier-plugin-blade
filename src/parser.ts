@@ -26,6 +26,7 @@ export const parse = async (
     noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
     noSingleQuote: !opts.singleQuote,
     customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
+    indentInnerHtml: opts.indentInnerHtml,
   };
 
   const result = await new Formatter(formatterOptions).formatContent(text);

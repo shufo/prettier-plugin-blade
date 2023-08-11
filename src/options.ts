@@ -63,5 +63,12 @@ export const options = {
     description: "Disable PHP syntax checking",
     since: "1.7.0",
   },
+  indentInnerHtml: {
+    type: "boolean",
+    category: "Blade",
+    default: false,
+    description: "Indent <head> and <body> sections in html",
+    since: "1.10.0",
+  },
 };
 
