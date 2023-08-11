@@ -16,6 +16,7 @@ export const parse = async (
       : opts.bracketSameLine
       ? "force-aligned"
       : opts.wrapAttributes,
+    wrapAttributesMinAttrs: opts.wrapAttributesMinAttrs,
     endWithNewline: opts.endWithNewline,
     useTabs: opts.useTabs,
     sortTailwindcssClasses: opts.sortTailwindcssClasses,

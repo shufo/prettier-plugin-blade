@@ -13,6 +13,14 @@ export const options = {
       "The way to wrap attributes. [auto|force|force-aligned|force-expand-multiline|aligned-multiple|preserve|preserve-aligned]",
     since: "1.0.0",
   },
+  wrapAttributesMinAttrs: {
+    type: "int",
+    category: "Blade",
+    default: 2,
+    description:
+      "Minimum number of html tag attributes for force wrap attribute options. Wrap the first attribute only if 'force-expand-multiline' is specified in wrap attributes",
+    since: "1.11.0",
+  },
   endWithNewLine: {
     type: "boolean",
     category: "Blade",
