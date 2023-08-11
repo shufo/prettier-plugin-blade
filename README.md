@@ -19,11 +19,11 @@ Format your blade template using Prettier
 
 ## Features
 
--   Automatically indent markup inside directives
--   Automatically add spacing to blade template markers
--   PHP 8 syntax support (null safe operator, named arguments)
--   Compliant to PSR-2 coding standard (PHP code inside directives)
--   Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
+- Automatically indent markup inside directives
+- Automatically add spacing to blade template markers
+- PHP 8 syntax support (null safe operator, named arguments)
+- Compliant to PSR-2 coding standard (PHP code inside directives)
+- Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
 
 ## Installation
 
@@ -41,18 +41,16 @@ then, add in your [Prettier configuration](https://prettier.io/docs/en/configura
 
 ```json
 {
-    "plugins": [
-        "@shufo/prettier-plugin-blade"
-    ],
-    "overrides": [
-        {
-            "files": ["*.blade.php"],
-            "options": {
-                "parser": "blade",
-                "tabWidth": 4
-            }
-        }
-    ]
+  "plugins": ["@shufo/prettier-plugin-blade"],
+  "overrides": [
+    {
+      "files": ["*.blade.php"],
+      "options": {
+        "parser": "blade",
+        "tabWidth": 4
+      }
+    }
+  ]
 }
 ```
 
@@ -155,8 +153,8 @@ You can use these options for prettier blade plugin in prettier CLI.
 |              `--print-width` | The line length where Prettier will try wrap. default: `120`                                                                                                                                                                                                                    |
 |          `--wrap-attributes` | The way to wrap attributes. [`auto`\|`force`\|`force-aligned`\|`force-expand-multiline`\|`aligned-multiple`\|`preserve`\|`preserve-aligned`]. default: `auto`                                                                                                                   |
 |        `--end-with-new-line` | End output with newline. default: `true`                                                                                                                                                                                                                                        |
-| `--sort-tailwindcss-classes` | Sort Tailwind CSS classes. It will automatically look for and respect `tailwind.config.js` if it exists. default: `false`                                                                                                                                                           |
-|  `--tailwindcss-config-path` | Path to your custom Tailwind configuration file. This option is only available if `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                                       |
+| `--sort-tailwindcss-classes` | Sort Tailwind CSS classes. It will automatically look for and respect `tailwind.config.js` if it exists. default: `false`                                                                                                                                                       |
+|  `--tailwindcss-config-path` | Path to your custom Tailwind configuration file. This option is only available if `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                        |
 |     `--sort-html-attributes` | Sort HTML Attributes in the specified order. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `none` |
 |      `--no-php-syntax-check` | Disable PHP syntax checking. default: `false`                                                                                                                                                                                                                                   |
 
@@ -164,12 +162,12 @@ You can use these options for prettier blade plugin in prettier CLI.
 
 ```json
 {
-    "printWidth": 120,
-    "tabWidth": 4,
-    "wrapAttributes": "auto",
-    "sortTailwindcssClasses": true,
-    "sortHtmlAttributes": "none",
-    "noPhpSyntaxCheck": false
+  "printWidth": 120,
+  "tabWidth": 4,
+  "wrapAttributes": "auto",
+  "sortTailwindcssClasses": true,
+  "sortHtmlAttributes": "none",
+  "noPhpSyntaxCheck": false
 }
 ```
 
@@ -239,7 +237,7 @@ This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatt
 
 Like:
 
--   The mix of open/closed HTML tag and directives
+- The mix of open/closed HTML tag and directives
 
 ❌ Example of **unexpected** code
 
@@ -269,7 +267,7 @@ You can format the blade file programmatically using Prettier's API
 
 ```js
 // CommonJS
-const prettier = require('prettier');
+const prettier = require("prettier");
 
 const input = `
 <div>
@@ -281,7 +279,7 @@ const input = `
 </div>
 `;
 
-const res = await prettier.format(input, { parser: 'blade' });
+const res = await prettier.format(input, { parser: "blade" });
 console.log(res);
 // =>
 //<div>
@@ -293,7 +291,7 @@ console.log(res);
 //</div>
 
 // ES Module
-import * as prettier from 'prettier';
+import * as prettier from "prettier";
 
 const input = `
 <div>
@@ -304,7 +302,7 @@ const input = `
   @endif
 </div>
 `;
-const res = await prettier.format(input, { parser: 'blade' });
+const res = await prettier.format(input, { parser: "blade" });
 console.log(res);
 ```
 
