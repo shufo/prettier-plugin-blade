@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.11.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.10.1...v1.11.0) (2023-08-11)
+
+
+### Features
+
+* 🎸 add option `--extra-liners` ([941f865](https://github.com/shufo/prettier-plugin-blade/commit/941f865ed943c0657f1a3c9811daae031836300a))
+* 🎸 add option `--indent-inner-html` ([e683542](https://github.com/shufo/prettier-plugin-blade/commit/e683542aa944c193a4b46d22fe7e5a065c29d40b))
+* 🎸 add option `--wrap-attributes-min-attrs` ([9099b45](https://github.com/shufo/prettier-plugin-blade/commit/9099b45bfe01049e8c0e87d67f0e014e1e5d73f5))
+
+
+### Fixes
+
+* **deps:** update dependency prettier to v3.0.1 ([1cf7a72](https://github.com/shufo/prettier-plugin-blade/commit/1cf7a72c68e273eb38e7d58e48d22de7b088c9e2))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.37.0 ([ae03cb8](https://github.com/shufo/prettier-plugin-blade/commit/ae03cb8df02356b645466282a638ea8ed1e6b387))
+* **deps:** update pozil/auto-assign-issue action to v1.12.0 ([d8df24e](https://github.com/shufo/prettier-plugin-blade/commit/d8df24e298a47ffadae974ff266da82f9c2742d7))
+
 ## [1.10.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.10.0...v1.10.1) (2023-07-27)
 
 
