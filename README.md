@@ -156,6 +156,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 |   `--tailwindcss-config-path` | Path to your custom Tailwind configuration file. This option is only available if `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                        |
 |      `--sort-html-attributes` | Sort HTML Attributes in the specified order. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `none` |
 |       `--no-php-syntax-check` | Disable PHP syntax checking. default: `false`                                                                                                                                                                                                                                   |
+|              `--extra-liners` | Comma separated list of tags that should have an extra newline before them. default: `head,body,/html`                                                                                                                                                                          |
 
 ### `.prettierrc` example
 
