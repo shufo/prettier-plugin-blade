@@ -27,6 +27,7 @@ export const parse = async (
     noSingleQuote: !opts.singleQuote,
     customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
     indentInnerHtml: opts.indentInnerHtml,
+    extraLiners: opts.extraLiners.split(","),
   };
 
   const result = await new Formatter(formatterOptions).formatContent(text);

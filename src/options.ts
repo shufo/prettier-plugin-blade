@@ -70,5 +70,12 @@ export const options = {
     description: "Indent <head> and <body> sections in html",
     since: "1.10.0",
   },
+  extraLiners: {
+    type: "string",
+    category: "Blade",
+    default: "head,body,/html",
+    description: "Comma separated list of tags that should have an extra newline before them.",
+    since: "1.10.0",
+  },
 };
 

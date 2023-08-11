@@ -71,6 +71,13 @@ describe('CLI test', () => {
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'indentInnerHtml'),
             to: 'formatted.index.blade.php',
         },
+        {
+            name: '.prettierrc.json with wrap attributes min attrs option',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'extraLiners'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'extraLiners'),
+            to: 'formatted.index.blade.php',
+        },
     ];
 
     targets.forEach(target => {
