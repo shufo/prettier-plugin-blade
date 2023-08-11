@@ -58,7 +58,7 @@ then, add in your [Prettier configuration](https://prettier.io/docs/en/configura
 
 | Prettier | Package |
 | -------: | ------: |
-|      3.x |   1.9.x |
+|      3.x |  ^1.9.x |
 |      2.x |   1.8.x |
 
 ## Usage (CLI)
@@ -166,9 +166,12 @@ You can use these options for prettier blade plugin in prettier CLI.
   "printWidth": 120,
   "tabWidth": 4,
   "wrapAttributes": "auto",
+  "wrapAttributesMinAttrs": 2,
   "sortTailwindcssClasses": true,
   "sortHtmlAttributes": "none",
-  "noPhpSyntaxCheck": false
+  "noPhpSyntaxCheck": false,
+  "indentInnerHtml": true,
+  "extraLiners": ""
 }
 ```
 
