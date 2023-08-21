@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.11.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.11.0...v1.11.1) (2023-08-21)
+
+
+### Fixes
+
+* **deps:** update dependency prettier to v3.0.2 ([006a2c6](https://github.com/shufo/prettier-plugin-blade/commit/006a2c6b491d36a6cf2582997cba9b72be98ebe0))
+
+
+### Miscellaneous
+
+* 🤖 add vscode task.json ([091c063](https://github.com/shufo/prettier-plugin-blade/commit/091c06398d4150bbdc3f09ce140ae20f1f303035))
+* 🤖 bump blade-formatter to 1.37.1 ([300a275](https://github.com/shufo/prettier-plugin-blade/commit/300a27547bc8de631c246ff53dac0e3e5cfa101b))
+* **deps:** update dependency esbuild to ^0.19.0 ([2541c88](https://github.com/shufo/prettier-plugin-blade/commit/2541c88b61c518afb6b628cca8f2b06d00f898b5))
+
 ## [1.11.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.10.1...v1.11.0) (2023-08-11)
 
 
