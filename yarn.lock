@@ -896,13 +896,13 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@prettier/plugin-php@^0.20.0":
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.20.1.tgz#2761b2aaf9942f707062781709189c9b283eb7fa"
-  integrity sha512-CFn+NH44jb0buvg8D/DvLjeetadmNBMRq3yrgL8I+tXioDZlhQ+eBLLRILPEBIQ6jBmOjzm/Q7Qin8KD7raiFw==
+"@prettier/plugin-php@^0.19.0":
+  version "0.19.7"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.19.7.tgz#c11b710f319f83c276b6b3f8ab3f70f612302785"
+  integrity sha512-QOzBs05nwuR92uak7xBHf7RCZCFXml+6Sk3cjTp2ahQlilBtupqlNjitlTXsOfPIAYwlFgLP1oSfyapS6DN00w==
   dependencies:
     linguist-languages "^7.21.0"
-    mem "^9.0.2"
+    mem "^8.0.0"
     php-parser "^3.1.5"
 
 "@shufo/tailwindcss-class-sorter@3.0.1":
@@ -1412,12 +1412,12 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@1.38.0:
-  version "1.38.0"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.38.0.tgz#eb4ee5086ee935de2cb666d627404a78285a5ff2"
-  integrity sha512-PLWEqr2iscgg618vP+tCANJn/HMu8kMOKDDO95UhXshx/xMpAQqFbVqzBiWWlgpHZtK0/QDOq69D6ayJi0bCLw==
+blade-formatter@1.38.1:
+  version "1.38.1"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.38.1.tgz#ef5c326203451b111d36862385ecbbaeab9e6c29"
+  integrity sha512-cd5D3buT7VuJmcAoE3dlcq+nPAdRmMp07Fju7ehsbLZBLWuuO+kEPyNAXgrRlpxdPQSZEoUmPlW2wzJZCTMxTA==
   dependencies:
-    "@prettier/plugin-php" "^0.20.0"
+    "@prettier/plugin-php" "^0.19.0"
     "@shufo/tailwindcss-class-sorter" "3.0.1"
     aigle "^1.14.1"
     ajv "^8.9.0"
@@ -3010,13 +3010,13 @@ map-age-cleaner@^0.1.3:
   dependencies:
     p-defer "^1.0.0"
 
-mem@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/mem/-/mem-9.0.2.tgz#bbc2d40be045afe30749681e8f5d554cee0c0354"
-  integrity sha512-F2t4YIv9XQUBHt6AOJ0y7lSmP1+cY7Fm1DRh9GClTGzKST7UWLMx6ly9WZdLH/G/ppM5RL4MlQfRT71ri9t19A==
+mem@^8.0.0:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/mem/-/mem-8.1.1.tgz#cf118b357c65ab7b7e0817bdf00c8062297c0122"
+  integrity sha512-qFCFUDs7U3b8mBDPyz5EToEKoAkgCzqquIgi9nkkR9bixxOVOre+09lbuH7+9Kn2NFpm56M3GUWVbU2hQgdACA==
   dependencies:
     map-age-cleaner "^0.1.3"
-    mimic-fn "^4.0.0"
+    mimic-fn "^3.1.0"
 
 merge-stream@^2.0.0:
   version "2.0.0"
@@ -3049,10 +3049,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mimic-fn@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-4.0.0.tgz#60a90550d5cb0b239cca65d893b1a53b29871ecc"
-  integrity sha512-vqiC06CuhBTUdZH+RYl8sFrL096vA45Ok5ISO6sE/Mr1jRbGH4Csnhi8f3wKVl7x8mO4Au7Ir9D3Oyv1VYMFJw==
+mimic-fn@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-3.1.0.tgz#65755145bbf3e36954b949c16450427451d5ca74"
+  integrity sha512-Ysbi9uYW9hFyfrThdDEQuykN4Ey6BuwPD2kpI5ES/nFTDn/98yxYNLZJcgUAKPT/mcrLLKaGzJR9YVxJrIdASQ==
 
 minimatch@9.0.1:
   version "9.0.1"
