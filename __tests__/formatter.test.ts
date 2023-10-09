@@ -313,6 +313,7 @@ describe("option test", () => {
       const result = await prettier.format(content, {
         plugins: [path.resolve(__dirname, "../")],
         parser: "blade",
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         trailingCommaPHP: false,
       });
