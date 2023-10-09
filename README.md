@@ -157,6 +157,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 |      `--sort-html-attributes` | Sort HTML Attributes in the specified order. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `none` |
 |       `--no-php-syntax-check` | Disable PHP syntax checking. default: `false`                                                                                                                                                                                                                                   |
 |              `--extra-liners` | Comma separated list of tags that should have an extra newline before them. default: `head,body,/html`                                                                                                                                                                          |
+|        `--trailing-comma-php` | If set to false, no trailing commas are printed for php expression. default: `true`                                                                                                                                                                                             |
 
 ### `.prettierrc` example
 
@@ -170,7 +171,8 @@ You can use these options for prettier blade plugin in prettier CLI.
   "sortHtmlAttributes": "none",
   "noPhpSyntaxCheck": false,
   "indentInnerHtml": true,
-  "extraLiners": ""
+  "extraLiners": "",
+  "trailingCommaPHP": true
 }
 ```
 
