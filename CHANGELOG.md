@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.12.0...v1.13.0) (2023-10-09)
+
+
+### Features
+
+* 🎸 add option `--php-version` ([a57f9ef](https://github.com/shufo/prettier-plugin-blade/commit/a57f9ef891b096a800cd9c548368e19a677b8816))
+
 ## [1.12.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.11.1...v1.12.0) (2023-10-09)
 
 
