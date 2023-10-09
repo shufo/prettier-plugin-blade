@@ -84,5 +84,22 @@ export const options = {
     description: "If set to false, no trailing commas are printed for php expression.",
     since: "1.10.0",
   },
+  phpVersion: {
+    type: "string",
+    category: "Blade",
+    default: "8.1",
+    description: "The version of PHP to use for formatting.",
+    since: "1.13.0",
+  },
 };
 
+/**
+ * Parses a PHP version string and returns a floating point number.
+ * 
+ * @param {string} version - The PHP version string to parse.
+ * @returns {number} The parsed PHP version as a floating point number.
+ * @since 1.0.0
+ */
+export function parsePhpVersion(version: string): number {
+  return parseFloat(version);
+}

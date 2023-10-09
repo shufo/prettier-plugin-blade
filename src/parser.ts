@@ -2,12 +2,15 @@ import { Parser, ParserOptions, resolveConfigFile } from "prettier";
 import { FormatterOption } from "blade-formatter";
 import { Formatter } from "blade-formatter";
 import path from "path";
+import { parsePhpVersion } from "./options";
 
 export const parse = async (
   text: string,
   parsers: { [parserName: string]: Parser },
   opts: ParserOptions & FormatterOption,
 ) => {
+  const phpVersion = parsePhpVersion(opts["phpVersion"]);
+
   const formatterOptions: FormatterOption = {
     indentSize: opts["tabWidth"],
     wrapLineLength: opts["printWidth"],
@@ -25,7 +28,7 @@ export const parse = async (
     noMultipleEmptyLines: true,
     noPhpSyntaxCheck: opts["noPhpSyntaxCheck"],
     noSingleQuote: !opts["singleQuote"],
-    noTrailingCommaPhp: !opts["trailingCommaPHP"],
+    noTrailingCommaPhp: phpVersion < 7.2 || !opts["trailingCommaPHP"],
     customHtmlAttributesOrder: opts["customHtmlAttributesOrder"],
     indentInnerHtml: opts["indentInnerHtml"],
     // @ts-ignore
