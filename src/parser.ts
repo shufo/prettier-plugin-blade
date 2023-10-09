@@ -46,7 +46,7 @@ export const parse = async (
 async function resolveTailwindConfigPath(
   filepath: string | undefined,
   optionPath: string | undefined,
-): string | undefined {
+): Promise<string | undefined> {
   if (!optionPath) {
     return;
   }
