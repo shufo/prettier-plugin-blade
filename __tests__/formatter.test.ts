@@ -302,4 +302,30 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
+  
+  test.concurrent(
+    `can format fixture with trailing comma php option`,
+    async function () {
+      const content = fs
+        .readFileSync(path.resolve(__dirname, "fixtures", "runtimeConfig", "trailingCommaPhp", "index.blade.php"))
+        .toString("utf-8");
+
+      const result = await prettier.format(content, {
+        plugins: [path.resolve(__dirname, "../")],
+        parser: "blade",
+        // @ts-ignore
+        trailingCommaPHP: false,
+      });
+
+      const expected = fs
+        .readFileSync(
+          path.resolve(
+            __dirname, "fixtures", "runtimeConfig", "trailingCommaPhp", "formatted.index.blade.php"
+          )
+        )
+        .toString("utf-8");
+
+      expect(result).toEqual(expected);
+    }
+  );
 });

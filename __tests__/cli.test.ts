@@ -78,6 +78,13 @@ describe('CLI test', () => {
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'extraLiners'),
             to: 'formatted.index.blade.php',
         },
+        {
+            name: '.prettierrc.json with trailing comma php option',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'trailingCommaPhp'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'trailingCommaPhp'),
+            to: 'formatted.index.blade.php',
+        },
     ];
 
     targets.forEach(target => {
