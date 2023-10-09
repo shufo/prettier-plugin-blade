@@ -85,6 +85,13 @@ describe('CLI test', () => {
             toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'trailingCommaPhp'),
             to: 'formatted.index.blade.php',
         },
+        {
+            name: '.prettierrc.json with php version option',
+            fromDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'phpVersion'),
+            from: 'index.blade.php',
+            toDir: path.resolve('__tests__', 'fixtures', 'runtimeConfig', 'phpVersion'),
+            to: 'formatted.index.blade.php',
+        },
     ];
 
     targets.forEach(target => {
