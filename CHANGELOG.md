@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.12.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.11.1...v1.12.0) (2023-10-09)
+
+
+### Features
+
+* 🎸 add option `--trailint-comma-php` ([b3f7bf2](https://github.com/shufo/prettier-plugin-blade/commit/b3f7bf270d7dae955014ecd41cc4157162f1fde1))
+
+
+### Fixes
+
+* **deps:** update dependency prettier to v3.0.3 ([4b7d1b2](https://github.com/shufo/prettier-plugin-blade/commit/4b7d1b2e145ab5942d3b0554f6cb58ed8640d66d))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.38.0 ([d460efa](https://github.com/shufo/prettier-plugin-blade/commit/d460efa80bbeb7b0c2829a252ef16ef957d15333))
+* 🤖 bump blade-formatter to 1.38.1 ([beffaec](https://github.com/shufo/prettier-plugin-blade/commit/beffaec41f905f11f1ec4ab0294b02fb1d7a6a04))
+* 🤖 bump blade-formatter to 1.38.2 ([a9e9da5](https://github.com/shufo/prettier-plugin-blade/commit/a9e9da5717b438ea6ea050832ddde4fe7e051be3))
+* **deps:** update actions/checkout action to v4 ([9c975cd](https://github.com/shufo/prettier-plugin-blade/commit/9c975cd3405619c212641f39e721618018bec5e3))
+
 ## [1.11.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.11.0...v1.11.1) (2023-08-21)
 
 
