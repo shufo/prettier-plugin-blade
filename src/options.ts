@@ -77,5 +77,12 @@ export const options = {
     description: "Comma separated list of tags that should have an extra newline before them.",
     since: "1.10.0",
   },
+  trailingCommaPHP: {
+    type: "boolean",
+    category: "Blade",
+    default: true,
+    description: "If set to false, no trailing commas are printed for php expression.",
+    since: "1.10.0",
+  },
 };
 

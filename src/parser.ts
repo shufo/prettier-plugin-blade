@@ -25,6 +25,7 @@ export const parse = async (
     noMultipleEmptyLines: true,
     noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
     noSingleQuote: !opts.singleQuote,
+    noTrailingCommaPhp: !opts.trailingCommaPHP,
     customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
     indentInnerHtml: opts.indentInnerHtml,
     extraLiners: opts.extraLiners.split(","),
