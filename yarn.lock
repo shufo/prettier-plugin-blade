@@ -896,7 +896,7 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@prettier/plugin-php@^0.19.0":
+"@prettier/plugin-php@^0.19.7":
   version "0.19.7"
   resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.19.7.tgz#c11b710f319f83c276b6b3f8ab3f70f612302785"
   integrity sha512-QOzBs05nwuR92uak7xBHf7RCZCFXml+6Sk3cjTp2ahQlilBtupqlNjitlTXsOfPIAYwlFgLP1oSfyapS6DN00w==
@@ -1412,12 +1412,12 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@1.38.1:
-  version "1.38.1"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.38.1.tgz#ef5c326203451b111d36862385ecbbaeab9e6c29"
-  integrity sha512-cd5D3buT7VuJmcAoE3dlcq+nPAdRmMp07Fju7ehsbLZBLWuuO+kEPyNAXgrRlpxdPQSZEoUmPlW2wzJZCTMxTA==
+blade-formatter@1.38.2:
+  version "1.38.2"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.38.2.tgz#629a32a8440200b6ecbc05c8d3940d9436280826"
+  integrity sha512-Ihy1xVDfS1FJehROxgcgjxABSPSuZub5FAa2fSK/0j3swnBIsx82WktgCTJMlI3RQb2VKCesESKXENkLkTzlug==
   dependencies:
-    "@prettier/plugin-php" "^0.19.0"
+    "@prettier/plugin-php" "^0.19.7"
     "@shufo/tailwindcss-class-sorter" "3.0.1"
     aigle "^1.14.1"
     ajv "^8.9.0"
@@ -1433,7 +1433,7 @@ blade-formatter@1.38.1:
     php-parser "3.1.5"
     prettier "^2.2.0"
     tailwindcss "^3.1.8"
-    vscode-oniguruma "2.0.0"
+    vscode-oniguruma "1.7.0"
     vscode-textmate "^7.0.1"
     xregexp "^5.0.1"
     yargs "^17.3.1"
@@ -3423,9 +3423,9 @@ prettier@3.0.2:
   integrity sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==
 
 prettier@^2.2.0:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
+  version "2.8.8"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
+  integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
 pretty-format@^29.0.0, pretty-format@^29.0.1:
   version "29.0.1"
@@ -4049,10 +4049,10 @@ v8-to-istanbul@^9.0.1:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^1.6.0"
 
-vscode-oniguruma@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vscode-oniguruma/-/vscode-oniguruma-2.0.0.tgz#cdddaff982a0c112f9aebf29f877099014b93736"
-  integrity sha512-QWb6OZHNMxk1/nNOA6gjmbwA7gkKOYPAgteCOy8hX8/3FzoEb4pLHt2b2VHGy9gDdzGt3l5NqiQyo1HEQIanhw==
+vscode-oniguruma@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/vscode-oniguruma/-/vscode-oniguruma-1.7.0.tgz#439bfad8fe71abd7798338d1cd3dc53a8beea94b"
+  integrity sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==
 
 vscode-textmate@^7.0.1:
   version "7.0.1"
