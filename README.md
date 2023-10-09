@@ -158,6 +158,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 |       `--no-php-syntax-check` | Disable PHP syntax checking. default: `false`                                                                                                                                                                                                                                   |
 |              `--extra-liners` | Comma separated list of tags that should have an extra newline before them. default: `head,body,/html`                                                                                                                                                                          |
 |        `--trailing-comma-php` | If set to false, no trailing commas are printed for php expression. default: `true`                                                                                                                                                                                             |
+|               `--php-version` | The version of PHP to use for formatting. It affects trailing comma behaviour of php expression. default: `8.1`                                                                                                                                                                 |
 
 ### `.prettierrc` example
 
@@ -172,7 +173,8 @@ You can use these options for prettier blade plugin in prettier CLI.
   "noPhpSyntaxCheck": false,
   "indentInnerHtml": true,
   "extraLiners": "",
-  "trailingCommaPHP": true
+  "trailingCommaPHP": true,
+  "phpVersion": "8.1"
 }
 ```
 
