@@ -4,6 +4,13 @@ import { Formatter } from "blade-formatter";
 import path from "path";
 import { parsePhpVersion } from "./options";
 
+/**
+ * Parses the given Blade template text using the provided options and returns the formatted result.
+ * @param text The Blade template text to parse and format.
+ * @param parsers An object containing parsers to use for parsing the template.
+ * @param opts The options to use for formatting the template.
+ * @returns An object containing the formatted result, along with metadata about the original text.
+ */
 export const parse = async (
   text: string,
   parsers: { [parserName: string]: Parser },
@@ -46,6 +53,12 @@ export const parse = async (
   };
 };
 
+/**
+ * Resolves the path to the Tailwind CSS configuration file, if one is specified.
+ * @param filepath The path to the Blade template file being formatted.
+ * @param optionPath The path to the Tailwind CSS configuration file, as specified in the formatting options.
+ * @returns The resolved path to the Tailwind CSS configuration file, or undefined if no path was specified.
+ */
 async function resolveTailwindConfigPath(
   filepath: string | undefined,
   optionPath: string | undefined,

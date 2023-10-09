@@ -1,9 +1,43 @@
+/**
+ * This module exports default options and additional options for the Prettier plugin for Blade templates.
+ * 
+ * @since 1.0.0
+ * @module options
+ */
+
+/**
+ * Default options for the Prettier plugin for Blade templates.
+ * 
+ * @type {Object}
+ * @property {number} tabWidth - The number of spaces for each tab.
+ * @property {number} printWidth - The maximum width of the output.
+ * @property {boolean} singleQuote - Whether to use single quotes for strings.
+ * @since 1.0.0
+ */
 export const defaultOptions = {
   tabWidth: 4,
   printWidth: 120,
   singleQuote: true,
 };
 
+/**
+ * Additional options for the Prettier plugin for Blade templates.
+ * 
+ * @type {Object}
+ * @property {Object} wrapAttributes - The way to wrap attributes. [auto|force|force-aligned|force-expand-multiline|aligned-multiple|preserve|preserve-aligned]
+ * @property {Object} wrapAttributesMinAttrs - Minimum number of html tag attributes for force wrap attribute options. Wrap the first attribute only if 'force-expand-multiline' is specified in wrap attributes.
+ * @property {Object} endWithNewLine - Whether to end output with newline.
+ * @property {Object} sortTailwindcssClasses - Whether to sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.
+ * @property {Object} tailwindcssConfigPath - Path to custom Tailwindcss config. This option is available only when `sortTailwindcssClasses` is present.
+ * @property {Object} sortHtmlAttributes - Sort HTML Attributes. [none|alphabetical|code-guide|idiomatic|vuejs|custom]
+ * @property {Object} customHtmlAttributesOrder - Comma separated custom HTML attributes order. e.g. "id, aria-.+, class, src". To enable this you must specify sort html attributes option as `custom`. You can use regex for attribute names.
+ * @property {Object} noPhpSyntaxCheck - Whether to disable PHP syntax checking.
+ * @property {Object} indentInnerHtml - Whether to indent <head> and <body> sections in html.
+ * @property {Object} extraLiners - Comma separated list of tags that should have an extra newline before them.
+ * @property {Object} trailingCommaPHP - Whether to print trailing commas for php expression.
+ * @property {Object} phpVersion - The version of PHP to use for formatting.
+ * @since 1.0.0
+ */
 export const options = {
   wrapAttributes: {
     type: "string",
