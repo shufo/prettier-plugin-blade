@@ -35,6 +35,7 @@ export const defaultOptions = {
  * @property {Object} indentInnerHtml - Whether to indent <head> and <body> sections in html.
  * @property {Object} extraLiners - Comma separated list of tags that should have an extra newline before them.
  * @property {Object} trailingCommaPHP - Whether to print trailing commas for php expression.
+ * @property {Object} endOfLine - End of line setting
  * @property {Object} phpVersion - The version of PHP to use for formatting.
  * @since 1.0.0
  */
@@ -118,6 +119,13 @@ export const options = {
     description: "If set to false, no trailing commas are printed for php expression.",
     since: "1.10.0",
   },
+  endOfLine: {
+    type: "string",
+    category: "Blade",
+    default: "LF",
+    description: "Specify the line ending format",
+    since: "1.10.0",
+  },
   phpVersion: {
     type: "string",
     category: "Blade",
@@ -125,6 +133,7 @@ export const options = {
     description: "The version of PHP to use for formatting.",
     since: "1.13.0",
   },
+  
 };
 
 /**
