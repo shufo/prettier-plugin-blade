@@ -38,6 +38,7 @@ export const parse = async (
     noTrailingCommaPhp: phpVersion < 7.2 || !opts["trailingCommaPHP"],
     customHtmlAttributesOrder: opts["customHtmlAttributesOrder"],
     indentInnerHtml: opts["indentInnerHtml"],
+    endOfLine: opts["endOfLine"],
     // @ts-ignore
     extraLiners: opts["extraLiners"].split(","),
   };
