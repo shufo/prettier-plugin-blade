@@ -5,8 +5,8 @@
   },
   "version": "1.13.3",
   "dependencies": {
-    "prettier": "3.0.3"
     "blade-formatter": "1.40.1",
+    "prettier": "3.2.5"
   },
   "devDependencies": {
     "@types/concat-stream": "^2.0.0",
