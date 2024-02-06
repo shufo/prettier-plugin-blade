@@ -896,13 +896,12 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@prettier/plugin-php@^0.19.7":
-  version "0.19.7"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.19.7.tgz#c11b710f319f83c276b6b3f8ab3f70f612302785"
-  integrity sha512-QOzBs05nwuR92uak7xBHf7RCZCFXml+6Sk3cjTp2ahQlilBtupqlNjitlTXsOfPIAYwlFgLP1oSfyapS6DN00w==
+"@prettier/plugin-php@^0.22.2":
+  version "0.22.2"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.22.2.tgz#9a575f7f53ce102d72bb17fa0bd6580f1618bbd9"
+  integrity sha512-md0+7tNbsP0oy+wIP3KZZc6fzx1k1jtWaMjOy/gM8yU9f2BDYEi+iHOc/UNPihYvPI28zFTbjvlhH4QXQjQwNg==
   dependencies:
-    linguist-languages "^7.21.0"
-    mem "^8.0.0"
+    linguist-languages "^7.27.0"
     php-parser "^3.1.5"
 
 "@shufo/tailwindcss-class-sorter@3.0.1":
@@ -1412,12 +1411,12 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@1.38.6:
-  version "1.38.6"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.38.6.tgz#d3ea21faefa4c03a6fb3ada20fd545f2f3c1e311"
-  integrity sha512-XwW1A4G7GPXjCG7oPKkvBp8UVb/YS/zoS8FbuuUbrnwzzmoVEe29oSqh1JpCVj9+SI2ye/qohRuXNkwHjcq/Ww==
+blade-formatter@1.40.1:
+  version "1.40.1"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.40.1.tgz#fdd6bc33342ee19e1c7ef9d444a03f649cbb461a"
+  integrity sha512-TULnwSXLepfW+bnMQyYqaUhoxA65VwaOCNhipgsmAJ+c1FvedAc4AgWqVtcGUndAWU+MkHP/g+0r8kU22THfJg==
   dependencies:
-    "@prettier/plugin-php" "^0.19.7"
+    "@prettier/plugin-php" "^0.22.2"
     "@shufo/tailwindcss-class-sorter" "3.0.1"
     aigle "^1.14.1"
     ajv "^8.9.0"
@@ -1431,7 +1430,8 @@ blade-formatter@1.38.6:
     js-beautify "^1.14.8"
     lodash "^4.17.19"
     php-parser "3.1.5"
-    prettier "^2.2.0"
+    prettier "^3.2.5"
+    string-replace-async "^2.0.0"
     tailwindcss "^3.1.8"
     vscode-oniguruma "1.7.0"
     vscode-textmate "^7.0.1"
@@ -2943,10 +2943,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-linguist-languages@^7.21.0:
-  version "7.21.0"
-  resolved "https://registry.yarnpkg.com/linguist-languages/-/linguist-languages-7.21.0.tgz#da0184f622367cb092f1f8ba435937a85534f675"
-  integrity sha512-KrWJJbFOvlDhjlt5OhUipVlXg+plUfRurICAyij1ZVxQcqPt/zeReb9KiUVdGUwwhS/2KS9h3TbyfYLA5MDlxQ==
+linguist-languages@^7.27.0:
+  version "7.27.0"
+  resolved "https://registry.yarnpkg.com/linguist-languages/-/linguist-languages-7.27.0.tgz#bf42d6c62bd04655c8f60ed2f77a84eaeae4023a"
+  integrity sha512-Wzx/22c5Jsv2ag+uKy+ITanGA5hzvBZngrNGDXLTC7ZjGM6FLCYGgomauTkxNJeP9of353OM0pWqngYA180xgw==
 
 locate-path@^5.0.0:
   version "5.0.0"
@@ -3003,21 +3003,6 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
-map-age-cleaner@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/map-age-cleaner/-/map-age-cleaner-0.1.3.tgz#7d583a7306434c055fe474b0f45078e6e1b4b92a"
-  integrity sha512-bJzx6nMoP6PDLPBFmg7+xRKeFZvFboMrGlxmNj9ClvX53KrmvM5bXFXEWjbz4cz1AFn+jWJ9z/DJSz7hrs0w3w==
-  dependencies:
-    p-defer "^1.0.0"
-
-mem@^8.0.0:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/mem/-/mem-8.1.1.tgz#cf118b357c65ab7b7e0817bdf00c8062297c0122"
-  integrity sha512-qFCFUDs7U3b8mBDPyz5EToEKoAkgCzqquIgi9nkkR9bixxOVOre+09lbuH7+9Kn2NFpm56M3GUWVbU2hQgdACA==
-  dependencies:
-    map-age-cleaner "^0.1.3"
-    mimic-fn "^3.1.0"
-
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
@@ -3048,11 +3033,6 @@ mimic-fn@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
-
-mimic-fn@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-3.1.0.tgz#65755145bbf3e36954b949c16450427451d5ca74"
-  integrity sha512-Ysbi9uYW9hFyfrThdDEQuykN4Ey6BuwPD2kpI5ES/nFTDn/98yxYNLZJcgUAKPT/mcrLLKaGzJR9YVxJrIdASQ==
 
 minimatch@9.0.1:
   version "9.0.1"
@@ -3190,11 +3170,6 @@ os-homedir@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-homedir/-/os-homedir-1.0.2.tgz#ffbc4988336e0e833de0c168c7ef152121aa7fb3"
   integrity sha1-/7xJiDNuDoM94MFox+8VISGqf7M=
-
-p-defer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
-  integrity sha1-n26xgvbJqozXQwBKfU+WsZaw+ww=
 
 p-limit@^2.2.0:
   version "2.3.0"
@@ -3417,15 +3392,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
-  integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
-
-prettier@^2.2.0:
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
-  integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
+prettier@3.2.5, prettier@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.2.5.tgz#e52bc3090586e824964a8813b09aba6233b28368"
+  integrity sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==
 
 pretty-format@^29.0.0, pretty-format@^29.0.1:
   version "29.0.1"
@@ -3695,6 +3665,11 @@ string-length@^4.0.1:
   dependencies:
     char-regex "^1.0.2"
     strip-ansi "^6.0.0"
+
+string-replace-async@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/string-replace-async/-/string-replace-async-2.0.0.tgz#c3224e89d1216d6116e6e229cf74223cd84a733b"
+  integrity sha512-AHMupZscUiDh07F1QziX7PLoB1DQ/pzu19vc8Xa8LwZcgnOXaw7yCgBuSYrxVEfaM2d8scc3Gtp+i+QJZV+spw==
 
 string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
