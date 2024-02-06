@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.13.5](https://github.com/shufo/prettier-plugin-blade/compare/v1.13.4...v1.13.5) (2024-02-06)
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.40.1 ([4eec5c7](https://github.com/shufo/prettier-plugin-blade/commit/4eec5c7ab3c9aea84d9259a2e70b604b1732854c))
+* 🤖 bump prettier to 3.2.5 ([028b7e7](https://github.com/shufo/prettier-plugin-blade/commit/028b7e786e833d62761e9e0772900d851b1441ec))
+* 🤖 update dependencies lock ([0348835](https://github.com/shufo/prettier-plugin-blade/commit/03488355721e297e57cd4075624355b070212f6d))
+* **deps:** update actions/cache action to v4 ([5f19c2f](https://github.com/shufo/prettier-plugin-blade/commit/5f19c2fece3efa33e9cc16d389d6c06cfe664205))
+* **deps:** update actions/stale action to v9 ([b7e438c](https://github.com/shufo/prettier-plugin-blade/commit/b7e438c136e1ea95c0cf6c4c31e86f67f980a834))
+* **deps:** update codecov/codecov-action action to v4 ([a9f2fa0](https://github.com/shufo/prettier-plugin-blade/commit/a9f2fa081ca75d68a1afe5a425b22fcc8960db4e))
+
 ## [1.13.4](https://github.com/shufo/prettier-plugin-blade/compare/v1.13.3...v1.13.4) (2023-11-05)
 
 
