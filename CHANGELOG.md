@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.13.5...v1.14.0) (2024-02-20)
+
+
+### Miscellaneous Chores
+
+* release 1.14.0 ([edfc864](https://github.com/shufo/prettier-plugin-blade/commit/edfc8641ebbc72461b0196a5d4cbe58598acf36e))
+
 ## [1.13.5](https://github.com/shufo/prettier-plugin-blade/compare/v1.13.4...v1.13.5) (2024-02-06)
 
 
