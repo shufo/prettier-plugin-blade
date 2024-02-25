@@ -39,7 +39,7 @@ describe("formatter test", () => {
 describe("broken text test", () => {
   const fixturesDir = path.resolve(__dirname, "error-fixtures");
 
-  test.concurrent(`can not format fixture`, async () => {
+  test.concurrent("can not format fixture", async () => {
     const content = fs
       .readFileSync(path.resolve(fixturesDir, "syntax.error.blade.php"))
       .toString("utf-8");
@@ -68,7 +68,7 @@ describe("option test", () => {
     "formattedWithOption",
   );
 
-  test.concurrent(`can format fixture with options`, async () => {
+  test.concurrent("can format fixture with options", async () => {
     const content = fs
       .readFileSync(path.resolve(fixturesDir, "index.blade.php"))
       .toString("utf-8");
@@ -80,13 +80,13 @@ describe("option test", () => {
     });
 
     const expected = fs
-      .readFileSync(path.resolve(formattedFixturesDir, `index.blade.php`))
+      .readFileSync(path.resolve(formattedFixturesDir, "index.blade.php"))
       .toString("utf-8");
 
     expect(result).toEqual(expected);
   });
 
-  test.concurrent(`can format fixture with sort options`, async () => {
+  test.concurrent("can format fixture with sort options", async () => {
     const content = fs
       .readFileSync(path.resolve(fixturesDir, "tailwindcss.blade.php"))
       .toString("utf-8");
@@ -101,7 +101,7 @@ describe("option test", () => {
 
     const expected = fs
       .readFileSync(
-        path.resolve(formattedFixturesDir, `formatted.tailwindcss.blade.php`),
+        path.resolve(formattedFixturesDir, "formatted.tailwindcss.blade.php"),
       )
       .toString("utf-8");
 
@@ -109,7 +109,7 @@ describe("option test", () => {
   });
 
   test.concurrent(
-    `can format fixture with singleAttributePerLine options`,
+    "can format fixture with singleAttributePerLine options",
     async () => {
       const content = fs
         .readFileSync(
@@ -129,7 +129,7 @@ describe("option test", () => {
         .readFileSync(
           path.resolve(
             formattedFixturesDir,
-            `formatted.single_attribute_per_line.blade.php`,
+            "formatted.single_attribute_per_line.blade.php",
           ),
         )
         .toString("utf-8");
@@ -139,7 +139,7 @@ describe("option test", () => {
   );
 
   test.concurrent(
-    `can format fixture with bracketSameLine option`,
+    "can format fixture with bracketSameLine option",
     async () => {
       const content = fs
         .readFileSync(
@@ -159,7 +159,7 @@ describe("option test", () => {
         .readFileSync(
           path.resolve(
             formattedFixturesDir,
-            `formatted.bracket_same_line.blade.php`,
+            "formatted.bracket_same_line.blade.php",
           ),
         )
         .toString("utf-8");
@@ -169,7 +169,7 @@ describe("option test", () => {
   );
 
   test.concurrent(
-    `can format fixture with tailwind config path option`,
+    "can format fixture with tailwind config path option",
     async () => {
       const content = fs
         .readFileSync(
@@ -205,7 +205,7 @@ describe("option test", () => {
   );
 
   test.concurrent(
-    `can format fixture with no php syntax check option`,
+    "can format fixture with no php syntax check option",
     async () => {
       const content = fs
         .readFileSync(
@@ -235,7 +235,7 @@ describe("option test", () => {
   );
 
   test.concurrent(
-    `can format fixture with custom html attributes order option`,
+    "can format fixture with custom html attributes order option",
     async () => {
       const content = fs
         .readFileSync(
@@ -266,7 +266,7 @@ describe("option test", () => {
   );
 
   test.concurrent(
-    `can format fixture with sort html attributes option as vuejs`,
+    "can format fixture with sort html attributes option as vuejs",
     async () => {
       const content = fs
         .readFileSync(path.resolve(fixturesDir, "vuejs_sort.blade.php"))
@@ -293,7 +293,7 @@ describe("option test", () => {
     },
   );
 
-  test.concurrent(`can format fixture with single quote option`, async () => {
+  test.concurrent("can format fixture with single quote option", async () => {
     const content = fs
       .readFileSync(
         path.resolve(
@@ -328,7 +328,7 @@ describe("option test", () => {
   });
 
   test.concurrent(
-    `can format fixture with trailing comma php option`,
+    "can format fixture with trailing comma php option",
     async () => {
       const content = fs
         .readFileSync(
