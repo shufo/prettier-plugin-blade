@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.14.2](https://github.com/shufo/prettier-plugin-blade/compare/v1.14.1...v1.14.2) (2024-02-25)
+
+
+### Miscellaneous
+
+* 🤖 add biomejs to dependencies ([9469060](https://github.com/shufo/prettier-plugin-blade/commit/94690602b6590834fad2cd4f282c281225c36eef))
+* 🤖 add config for biomejs ([4a6a33c](https://github.com/shufo/prettier-plugin-blade/commit/4a6a33c6f1abe5e72bcda6754d953fb28695e813))
+* 🤖 add Vitest to dev dependencies ([a638607](https://github.com/shufo/prettier-plugin-blade/commit/a6386074c3d400caf9f3e877d1fe78b7d3d6a865))
+* 🤖 remove eslint related dependencies ([2c226e8](https://github.com/shufo/prettier-plugin-blade/commit/2c226e8d6d5405cd5088c96c1d20525d8aea7a23))
+* 🤖 remove jest related dependencies ([a7ea5fa](https://github.com/shufo/prettier-plugin-blade/commit/a7ea5faae220942f09f325f0a47750e830e8ba56))
+
 ## [1.14.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.14.0...v1.14.1) (2024-02-25)
 
 
