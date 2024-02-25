@@ -1,7 +1,7 @@
+import { Parser, Printer, SupportLanguage } from "prettier";
+import { defaultOptions, options } from "./options";
 import { parse } from "./parser";
 import { print } from "./printer";
-import { options, defaultOptions } from "./options";
-import { Parser, Printer, SupportLanguage } from "prettier";
 
 /**
  * An array of supported languages by the plugin.
