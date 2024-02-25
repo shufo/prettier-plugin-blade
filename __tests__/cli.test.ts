@@ -2,6 +2,7 @@ import * as cmd from './support/cmd';
 import path from 'path';
 import fs from 'fs';
 import { name as packageName } from '../package.json';
+import { describe, test, expect } from 'vitest'
 
 describe('CLI test', () => {
     const prettierBin = path.resolve('node_modules', '.bin', 'prettier');

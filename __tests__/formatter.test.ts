@@ -1,6 +1,8 @@
 import path from "path";
 import fs from "fs";
-import prettier from "prettier";
+import * as prettier from "prettier";
+import * as plugin from "../dist/index";
+import { describe, test, expect } from 'vitest'
 
 describe("formatter test", () => {
   const fixturesDir = path.resolve(__dirname, "fixtures");
@@ -19,7 +21,7 @@ describe("formatter test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
       });
 
@@ -44,7 +46,7 @@ describe("broken text test", () => {
 
     const f = async () => {
       return await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
       });
     };
@@ -72,7 +74,7 @@ describe("option test", () => {
       .toString("utf-8");
 
     const result = await prettier.format(content, {
-      plugins: [path.resolve(__dirname, "../")],
+      plugins: [plugin],
       parser: "blade",
       tabWidth: 2,
     });
@@ -90,7 +92,7 @@ describe("option test", () => {
       .toString("utf-8");
 
     const result = await prettier.format(content, {
-      plugins: [path.resolve(__dirname, "../")],
+      plugins: [plugin],
       parser: "blade",
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
@@ -116,7 +118,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -144,7 +146,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -172,7 +174,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -201,7 +203,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -229,7 +231,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -258,7 +260,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -286,7 +288,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         singleQuote: false,
       });
@@ -302,7 +304,7 @@ describe("option test", () => {
       expect(result).toEqual(expected);
     }
   );
-  
+
   test.concurrent(
     `can format fixture with trailing comma php option`,
     async function () {
@@ -311,7 +313,7 @@ describe("option test", () => {
         .toString("utf-8");
 
       const result = await prettier.format(content, {
-        plugins: [path.resolve(__dirname, "../")],
+        plugins: [plugin],
         parser: "blade",
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
