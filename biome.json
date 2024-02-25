@@ -8,10 +8,6 @@
 		"rules": {
 			"recommended": true
 		},
-		"ignore": [
-			"coverage/**",
-			".yalc/**",
-			"dist/**"
-		]
+		"ignore": ["coverage/**", ".yalc/**", "dist/**"]
 	}
 }

@@ -1,15 +1,15 @@
 {
-    "overrides": [
-        {
-            "files": ["*.blade.php"],
-            "options": {
-                "tabWidth": 4,
-                "parser": "blade"
-            }
-        }
-    ],
-    "printWidth": 120,
-    "tabWidth": 4,
-    "sortHtmlAttributes": "custom",
-    "customHtmlAttributesOrder": "id, aria-.+, class, src"
+	"overrides": [
+		{
+			"files": ["*.blade.php"],
+			"options": {
+				"tabWidth": 4,
+				"parser": "blade"
+			}
+		}
+	],
+	"printWidth": 120,
+	"tabWidth": 4,
+	"sortHtmlAttributes": "custom",
+	"customHtmlAttributesOrder": "id, aria-.+, class, src"
 }
