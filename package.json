@@ -9,6 +9,7 @@
     "prettier": "3.2.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
     "@types/concat-stream": "^2.0.0",
     "@types/prettier": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
