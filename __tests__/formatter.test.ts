@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs";
 import prettier from "prettier";
+import { describe, test, expect } from 'vitest'
 
 describe("formatter test", () => {
   const fixturesDir = path.resolve(__dirname, "fixtures");

@@ -1,4 +1,5 @@
 import { parse } from "../src/parser";
+import { describe, it, expect } from 'vitest'
 
 describe("parse", () => {
     it("should format the given text using the provided options", async () => {
