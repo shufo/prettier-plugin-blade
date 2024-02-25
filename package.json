@@ -28,6 +28,7 @@
     "test": "yarn run build && node --experimental-vm-modules node_modules/.bin/vitest",
     "lint": "biome lint .",
     "fix": "biome lint . --apply",
+    "format": "biome format . --write",
     "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
   },
   "license": "MIT",
