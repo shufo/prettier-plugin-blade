@@ -26,8 +26,8 @@
     "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
     "watch": "ESM_BUILD=true node build/build.js",
     "test": "yarn run build && node --experimental-vm-modules node_modules/.bin/vitest",
-    "lint": "eslint . --ext .ts",
-    "fix": "eslint . --ext .ts --fix",
+    "lint": "biome lint .",
+    "fix": "biome lint . --apply",
     "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
   },
   "license": "MIT",
