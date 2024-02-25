@@ -1,13 +1,13 @@
 {
-  "overrides": [
-    {
-      "files": ["*.blade.php"],
-      "options": {
-        "tabWidth": 4,
-        "parser": "blade"
-      }
-    }
-  ],
-  "wrapAttributes": "force-expand-multiline",
-  "wrapAttributesMinAttrs": 0
+	"overrides": [
+		{
+			"files": ["*.blade.php"],
+			"options": {
+				"tabWidth": 4,
+				"parser": "blade"
+			}
+		}
+	],
+	"wrapAttributes": "force-expand-multiline",
+	"wrapAttributesMinAttrs": 0
 }

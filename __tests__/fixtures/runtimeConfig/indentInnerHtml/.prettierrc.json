@@ -1,14 +1,14 @@
 {
-    "overrides": [
-        {
-            "files": ["*.blade.php"],
-            "options": {
-                "tabWidth": 4,
-                "parser": "blade"
-            }
-        }
-    ],
-    "printWidth": 120,
-    "tabWidth": 4,
-    "indentInnerHtml": true
+	"overrides": [
+		{
+			"files": ["*.blade.php"],
+			"options": {
+				"tabWidth": 4,
+				"parser": "blade"
+			}
+		}
+	],
+	"printWidth": 120,
+	"tabWidth": 4,
+	"indentInnerHtml": true
 }

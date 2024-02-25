@@ -12,45 +12,48 @@ import { parsePhpVersion } from "./options";
  * @returns An object containing the formatted result, along with metadata about the original text.
  */
 export const parse = async (
-  text: string,
-  parsers: { [parserName: string]: Parser },
-  opts: ParserOptions & FormatterOption,
+	text: string,
+	parsers: { [parserName: string]: Parser },
+	opts: ParserOptions & FormatterOption,
 ) => {
-  const phpVersion = parsePhpVersion(opts["phpVersion"]);
+	const phpVersion = parsePhpVersion(opts.phpVersion);
 
-  const formatterOptions: FormatterOption = {
-    indentSize: opts["tabWidth"],
-    wrapLineLength: opts["printWidth"],
-    wrapAttributes: opts["singleAttributePerLine"]
-      ? "force-expand-multiline"
-      : opts["bracketSameLine"]
-        ? "force-aligned"
-        : opts["wrapAttributes"],
-    wrapAttributesMinAttrs: opts["wrapAttributesMinAttrs"],
-    endWithNewline: opts["endWithNewline"],
-    useTabs: opts["useTabs"],
-    sortTailwindcssClasses: opts["sortTailwindcssClasses"],
-    tailwindcssConfigPath: await resolveTailwindConfigPath(opts["filepath"], opts["tailwindcssConfigPath"]),
-    sortHtmlAttributes: opts["sortHtmlAttributes"],
-    noMultipleEmptyLines: true,
-    noPhpSyntaxCheck: opts["noPhpSyntaxCheck"],
-    noSingleQuote: !opts["singleQuote"],
-    noTrailingCommaPhp: phpVersion < 7.2 || !opts["trailingCommaPHP"],
-    customHtmlAttributesOrder: opts["customHtmlAttributesOrder"],
-    indentInnerHtml: opts["indentInnerHtml"],
-    // @ts-ignore
-    extraLiners: opts["extraLiners"].split(","),
-  };
+	const formatterOptions: FormatterOption = {
+		indentSize: opts.tabWidth,
+		wrapLineLength: opts.printWidth,
+		wrapAttributes: opts.singleAttributePerLine
+			? "force-expand-multiline"
+			: opts.bracketSameLine
+			  ? "force-aligned"
+			  : opts.wrapAttributes,
+		wrapAttributesMinAttrs: opts.wrapAttributesMinAttrs,
+		endWithNewline: opts.endWithNewline,
+		useTabs: opts.useTabs,
+		sortTailwindcssClasses: opts.sortTailwindcssClasses,
+		tailwindcssConfigPath: await resolveTailwindConfigPath(
+			opts.filepath,
+			opts.tailwindcssConfigPath,
+		),
+		sortHtmlAttributes: opts.sortHtmlAttributes,
+		noMultipleEmptyLines: true,
+		noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
+		noSingleQuote: !opts.singleQuote,
+		noTrailingCommaPhp: phpVersion < 7.2 || !opts.trailingCommaPHP,
+		customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
+		indentInnerHtml: opts.indentInnerHtml,
+		// @ts-ignore
+		extraLiners: opts.extraLiners.split(","),
+	};
 
-  const result = await new Formatter(formatterOptions).formatContent(text);
+	const result = await new Formatter(formatterOptions).formatContent(text);
 
-  return {
-    type: "blade-formatter",
-    body: result,
-    end: text.length,
-    source: text,
-    start: 0,
-  };
+	return {
+		type: "blade-formatter",
+		body: result,
+		end: text.length,
+		source: text,
+		start: 0,
+	};
 };
 
 /**
@@ -60,18 +63,18 @@ export const parse = async (
  * @returns The resolved path to the Tailwind CSS configuration file, or undefined if no path was specified.
  */
 async function resolveTailwindConfigPath(
-  filepath: string | undefined,
-  optionPath: string | undefined,
+	filepath: string | undefined,
+	optionPath: string | undefined,
 ): Promise<string | undefined> {
-  if (!optionPath) {
-    return;
-  }
+	if (!optionPath) {
+		return;
+	}
 
-  if (path.isAbsolute(optionPath ?? "")) {
-    return optionPath;
-  }
+	if (path.isAbsolute(optionPath ?? "")) {
+		return optionPath;
+	}
 
-  const prettierRcPath = await resolveConfigFile(filepath);
+	const prettierRcPath = await resolveConfigFile(filepath);
 
-  return path.resolve(path.dirname(prettierRcPath ?? ""), optionPath ?? "");
+	return path.resolve(path.dirname(prettierRcPath ?? ""), optionPath ?? "");
 }

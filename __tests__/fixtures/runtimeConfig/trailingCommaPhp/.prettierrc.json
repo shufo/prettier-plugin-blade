@@ -1,14 +1,14 @@
 {
-    "overrides": [
-        {
-            "files": ["*.blade.php"],
-            "options": {
-                "tabWidth": 4,
-                "parser": "blade"
-            }
-        }
-    ],
-    "printWidth": 120,
-    "tabWidth": 4,
-    "trailingCommaPHP": false
+	"overrides": [
+		{
+			"files": ["*.blade.php"],
+			"options": {
+				"tabWidth": 4,
+				"parser": "blade"
+			}
+		}
+	],
+	"printWidth": 120,
+	"tabWidth": 4,
+	"trailingCommaPHP": false
 }
