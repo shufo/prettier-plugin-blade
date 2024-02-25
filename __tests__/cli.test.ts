@@ -95,8 +95,8 @@ describe('CLI test', () => {
         },
     ];
 
-    targets.forEach(target => {
-        test.concurrent(`${target.name} test`, async function () {
+    for (const target of targets) {
+        test.concurrent(`${target.name} test`, async () => {
             const args = [
                 ...prettierPluginArgs,
                 path.resolve(target.fromDir, target.from),
@@ -110,5 +110,5 @@ describe('CLI test', () => {
 
             expect(result).toEqual(formatted.toString('utf-8'));
         });
-    });
+    }
 });
