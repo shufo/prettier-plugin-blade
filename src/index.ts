@@ -37,6 +37,8 @@ export const parsers: { [k: string]: Parser } = {
      * @param node The AST node.
      * @returns The start location of the node.
      */
+
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     locStart(node: any) {
       return node.start;
     },
@@ -45,6 +47,7 @@ export const parsers: { [k: string]: Parser } = {
      * @param node The AST node.
      * @returns The end location of the node.
      */
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     locEnd(node: any) {
       return node.end;
     },

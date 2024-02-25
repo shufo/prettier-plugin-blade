@@ -16,30 +16,30 @@ export const parse = async (
   parsers: { [parserName: string]: Parser },
   opts: ParserOptions & FormatterOption,
 ) => {
-  const phpVersion = parsePhpVersion(opts["phpVersion"]);
+  const phpVersion = parsePhpVersion(opts.phpVersion);
 
   const formatterOptions: FormatterOption = {
-    indentSize: opts["tabWidth"],
-    wrapLineLength: opts["printWidth"],
-    wrapAttributes: opts["singleAttributePerLine"]
+    indentSize: opts.tabWidth,
+    wrapLineLength: opts.printWidth,
+    wrapAttributes: opts.singleAttributePerLine
       ? "force-expand-multiline"
-      : opts["bracketSameLine"]
+      : opts.bracketSameLine
         ? "force-aligned"
-        : opts["wrapAttributes"],
-    wrapAttributesMinAttrs: opts["wrapAttributesMinAttrs"],
-    endWithNewline: opts["endWithNewline"],
-    useTabs: opts["useTabs"],
-    sortTailwindcssClasses: opts["sortTailwindcssClasses"],
-    tailwindcssConfigPath: await resolveTailwindConfigPath(opts["filepath"], opts["tailwindcssConfigPath"]),
-    sortHtmlAttributes: opts["sortHtmlAttributes"],
+        : opts.wrapAttributes,
+    wrapAttributesMinAttrs: opts.wrapAttributesMinAttrs,
+    endWithNewline: opts.endWithNewline,
+    useTabs: opts.useTabs,
+    sortTailwindcssClasses: opts.sortTailwindcssClasses,
+    tailwindcssConfigPath: await resolveTailwindConfigPath(opts.filepath, opts.tailwindcssConfigPath),
+    sortHtmlAttributes: opts.sortHtmlAttributes,
     noMultipleEmptyLines: true,
-    noPhpSyntaxCheck: opts["noPhpSyntaxCheck"],
-    noSingleQuote: !opts["singleQuote"],
-    noTrailingCommaPhp: phpVersion < 7.2 || !opts["trailingCommaPHP"],
-    customHtmlAttributesOrder: opts["customHtmlAttributesOrder"],
-    indentInnerHtml: opts["indentInnerHtml"],
+    noPhpSyntaxCheck: opts.noPhpSyntaxCheck,
+    noSingleQuote: !opts.singleQuote,
+    noTrailingCommaPhp: phpVersion < 7.2 || !opts.trailingCommaPHP,
+    customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
+    indentInnerHtml: opts.indentInnerHtml,
     // @ts-ignore
-    extraLiners: opts["extraLiners"].split(","),
+    extraLiners: opts.extraLiners.split(","),
   };
 
   const result = await new Formatter(formatterOptions).formatContent(text);
