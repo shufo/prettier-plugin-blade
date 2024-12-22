@@ -173,7 +173,8 @@ You can use these options for prettier blade plugin in prettier CLI.
   "noPhpSyntaxCheck": false,
   "indentInnerHtml": true,
   "extraLiners": "",
-  "trailingCommaPHP": true
+  "trailingCommaPHP": true,
+  "componentPrefix": "x-,livewire"
 }
 ```
 
