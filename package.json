@@ -9,13 +9,13 @@
     "prettier": "3.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.3",
+    "@biomejs/biome": "1.9.4",
     "@types/concat-stream": "^2.0.0",
     "@types/prettier": "^3.0.0",
     "codecov": "^3.8.3",
     "concat-stream": "^2.0.0",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.19.0",
+    "esbuild": "^0.24.0",
     "esbuild-node-externals": "^1.4.1",
     "ts-node": "^10.5.0",
     "typescript": "^5.0.0",
