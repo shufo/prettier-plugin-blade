@@ -1,7 +1,7 @@
 import { type Parser, type ParserOptions, resolveConfigFile } from "prettier";
 import type { FormatterOption } from "blade-formatter";
 import { Formatter } from "blade-formatter";
-import path from "path";
+import path from "node:path";
 import { parsePhpVersion } from "./options";
 
 /**
