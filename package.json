@@ -3,7 +3,7 @@
 	"engines": {
 		"node": ">= 14.0.0"
 	},
-	"version": "1.14.1",
+	"version": "1.14.2",
 	"dependencies": {
 		"blade-formatter": "1.42.0",
 		"prettier": "3.4.2"
@@ -48,7 +48,16 @@
 		"type": "git",
 		"url": "https://github.com/shufo/prettier-plugin-blade.git"
 	},
-	"files": ["dist", "src", "CHANGELOG.md"],
-	"keywords": ["prettier", "blade", "formatter", "laravel"],
+	"files": [
+		"dist",
+		"src",
+		"CHANGELOG.md"
+	],
+	"keywords": [
+		"prettier",
+		"blade",
+		"formatter",
+		"laravel"
+	],
 	"author": "Shuhei Hayashibara"
 }
