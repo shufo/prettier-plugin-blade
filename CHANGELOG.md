@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.3](https://github.com/shufo/prettier-plugin-blade/compare/v1.14.2...v1.14.3) (2024-12-22)
+
+
+### Miscellaneous
+
+* 🤖 bump create release node version to 22.x ([0855cd9](https://github.com/shufo/prettier-plugin-blade/commit/0855cd9339b19b35a2227d9877c04f1615f2368a))
+
 ## [1.14.2](https://github.com/shufo/prettier-plugin-blade/compare/v1.14.1...v1.14.2) (2024-12-22)
 
 
