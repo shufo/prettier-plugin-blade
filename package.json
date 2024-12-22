@@ -6,12 +6,12 @@
   "version": "1.14.1",
   "dependencies": {
     "blade-formatter": "1.42.0",
-    "prettier": "3.2.5"
+    "prettier": "3.4.2"
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
     "@types/concat-stream": "^2.0.0",
-    "@types/prettier": "^2.4.4",
+    "@types/prettier": "^3.0.0",
     "codecov": "^3.8.3",
     "concat-stream": "^2.0.0",
     "cross-env": "^7.0.3",
