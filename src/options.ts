@@ -136,7 +136,8 @@ export const options = {
 		type: "string",
 		category: "Blade",
 		default: "x-,livewire",
-		description: "Comma separated list of component prefix use to preserve style in html attributes.",
+		description:
+			"Comma separated list of component prefix use to preserve style in html attributes.",
 		since: "1.15.0",
 	},
 };
