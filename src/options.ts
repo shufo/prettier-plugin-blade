@@ -34,6 +34,7 @@ export const defaultOptions = {
  * @property {Object} noPhpSyntaxCheck - Whether to disable PHP syntax checking.
  * @property {Object} indentInnerHtml - Whether to indent <head> and <body> sections in html.
  * @property {Object} extraLiners - Comma separated list of tags that should have an extra newline before them.
+ * @property {Object} componentPrefix - Comma separated list of component prefixes use to preserve style in html attributes.
  * @property {Object} trailingCommaPHP - Whether to print trailing commas for php expression.
  * @property {Object} phpVersion - The version of PHP to use for formatting.
  * @since 1.0.0
@@ -130,6 +131,13 @@ export const options = {
 		default: "8.1",
 		description: "The version of PHP to use for formatting.",
 		since: "1.13.0",
+	},
+	componentPrefix: {
+		type: "string",
+		category: "Blade",
+		default: "x-,livewire",
+		description: "Comma separated list of component prefix use to preserve style in html attributes.",
+		since: "1.15.0",
 	},
 };
 
