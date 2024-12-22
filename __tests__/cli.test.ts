@@ -1,6 +1,6 @@
 import * as cmd from "./support/cmd";
-import path from "path";
-import fs from "fs";
+import path from "node:path";
+import fs from "node:fs";
 import { name as packageName } from "../package.json";
 import { describe, test, expect } from "vitest";
 

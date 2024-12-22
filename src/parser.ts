@@ -1,7 +1,7 @@
-import { Parser, ParserOptions, resolveConfigFile } from "prettier";
-import { FormatterOption } from "blade-formatter";
+import { type Parser, type ParserOptions, resolveConfigFile } from "prettier";
+import type { FormatterOption } from "blade-formatter";
 import { Formatter } from "blade-formatter";
-import path from "path";
+import path from "node:path";
 import { parsePhpVersion } from "./options";
 
 /**
@@ -24,8 +24,8 @@ export const parse = async (
 		wrapAttributes: opts.singleAttributePerLine
 			? "force-expand-multiline"
 			: opts.bracketSameLine
-			  ? "force-aligned"
-			  : opts.wrapAttributes,
+				? "force-aligned"
+				: opts.wrapAttributes,
 		wrapAttributesMinAttrs: opts.wrapAttributesMinAttrs,
 		endWithNewline: opts.endWithNewline,
 		useTabs: opts.useTabs,
