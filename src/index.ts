@@ -1,4 +1,4 @@
-import { Parser, Printer, SupportLanguage } from "prettier";
+import type { Parser, Printer, SupportLanguage } from "prettier";
 import { defaultOptions, options } from "./options";
 import { parse } from "./parser";
 import { print } from "./printer";

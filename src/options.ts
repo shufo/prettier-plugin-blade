@@ -141,5 +141,5 @@ export const options = {
  * @since 1.0.0
  */
 export function parsePhpVersion(version: string): number {
-	return parseFloat(version);
+	return Number.parseFloat(version);
 }

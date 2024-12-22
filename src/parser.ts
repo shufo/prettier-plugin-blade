@@ -1,5 +1,5 @@
-import { Parser, ParserOptions, resolveConfigFile } from "prettier";
-import { FormatterOption } from "blade-formatter";
+import { type Parser, type ParserOptions, resolveConfigFile } from "prettier";
+import type { FormatterOption } from "blade-formatter";
 import { Formatter } from "blade-formatter";
 import path from "path";
 import { parsePhpVersion } from "./options";

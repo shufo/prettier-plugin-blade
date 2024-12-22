@@ -1,4 +1,4 @@
-import { AstPath, Doc } from "prettier";
+import type { AstPath, Doc } from "prettier";
 
 /**
  * Returns a `Doc` representation of the given AST `path`.
