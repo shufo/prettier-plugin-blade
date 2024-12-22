@@ -28,6 +28,7 @@ describe("parse", () => {
 			customHtmlAttributesOrder: [],
 			indentInnerHtml: false,
 			extraLiners: "",
+			componentPrefix: "",
 			filepath: undefined,
 		};
 

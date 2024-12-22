@@ -9,5 +9,9 @@
 			"recommended": true
 		},
 		"ignore": ["coverage/**", ".yalc/**", "dist/**"]
+	},
+	"formatter": {
+		"enabled": true,
+		"ignore": ["package.json", "README.md"]
 	}
 }

@@ -161,6 +161,23 @@ describe("CLI test", () => {
 			to: "formatted.index.blade.php",
 		},
 		{
+			name: ".prettierrc.json with component prefix option",
+			fromDir: path.resolve(
+				"__tests__",
+				"fixtures",
+				"runtimeConfig",
+				"componentPrefix",
+			),
+			from: "index.blade.php",
+			toDir: path.resolve(
+				"__tests__",
+				"fixtures",
+				"runtimeConfig",
+				"componentPrefix",
+			),
+			to: "formatted.index.blade.php",
+		},
+		{
 			name: ".prettierrc.json with trailing comma php option",
 			fromDir: path.resolve(
 				"__tests__",

@@ -41,6 +41,7 @@ export const parse = async (
 		noTrailingCommaPhp: phpVersion < 7.2 || !opts.trailingCommaPHP,
 		customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
 		indentInnerHtml: opts.indentInnerHtml,
+		componentPrefix: opts.componentPrefix?.split(","),
 		// @ts-ignore
 		extraLiners: opts.extraLiners.split(","),
 	};

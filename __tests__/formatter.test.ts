@@ -358,4 +358,43 @@ describe("option test", () => {
 			expect(result).toEqual(expected);
 		},
 	);
+
+	test.concurrent(
+		"can format fixture with component prefix option",
+		async () => {
+			const content = fs
+				.readFileSync(
+					path.resolve(
+						__dirname,
+						"fixtures",
+						"runtimeConfig",
+						"componentPrefix",
+						"index.blade.php",
+					),
+				)
+				.toString("utf-8");
+
+			const result = await prettier.format(content, {
+				plugins: [plugin],
+				parser: "blade",
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+				// @ts-ignore
+				componentPrefix: "foo",
+			});
+
+			const expected = fs
+				.readFileSync(
+					path.resolve(
+						__dirname,
+						"fixtures",
+						"runtimeConfig",
+						"componentPrefix",
+						"formatted.index.blade.php",
+					),
+				)
+				.toString("utf-8");
+
+			expect(result).toEqual(expected);
+		},
+	);
 });
