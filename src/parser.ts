@@ -24,8 +24,8 @@ export const parse = async (
 		wrapAttributes: opts.singleAttributePerLine
 			? "force-expand-multiline"
 			: opts.bracketSameLine
-			  ? "force-aligned"
-			  : opts.wrapAttributes,
+				? "force-aligned"
+				: opts.wrapAttributes,
 		wrapAttributesMinAttrs: opts.wrapAttributesMinAttrs,
 		endWithNewline: opts.endWithNewline,
 		useTabs: opts.useTabs,
