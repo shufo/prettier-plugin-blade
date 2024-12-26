@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.1](https://github.com/shufo/prettier-plugin-blade/compare/v1.15.0...v1.15.1) (2024-12-26)
+
+
+### Fixes
+
+* 🐛 default value has different value with base library ([eb8ed5d](https://github.com/shufo/prettier-plugin-blade/commit/eb8ed5d8f9064d7d1c47939b8a56de79e1586990))
+
 ## [1.15.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.14.3...v1.15.0) (2024-12-22)
 
 
