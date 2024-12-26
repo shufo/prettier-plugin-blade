@@ -174,7 +174,7 @@ You can use these options for prettier blade plugin in prettier CLI.
   "indentInnerHtml": true,
   "extraLiners": "",
   "trailingCommaPHP": true,
-  "componentPrefix": "x-,livewire"
+  "componentPrefix": "x-,livewire:"
 }
 ```
 
