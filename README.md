@@ -238,6 +238,10 @@ and turn on checkbox `On 'Reformat Code' action`
 
 Restart your IDE if you get the error: 'Prettier: File \*.php has unsupported type'
 
+### Nova
+
+The [Prettier⁺ Extension](https://extensions.panic.com/extensions/stonerl/stonerl.prettier/) has built-in support for plugin-blade.
+
 ## Limitation
 
 This plugin is based on [blade-formatter](https://github.com/shufo/blade-formatter) which does not generate ASTs with lexer, so it might break indentation on complex blade.
