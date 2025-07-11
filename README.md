@@ -388,13 +388,6 @@ $ yarn run test
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/stonerl">
-            <img src="https://avatars.githubusercontent.com/u/2091312?v=4" width="100;" alt="stonerl"/>
-            <br />
-            <sub><b>Toni Förster</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/vuolter">
             <img src="https://avatars.githubusercontent.com/u/1221092?v=4" width="100;" alt="vuolter"/>
             <br />
