@@ -341,6 +341,13 @@ $ yarn run test
 <table>
 <tr>
     <td align="center">
+        <a href="https://github.com/fisker">
+            <img src="https://avatars.githubusercontent.com/u/172584?v=4" width="100;" alt="fisker"/>
+            <br />
+            <sub><b>Fisker Cheung</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/shufo">
             <img src="https://avatars.githubusercontent.com/u/1641039?v=4" width="100;" alt="shufo"/>
             <br />
@@ -374,7 +381,8 @@ $ yarn run test
             <br />
             <sub><b>Nessim Abadi</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/vuolter">
             <img src="https://avatars.githubusercontent.com/u/1221092?v=4" width="100;" alt="vuolter"/>
