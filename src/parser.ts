@@ -44,7 +44,7 @@ export const parse = async (
 		componentPrefix: opts.componentPrefix?.split(","),
 		// @ts-ignore
 		extraLiners: opts.extraLiners.split(","),
-		phpVersion: opts.phpVersion,
+		phpVersion: opts.phpVersion || "auto",
 	};
 
 	const result = await new Formatter(formatterOptions).formatContent(text);
