@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.16.0](https://github.com/shufo/prettier-plugin-blade/compare/v1.15.4...v1.16.0) (2025-07-16)
+
+
+### Features
+
+* 🎸 allow user to specify target php version for format ([9dbbb64](https://github.com/shufo/prettier-plugin-blade/commit/9dbbb640485e8bb9d908538aa456e48c73382d5b))
+
+
+### Miscellaneous
+
+* 🤖 bump blade-formatter to 1.43.0 ([547c084](https://github.com/shufo/prettier-plugin-blade/commit/547c08493c8580d1d8f907bd54152e157c733f91))
+* 🤖 bump target version of php syntax to 8.4 as default ([803ffb9](https://github.com/shufo/prettier-plugin-blade/commit/803ffb9e21119488f40be14f015b7b755aba8d7c))
+
 ## [1.15.4](https://github.com/shufo/prettier-plugin-blade/compare/v1.15.3...v1.15.4) (2025-07-11)
 
 
