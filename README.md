@@ -159,6 +159,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 |              `--extra-liners` | Comma separated list of tags that should have an extra newline before them. default: `head,body,/html`                                                                                                                                                                          |
 |        `--trailing-comma-php` | If set to false, no trailing commas are printed for php expression. default: `true`                                                                                                                                                                                             |
 |          `--component-prefix` | Comma separated list of component prefix use to preserve style in html attributes. default: `x-,livewire:`                                                                                                                                                                      |
+|               `--php-version` | The version of PHP to use for formatting. default: `8.4`                                                                                                                                                                                                                        |
 
 ### `.prettierrc` example
 
@@ -174,7 +175,8 @@ You can use these options for prettier blade plugin in prettier CLI.
   "indentInnerHtml": true,
   "extraLiners": "",
   "trailingCommaPHP": true,
-  "componentPrefix": "x-,livewire:"
+  "componentPrefix": "x-,livewire:",
+  "phpVersion": "8.4"
 }
 ```
 
