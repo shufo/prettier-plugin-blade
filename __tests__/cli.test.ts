@@ -227,4 +227,21 @@ describe("CLI test", () => {
 			expect(result).toEqual(formatted.toString("utf-8"));
 		});
 	}
+
+	test.concurrent("php version argument test", async () => {
+		const args = [
+			...prettierPluginArgs,
+			path.resolve("__tests__", "fixtures", "php_version.blade.php"),
+			"--php-version",
+			"8.0",
+		];
+
+		const result = await cmd.execute(prettierBin, args);
+
+		const formatted = fs.readFileSync(
+			path.resolve("__tests__", "fixtures", "php_version.blade.php"),
+		);
+
+		expect(result).toEqual(formatted.toString("utf-8"));
+	});
 });
