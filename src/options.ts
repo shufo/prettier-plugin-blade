@@ -128,7 +128,7 @@ export const options = {
 	phpVersion: {
 		type: "string",
 		category: "Blade",
-		default: "8.1",
+		default: "8.4",
 		description: "The version of PHP to use for formatting.",
 		since: "1.13.0",
 	},
