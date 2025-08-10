@@ -5,7 +5,7 @@
 	},
 	"version": "1.16.0",
 	"dependencies": {
-		"blade-formatter": "1.43.0",
+		"blade-formatter": "1.44.0",
 		"prettier": "3.6.2"
 	},
 	"devDependencies": {
