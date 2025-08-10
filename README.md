@@ -345,64 +345,68 @@ $ yarn run test
 
 <!-- readme: collaborators,contributors -start -->
 <table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/fisker">
-            <img src="https://avatars.githubusercontent.com/u/172584?v=4" width="100;" alt="fisker"/>
-            <br />
-            <sub><b>Fisker Cheung</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/shufo">
-            <img src="https://avatars.githubusercontent.com/u/1641039?v=4" width="100;" alt="shufo"/>
-            <br />
-            <sub><b>Shuhei Hayashibara</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/howdu">
-            <img src="https://avatars.githubusercontent.com/u/533658?v=4" width="100;" alt="howdu"/>
-            <br />
-            <sub><b>Beej</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/ianjamieson">
-            <img src="https://avatars.githubusercontent.com/u/2786904?v=4" width="100;" alt="ianjamieson"/>
-            <br />
-            <sub><b>Ian Jamieson</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/mortenscheel">
-            <img src="https://avatars.githubusercontent.com/u/6514342?v=4" width="100;" alt="mortenscheel"/>
-            <br />
-            <sub><b>Morten Scheel</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/nessimabadi">
-            <img src="https://avatars.githubusercontent.com/u/11637110?v=4" width="100;" alt="nessimabadi"/>
-            <br />
-            <sub><b>Nessim Abadi</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/stonerl">
-            <img src="https://avatars.githubusercontent.com/u/2091312?v=4" width="100;" alt="stonerl"/>
-            <br />
-            <sub><b>Toni Förster</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/vuolter">
-            <img src="https://avatars.githubusercontent.com/u/1221092?v=4" width="100;" alt="vuolter"/>
-            <br />
-            <sub><b>Walter Purcaro</b></sub>
-        </a>
-    </td></tr>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/fisker">
+                    <img src="https://avatars.githubusercontent.com/u/172584?v=4" width="100;" alt="fisker"/>
+                    <br />
+                    <sub><b>Fisker Cheung</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/shufo">
+                    <img src="https://avatars.githubusercontent.com/u/1641039?v=4" width="100;" alt="shufo"/>
+                    <br />
+                    <sub><b>Shuhei Hayashibara</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/howdu">
+                    <img src="https://avatars.githubusercontent.com/u/533658?v=4" width="100;" alt="howdu"/>
+                    <br />
+                    <sub><b>Beej</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ianjamieson">
+                    <img src="https://avatars.githubusercontent.com/u/2786904?v=4" width="100;" alt="ianjamieson"/>
+                    <br />
+                    <sub><b>Ian Jamieson</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/mortenscheel">
+                    <img src="https://avatars.githubusercontent.com/u/6514342?v=4" width="100;" alt="mortenscheel"/>
+                    <br />
+                    <sub><b>Morten Scheel</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/nessimabadi">
+                    <img src="https://avatars.githubusercontent.com/u/11637110?v=4" width="100;" alt="nessimabadi"/>
+                    <br />
+                    <sub><b>Nessim Abadi</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/stonerl">
+                    <img src="https://avatars.githubusercontent.com/u/2091312?v=4" width="100;" alt="stonerl"/>
+                    <br />
+                    <sub><b>Toni Förster</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/vuolter">
+                    <img src="https://avatars.githubusercontent.com/u/1221092?v=4" width="100;" alt="vuolter"/>
+                    <br />
+                    <sub><b>Walter Purcaro</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
 </table>
 <!-- readme: collaborators,contributors -end -->
 
