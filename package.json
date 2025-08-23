@@ -9,7 +9,7 @@
 		"prettier": "3.6.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.2.2",
 		"@types/concat-stream": "^2.0.0",
 		"@types/prettier": "^3.0.0",
 		"codecov": "^3.8.3",
