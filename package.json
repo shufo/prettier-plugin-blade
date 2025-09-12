@@ -5,8 +5,10 @@
 	},
 	"version": "1.16.1",
 	"dependencies": {
-		"blade-formatter": "1.44.0",
-		"prettier": "3.6.2"
+		"blade-formatter": "1.44.0"
+	},
+	"peerDependencies": {
+		"prettier": "^3.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
@@ -17,6 +19,7 @@
 		"cross-env": "^10.0.0",
 		"esbuild": "^0.25.0",
 		"esbuild-node-externals": "^1.4.1",
+		"prettier": "3.6.2",
 		"ts-node": "^10.5.0",
 		"typescript": "^5.0.0",
 		"vitest": "^3.0.0"
