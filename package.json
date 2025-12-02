@@ -5,21 +5,21 @@
 	},
 	"version": "1.16.2",
 	"dependencies": {
-		"blade-formatter": "1.44.4",
+		"blade-formatter": "1.44.0",
 		"prettier": "3.8.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@types/concat-stream": "^2.0.0",
+		"@biomejs/biome": "^1.9.4",
+		"@types/concat-stream": "^2.0.3",
 		"@types/prettier": "^3.0.0",
 		"codecov": "^3.8.3",
 		"concat-stream": "^2.0.0",
-		"cross-env": "^10.0.0",
-		"esbuild": "^0.27.0",
-		"esbuild-node-externals": "^1.4.1",
-		"ts-node": "^10.5.0",
-		"typescript": "^5.0.0",
-		"vitest": "^4.0.0"
+		"cross-env": "^10.1.0",
+		"esbuild": "^0.27.3",
+		"esbuild-node-externals": "^1.20.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^6",
+		"vitest": "^4.0.18"
 	},
 	"main": "dist/index.cjs",
 	"scripts": {
@@ -27,7 +27,7 @@
 		"watch": "ESM_BUILD=true node build/build.js",
 		"test": "yarn run build && node --experimental-vm-modules node_modules/.bin/vitest --reporter verbose --run",
 		"lint": "biome lint .",
-		"fix": "biome lint . --apply",
+		"fix": "biome lint . --write",
 		"format": "biome format . --write",
 		"prettier": "prettier --plugin @shufo/prettier-plugin-blade"
 	},
