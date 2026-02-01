@@ -128,7 +128,7 @@ export const options = {
 	endOfLine: {
 	    type: "string",
 	    category: "Blade",
-	    default: "LF",
+	    default: "lf",
 	    description: "Specify the line ending format",
 	    since: "1.10.0",
   	},
