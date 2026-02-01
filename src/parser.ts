@@ -44,6 +44,7 @@ export const parse = async (
 		componentPrefix: opts.componentPrefix?.split(","),
 		// @ts-ignore
 		extraLiners: opts.extraLiners.split(","),
+		endOfLine: opts.endOfLine || "LF",
 		phpVersion: opts.phpVersion || "auto",
 	};
 
