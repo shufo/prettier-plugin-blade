@@ -13,13 +13,13 @@ jobs:
         steps:
             - uses: actions/checkout@v6
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
                   node-version: ${{ matrix.node-version }}
             - name: Get yarn cache directory path
               id: yarn-cache-dir-path
               run: echo "::set-output name=dir::$(yarn cache dir)"
-            - uses: actions/cache@v4
+            - uses: actions/cache@v5
               id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
               with:
                   path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
