@@ -700,10 +700,10 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@1.44.3:
-  version "1.44.3"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.44.3.tgz#2bc1842fb75eeeca731fa22504fe0ce1eb4a0a96"
-  integrity sha512-8TtARFm4W7fAudwO7NwNiPhw41OJOppPQMMDFLqtkZ3PyrFaQTWJwqRMw5DcC4t3sIxas7k1VKMEJSy1A3nwqA==
+blade-formatter@1.44.4:
+  version "1.44.4"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.44.4.tgz#b8daabc9ca7e662628a2a924041ed8d3527ead15"
+  integrity sha512-+A7hdXQwIZ21+qWXQPgz+hJKtnjG2iN0Ay2m/E/4zQ5cvdFykTjXXGqae91ZmcKez1x0CSdS80WNObamTwJgFg==
   dependencies:
     "@prettier/plugin-php" "^0.24.0"
     "@shufo/tailwindcss-class-sorter" "3.0.1"
@@ -718,7 +718,7 @@ blade-formatter@1.44.3:
     ignore "^6.0.0"
     js-beautify "^1.15.4"
     lodash "^4.17.19"
-    php-parser "3.4.0"
+    php-parser "3.5.0"
     prettier "^3.2.5"
     string-replace-async "^2.0.0"
     tailwindcss "^3.1.8"
@@ -1665,10 +1665,10 @@ pathe@^2.0.3:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
   integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
 
-php-parser@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.4.0.tgz#dcd7743bf01caaaa7281e8b253f4cdbbea6e1265"
-  integrity sha512-JoDPazv8OESrVtcoIuO8HC587zVNJYSYUIl9zYn+JEpwlHSOrxmyMHB+sDS0O1ID5z1aFxPnr+vAUGoSKphlHA==
+php-parser@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.5.0.tgz#c1c8e5aa663efe92e8e1ecd99a4e9d1b44e24060"
+  integrity sha512-EHdzSckQNP86jQRCEsMYhs+YzS4BfvfxnyhvzHVhVRoRUGEMFi8f3xKfuS9xdChBazZSyvb10SZbqhYQLGBcQg==
 
 php-parser@^3.2.5:
   version "3.2.5"
