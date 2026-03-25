@@ -51,7 +51,8 @@
 	"files": [
 		"dist",
 		"src",
-		"CHANGELOG.md"
+		"CHANGELOG.md",
+		"build"
 	],
 	"keywords": [
 		"prettier",

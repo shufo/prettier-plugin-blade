@@ -125,6 +125,13 @@ export const options = {
 			"If set to false, no trailing commas are printed for php expression.",
 		since: "1.10.0",
 	},
+	endOfLine: {
+	    type: "string",
+	    category: "Blade",
+	    default: "lf",
+	    description: "Specify the line ending format",
+	    since: "1.10.0",
+  	},
 	phpVersion: {
 		type: "string",
 		category: "Blade",
