@@ -322,15 +322,15 @@ console.log(res);
 ## Development
 
 ```bash
-$ yarn install
-$ yarn run watch # watch changes
+$ npm install
+$ npm run watch # watch changes
 ```
 
 ## Testing
 
 ```bash
-$ yarn install
-$ yarn run test
+$ npm install
+$ npm run test
 ```
 
 ## Contributing
