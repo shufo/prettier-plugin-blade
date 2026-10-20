@@ -23,12 +23,12 @@ jobs:
         with:
           node-version: 24.x
           registry-url: "https://registry.npmjs.org"
-          cache: 'npm'
-      - run: npm ci 
+          cache: "npm"
+      - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - run: npm run build
         if: ${{ steps.release.outputs.release_created }}
       - name: publish to npm
         if: ${{ steps.release.outputs.release_created }}
         run: |
-          npm publish
+          npm publish --provenance
