@@ -6,8 +6,6 @@
 ### Fixes
 
 * **deps:** update dependency prettier to v3.9.10 ([916779e](https://github.com/shufo/prettier-plugin-blade/commit/916779ea1a85d5c4cce3b1fda6b5c768b8c38f7d))
-* **deps:** update dependency prettier to v3.9.10 ([cc5c320](https://github.com/shufo/prettier-plugin-blade/commit/cc5c32056f12602e20c0fb1af36e67574b567b50))
-
 
 ### Miscellaneous
 
@@ -15,13 +13,10 @@
 * 🤖 bump blade-formatter to 1.44.6 ([13bd662](https://github.com/shufo/prettier-plugin-blade/commit/13bd662e62d1f68b5e46edabddea9eb5f3e8f2ef))
 * 🤖 migrate from yarn to npm ([3b275d3](https://github.com/shufo/prettier-plugin-blade/commit/3b275d3327e89d9644d18200c44a4f90aa13ace8))
 * **deps:** update actions/cache action to v6 ([002da7d](https://github.com/shufo/prettier-plugin-blade/commit/002da7d60a12a744c37312a4fa51851fac57d089))
-* **deps:** update actions/cache action to v6 ([b0ac898](https://github.com/shufo/prettier-plugin-blade/commit/b0ac8980a81b278c71a33814dd9d4c0537219656))
 * **deps:** update actions/checkout action to v7 ([164207d](https://github.com/shufo/prettier-plugin-blade/commit/164207d7eaa51085c494fd8e1aa54581c7518206))
-* **deps:** update actions/checkout action to v7 ([33e0574](https://github.com/shufo/prettier-plugin-blade/commit/33e0574e5de02840baeb545662412ef7525de937))
 * **deps:** update actions/setup-node action to v7 ([381e128](https://github.com/shufo/prettier-plugin-blade/commit/381e12812798b0d154bad050d5c541115d232d09))
-* **deps:** update actions/setup-node action to v7 ([49ec3ec](https://github.com/shufo/prettier-plugin-blade/commit/49ec3ec1366201533d9f5be460791d7dabd55c07))
 * **deps:** update dependency vitest to v4.1.11 [security] ([04dcd1a](https://github.com/shufo/prettier-plugin-blade/commit/04dcd1abcba9b742fae5d423221585e61121918f))
-* **deps:** update dependency vitest to v4.1.11 [security] ([456b178](https://github.com/shufo/prettier-plugin-blade/commit/456b178cb60c6afb8d41d1eb579c5b35cd80ec68))
+
 
 ## [1.16.2](https://github.com/shufo/prettier-plugin-blade/compare/v1.16.1...v1.16.2) (2026-03-25)
 
