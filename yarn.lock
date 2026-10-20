@@ -284,13 +284,13 @@
   resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.153.0.tgz#ac7cd0095a6db231a892d41310ddf2e1b2329bfc"
   integrity sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw==
 
-"@prettier/plugin-php@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.24.0.tgz#c7e84dac73aa45109cfa0a0c73301063fdb3dc9f"
-  integrity sha512-x9l65fCE/pgoET6RQowgdgG8Xmzs44z6j6Hhg3coINCyCw9JBGJ5ZzMR2XHAM2jmAdbJAIgqB6cUn4/3W3XLTA==
+"@prettier/plugin-php@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.25.0.tgz#2f0c70248b4507b28c6936742e70816b178c0724"
+  integrity sha512-hi0NhucbspYqw5pZYKywEk5CxsBwA0pBcG6K08AZw7OQDoUm4Hhbxql7z/SzQGeTRHqak5PwDnVNgttZiZdrlg==
   dependencies:
     linguist-languages "^8.0.0"
-    php-parser "^3.2.5"
+    php-parser "^3.4.0"
 
 "@rolldown/binding-android-arm-eabi@1.2.13":
   version "1.2.13"
@@ -638,12 +638,12 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-blade-formatter@1.44.5:
-  version "1.44.5"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.44.5.tgz#48c4a3b6a0f78054d9cea4dce1a858e9d013bfba"
-  integrity sha512-+okD4FrjhoL6lRy7f7C/mI5pOI9BgqLV2XMgiwuCp9Vw0Juxd9CKOXxLNcSuSsfjqH83Ag3rgXtUBc1KUbdyAQ==
+blade-formatter@1.44.6:
+  version "1.44.6"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.44.6.tgz#93bf722912855e46f3c1e2f08d9f68dc96d5f8bd"
+  integrity sha512-D0bhngjLXVGmY1edJkTcK7GMMacMAf2u8PPUZ9YWfG4uhwN1k+OuWxnyNMt/X/xACRM9Cf511peM0om/6fGASg==
   dependencies:
-    "@prettier/plugin-php" "^0.24.0"
+    "@prettier/plugin-php" "^0.25.0"
     "@shufo/tailwindcss-class-sorter" "3.0.1"
     aigle "^1.14.1"
     ajv "^8.9.0"
@@ -655,8 +655,8 @@ blade-formatter@1.44.5:
     html-attribute-sorter "^0.4.3"
     ignore "^6.0.0"
     js-beautify "^2.0.3"
-    lodash "^4.17.19"
-    php-parser "3.5.0"
+    lodash "^4.18.1"
+    php-parser "3.7.0"
     prettier "^3.2.5"
     string-replace-async "^2.0.0"
     tailwindcss "^3.1.8"
@@ -1332,10 +1332,10 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash@^4.17.19:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+lodash@^4.18.1:
+  version "4.18.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.18.1.tgz#ff2b66c1f6326d59513de2407bf881439812771c"
+  integrity sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==
 
 lru-cache@^11.0.0:
   version "11.2.7"
@@ -1533,15 +1533,10 @@ pathe@^2.0.3:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
   integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
 
-php-parser@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.5.0.tgz#c1c8e5aa663efe92e8e1ecd99a4e9d1b44e24060"
-  integrity sha512-EHdzSckQNP86jQRCEsMYhs+YzS4BfvfxnyhvzHVhVRoRUGEMFi8f3xKfuS9xdChBazZSyvb10SZbqhYQLGBcQg==
-
-php-parser@^3.2.5:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.2.5.tgz#24ff4b4f3e1788967f7737e43c273a5a8e7cd0ac"
-  integrity sha512-M1ZYlALFFnESbSdmRtTQrBFUHSriHgPhgqtTF/LCbZM4h7swR5PHtUceB2Kzby5CfqcsYwBn7OXTJ0+8Sajwkw==
+php-parser@3.7.0, php-parser@^3.4.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.7.0.tgz#b40b82dc9ba2ad3068b418130f50a84b663d29ac"
+  integrity sha512-JRc1t78GZAEa+MuzVC5A5RJS1NDFTS4UnprUEu/NnsN9cyHbGZLUqghO9IQZUSCay62HYQiWd3PxyWAEF45zmA==
 
 picocolors@^1.0.0:
   version "1.0.0"
