@@ -1,64 +1,64 @@
 {
-	"name": "@shufo/prettier-plugin-blade",
-	"engines": {
-		"node": ">= 14.0.0"
-	},
-	"version": "1.16.2",
-	"dependencies": {
-		"blade-formatter": "1.44.6",
-		"prettier": "3.8.1"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@types/concat-stream": "^2.0.0",
-		"@types/prettier": "^3.0.0",
-		"codecov": "^3.8.3",
-		"concat-stream": "^2.0.0",
-		"cross-env": "^10.0.0",
-		"esbuild": "^0.27.0",
-		"esbuild-node-externals": "^1.4.1",
-		"ts-node": "^10.5.0",
-		"typescript": "^5.0.0",
-		"vitest": "^4.0.0"
-	},
-	"main": "dist/index.cjs",
-	"scripts": {
-		"build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
-		"watch": "ESM_BUILD=true node build/build.js",
-		"test": "yarn run build && node --experimental-vm-modules node_modules/.bin/vitest --reporter verbose --run",
-		"lint": "biome lint .",
-		"fix": "biome lint . --apply",
-		"format": "biome format . --write",
-		"prettier": "prettier --plugin @shufo/prettier-plugin-blade"
-	},
-	"license": "MIT",
-	"publishConfig": {
-		"access": "public"
-	},
-	"type": "module",
-	"exports": {
-		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs",
-			"default": "./dist/index.js"
-		},
-		"./*": "./*"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/shufo/prettier-plugin-blade.git"
-	},
-	"files": [
-		"dist",
-		"src",
-		"CHANGELOG.md"
-	],
-	"keywords": [
-		"prettier",
-		"blade",
-		"formatter",
-		"laravel"
-	],
-	"author": "Shuhei Hayashibara",
-	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "name": "@shufo/prettier-plugin-blade",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "version": "1.16.2",
+  "dependencies": {
+    "blade-formatter": "1.44.6",
+    "prettier": "3.8.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/concat-stream": "^2.0.0",
+    "@types/prettier": "^3.0.0",
+    "codecov": "^3.8.3",
+    "concat-stream": "^2.0.0",
+    "cross-env": "^10.0.0",
+    "esbuild": "^0.27.0",
+    "esbuild-node-externals": "^1.4.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  },
+  "main": "dist/index.cjs",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
+    "watch": "ESM_BUILD=true node build/build.js",
+    "test": "npm run build && node --experimental-vm-modules node_modules/.bin/vitest --reporter verbose --run",
+    "lint": "biome lint .",
+    "fix": "biome lint . --apply",
+    "format": "biome format . --write",
+    "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shufo/prettier-plugin-blade.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "prettier",
+    "blade",
+    "formatter",
+    "laravel"
+  ],
+  "author": "Shuhei Hayashibara",
+  "packageManager": "^npm@11.20.0"
 }
