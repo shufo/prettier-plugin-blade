@@ -3,31 +3,32 @@
   "engines": {
     "node": ">= 14.0.0"
   },
-  "version": "1.16.3",
+  "version": "1.17.0",
   "dependencies": {
-    "blade-formatter": "1.44.6",
-    "prettier": "3.9.10"
+    "blade-formatter": "^1.44.6",
+    "prettier": "^3.9.10"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@types/concat-stream": "^2.0.0",
+    "@biomejs/biome": "2.6.3",
+    "@types/concat-stream": "^2.0.3",
     "@types/prettier": "^3.0.0",
     "codecov": "^3.8.3",
     "concat-stream": "^2.0.0",
-    "cross-env": "^10.0.0",
-    "esbuild": "^0.27.0",
-    "esbuild-node-externals": "^1.4.1",
-    "ts-node": "^10.5.0",
-    "typescript": "^5.0.0",
-    "vitest": "^4.0.0"
+    "cross-env": "^10.1.0",
+    "esbuild": "^0.28.2",
+    "esbuild-node-externals": "^2.0.0",
+    "tailwindcss": "^4.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.12"
   },
   "main": "dist/index.cjs",
   "scripts": {
     "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
-    "watch": "ESM_BUILD=true node build/build.js",
-    "test": "npm run build && node --experimental-vm-modules node_modules/.bin/vitest --reporter verbose --run",
+    "watch": "cross-env ESM_BUILD=true node build/build.js",
+    "test": "npm run build && vitest --reporter verbose --run",
     "lint": "biome lint .",
-    "fix": "biome lint . --apply",
+    "fix": "biome lint . --write",
     "format": "biome format . --write",
     "prettier": "prettier --plugin @shufo/prettier-plugin-blade"
   },

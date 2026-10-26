@@ -3,20 +3,24 @@ import type { FormatterOption } from "blade-formatter";
 import { Formatter } from "blade-formatter";
 import path from "node:path";
 import { parsePhpVersion } from "./options";
+import { sortTailwindClasses } from "./tailwind";
 
 /**
  * Parses the given Blade template text using the provided options and returns the formatted result.
  * @param text The Blade template text to parse and format.
- * @param parsers An object containing parsers to use for parsing the template.
+ * @param _parsers An object containing parsers to use for parsing the template.
  * @param opts The options to use for formatting the template.
  * @returns An object containing the formatted result, along with metadata about the original text.
  */
 export const parse = async (
 	text: string,
-	parsers: { [parserName: string]: Parser },
-	opts: ParserOptions & FormatterOption,
+	_parsers: { [parserName: string]: Parser },
+	opts: ParserOptions & FormatterOption & { tailwindStylesheet?: string },
 ) => {
 	const phpVersion = parsePhpVersion(opts.phpVersion);
+	const tailwindStylesheet = opts.sortTailwindcssClasses
+		? await resolveOptionPath(opts.filepath, opts.tailwindStylesheet)
+		: undefined;
 
 	const formatterOptions: FormatterOption = {
 		indentSize: opts.tabWidth,
@@ -28,9 +32,12 @@ export const parse = async (
 				: opts.wrapAttributes,
 		wrapAttributesMinAttrs: opts.wrapAttributesMinAttrs,
 		endWithNewline: opts.endWithNewline,
+		// blade-formatter defaults to os.EOL; Prettier converts LF to the configured endOfLine itself
+		endOfLine: "LF",
 		useTabs: opts.useTabs,
-		sortTailwindcssClasses: opts.sortTailwindcssClasses,
-		tailwindcssConfigPath: await resolveTailwindConfigPath(
+		// Tailwind CSS v4 classes are sorted before blade-formatter runs
+		sortTailwindcssClasses: opts.sortTailwindcssClasses && !tailwindStylesheet,
+		tailwindcssConfigPath: await resolveOptionPath(
 			opts.filepath,
 			opts.tailwindcssConfigPath,
 		),
@@ -42,12 +49,15 @@ export const parse = async (
 		customHtmlAttributesOrder: opts.customHtmlAttributesOrder,
 		indentInnerHtml: opts.indentInnerHtml,
 		componentPrefix: opts.componentPrefix?.split(","),
-		// @ts-ignore
+		// @ts-expect-error
 		extraLiners: opts.extraLiners.split(","),
 		phpVersion: opts.phpVersion || "auto",
 	};
 
-	const result = await new Formatter(formatterOptions).formatContent(text);
+	const source = tailwindStylesheet
+		? await sortTailwindClasses(text, tailwindStylesheet)
+		: text;
+	const result = await new Formatter(formatterOptions).formatContent(source);
 
 	return {
 		type: "blade-formatter",
@@ -59,12 +69,12 @@ export const parse = async (
 };
 
 /**
- * Resolves the path to the Tailwind CSS configuration file, if one is specified.
+ * Resolves a path given in the formatting options relative to the Prettier configuration file, if one is specified.
  * @param filepath The path to the Blade template file being formatted.
- * @param optionPath The path to the Tailwind CSS configuration file, as specified in the formatting options.
- * @returns The resolved path to the Tailwind CSS configuration file, or undefined if no path was specified.
+ * @param optionPath The path as specified in the formatting options.
+ * @returns The resolved path, or undefined if no path was specified.
  */
-async function resolveTailwindConfigPath(
+async function resolveOptionPath(
 	filepath: string | undefined,
 	optionPath: string | undefined,
 ): Promise<string | undefined> {

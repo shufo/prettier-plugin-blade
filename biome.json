@@ -1,17 +1,24 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
-	"organizeImports": {
-		"enabled": true
+	"$schema": "https://biomejs.dev/schemas/2.6.3/schema.json",
+	"files": {
+		"includes": ["**", "!**/coverage", "!**/.yalc", "!**/dist"]
 	},
+	"css": { "parser": { "tailwindDirectives": true } },
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
-		},
-		"ignore": ["coverage/**", ".yalc/**", "dist/**"]
+			"preset": "recommended"
+		}
 	},
 	"formatter": {
 		"enabled": true,
-		"ignore": ["package.json", "README.md"]
+		"includes": [
+			"**",
+			"!**/package.json",
+			"!**/*.md",
+			"!**/*.yml",
+			"!**/*.yaml"
+		]
 	}
 }

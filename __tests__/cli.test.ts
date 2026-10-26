@@ -5,7 +5,12 @@ import { name as packageName } from "../package.json";
 import { describe, test, expect } from "vitest";
 
 describe("CLI test", () => {
-	const prettierBin = path.resolve("node_modules", ".bin", "prettier");
+	const prettierBin = path.resolve(
+		"node_modules",
+		"prettier",
+		"bin",
+		"prettier.cjs",
+	);
 	const prettierPluginArgs = ["--plugin", packageName];
 
 	const targets = [
@@ -56,6 +61,41 @@ describe("CLI test", () => {
 			),
 			from: "index.blade.php",
 			toDir: path.resolve("__tests__", "fixtures", "runtimeConfig", "tailwind"),
+			to: "formatted.index.blade.php",
+		},
+		{
+			name: ".prettierrc.json with tailwind v4 stylesheet option",
+			fromDir: path.resolve(
+				"__tests__",
+				"fixtures",
+				"runtimeConfig",
+				"tailwind4",
+			),
+			from: "index.blade.php",
+			toDir: path.resolve(
+				"__tests__",
+				"fixtures",
+				"runtimeConfig",
+				"tailwind4",
+			),
+			to: "formatted.index.blade.php",
+		},
+		{
+			name: ".prettierrc.json with tailwind v4 stylesheet exists above given path",
+			fromDir: path.resolve(
+				"__tests__",
+				"fixtures",
+				"runtimeConfig",
+				"tailwind4",
+				"subdirectory",
+			),
+			from: "index.blade.php",
+			toDir: path.resolve(
+				"__tests__",
+				"fixtures",
+				"runtimeConfig",
+				"tailwind4",
+			),
 			to: "formatted.index.blade.php",
 		},
 		{

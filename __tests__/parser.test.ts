@@ -32,7 +32,7 @@ describe("parse", () => {
 			filepath: undefined,
 		};
 
-		// @ts-ignore
+		// @ts-expect-error
 		const result = await parse(text, parsers, opts);
 
 		expect(result.type).toBe("blade-formatter");

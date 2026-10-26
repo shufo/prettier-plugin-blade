@@ -23,7 +23,7 @@ Format your blade template using Prettier
 - Automatically add spacing to blade template markers
 - PHP 8 syntax support (null safe operator, named arguments)
 - Compliant to PSR-2 coding standard (PHP code inside directives)
-- Automatically sort Tailwind CSS classes with respect of `tailwind.config.js`
+- Automatically sort Tailwind CSS classes with respect of `tailwind.config.js` (Tailwind CSS v3) or your stylesheet (Tailwind CSS v4)
 
 ## Installation
 
@@ -154,6 +154,7 @@ You can use these options for prettier blade plugin in prettier CLI.
 |         `--end-with-new-line` | End output with newline. default: `true`                                                                                                                                                                                                                                        |
 |  `--sort-tailwindcss-classes` | Sort Tailwind CSS classes. It will automatically look for and respect `tailwind.config.js` if it exists. default: `false`                                                                                                                                                       |
 |   `--tailwindcss-config-path` | Path to your custom Tailwind configuration file. This option is only available if `--sort-tailwindcss-classes` is present. default: `''`                                                                                                                                        |
+|       `--tailwind-stylesheet` | Path to your Tailwind CSS v4 entry stylesheet (e.g. `resources/css/app.css`). When set, classes are sorted with Tailwind CSS v4. This option is only available if `--sort-tailwindcss-classes` is present. default: `''`                                                        |
 |      `--sort-html-attributes` | Sort HTML Attributes in the specified order. [`none` \| `alphabetical` \| [`code-guide`](https://codeguide.co/) \| [`idiomatic`](https://github.com/necolas/idiomatic-html#attribute-order) \| [`vuejs`](https://eslint.vuejs.org/rules/attributes-order.html)] default: `none` |
 |       `--no-php-syntax-check` | Disable PHP syntax checking. default: `false`                                                                                                                                                                                                                                   |
 |              `--extra-liners` | Comma separated list of tags that should have an extra newline before them. default: `head,body,/html`                                                                                                                                                                          |
@@ -179,6 +180,19 @@ You can use these options for prettier blade plugin in prettier CLI.
   "phpVersion": "8.4"
 }
 ```
+
+### Tailwind CSS v4
+
+Tailwind CSS v4 is configured in CSS instead of `tailwind.config.js`. To sort classes with Tailwind CSS v4, point `tailwindStylesheet` to the stylesheet that imports Tailwind CSS. Relative paths are resolved from the location of your Prettier config file.
+
+```json
+{
+  "sortTailwindcssClasses": true,
+  "tailwindStylesheet": "./resources/css/app.css"
+}
+```
+
+Custom theme values and utilities defined in the stylesheet (`@theme`, `@utility`, `@plugin`, ...) are respected. The `tailwindcss` v4 package installed in your project is used.
 
 ## Disabling format in file
 
