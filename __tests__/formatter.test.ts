@@ -95,7 +95,7 @@ describe("option test", () => {
 			plugins: [plugin],
 			parser: "blade",
 			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-			// @ts-ignore
+			// @ts-expect-error
 			sortTailwindcssClasses: true,
 		});
 
@@ -108,183 +108,208 @@ describe("option test", () => {
 		expect(result).toEqual(expected);
 	});
 
-	test.concurrent(
-		"can format fixture with singleAttributePerLine options",
-		async () => {
-			const content = fs
-				.readFileSync(
-					path.resolve(fixturesDir, "single_attribute_per_line.blade.php"),
-				)
-				.toString("utf-8");
+	test.concurrent("can format fixture with singleAttributePerLine options", async () => {
+		const content = fs
+			.readFileSync(
+				path.resolve(fixturesDir, "single_attribute_per_line.blade.php"),
+			)
+			.toString("utf-8");
 
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				singleAttributePerLine: true,
-			});
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			singleAttributePerLine: true,
+		});
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						formattedFixturesDir,
-						"formatted.single_attribute_per_line.blade.php",
-					),
-				)
-				.toString("utf-8");
-
-			expect(result).toEqual(expected);
-		},
-	);
-
-	test.concurrent(
-		"can format fixture with bracketSameLine option",
-		async () => {
-			const content = fs
-				.readFileSync(path.resolve(fixturesDir, "bracket_same_line.blade.php"))
-				.toString("utf-8");
-
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				bracketSameLine: true,
-			});
-
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						formattedFixturesDir,
-						"formatted.bracket_same_line.blade.php",
-					),
-				)
-				.toString("utf-8");
-
-			expect(result).toEqual(expected);
-		},
-	);
-
-	test.concurrent(
-		"can format fixture with tailwind config path option",
-		async () => {
-			const content = fs
-				.readFileSync(path.resolve(fixturesDir, "tailwind", "index.blade.php"))
-				.toString("utf-8");
-
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				sortTailwindcssClasses: true,
-				tailwindcssConfigPath: path.resolve(
-					fixturesDir,
-					"tailwind",
-					"tailwind.config.example.js",
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					formattedFixturesDir,
+					"formatted.single_attribute_per_line.blade.php",
 				),
-			});
+			)
+			.toString("utf-8");
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						formattedFixturesDir,
-						"tailwind",
-						"formatted.index.blade.php",
-					),
-				)
-				.toString("utf-8");
+		expect(result).toEqual(expected);
+	});
 
-			expect(result).toEqual(expected);
-		},
-	);
+	test.concurrent("can format fixture with bracketSameLine option", async () => {
+		const content = fs
+			.readFileSync(path.resolve(fixturesDir, "bracket_same_line.blade.php"))
+			.toString("utf-8");
 
-	test.concurrent(
-		"can format fixture with no php syntax check option",
-		async () => {
-			const content = fs
-				.readFileSync(
-					path.resolve(fixturesDir, "no_php_syntax_check.blade.php"),
-				)
-				.toString("utf-8");
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			bracketSameLine: true,
+		});
 
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				noPhpSyntaxCheck: true,
-			});
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					formattedFixturesDir,
+					"formatted.bracket_same_line.blade.php",
+				),
+			)
+			.toString("utf-8");
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						formattedFixturesDir,
-						"formatted.no_php_syntax_check.blade.php",
-					),
-				)
-				.toString("utf-8");
+		expect(result).toEqual(expected);
+	});
 
-			expect(result).toEqual(expected);
-		},
-	);
+	test.concurrent("can format fixture with tailwind config path option", async () => {
+		const content = fs
+			.readFileSync(path.resolve(fixturesDir, "tailwind", "index.blade.php"))
+			.toString("utf-8");
 
-	test.concurrent(
-		"can format fixture with custom html attributes order option",
-		async () => {
-			const content = fs
-				.readFileSync(
-					path.resolve(fixturesDir, "custom_html_attributes_order.blade.php"),
-				)
-				.toString("utf-8");
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			sortTailwindcssClasses: true,
+			tailwindcssConfigPath: path.resolve(
+				fixturesDir,
+				"tailwind",
+				"tailwind.config.example.js",
+			),
+		});
 
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				sortHtmlAttributes: "custom",
-				customHtmlAttributesOrder: "id, aria-.+, class, src",
-			});
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					formattedFixturesDir,
+					"tailwind",
+					"formatted.index.blade.php",
+				),
+			)
+			.toString("utf-8");
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						formattedFixturesDir,
-						"formatted.custom_html_attributes_order.blade.php",
-					),
-				)
-				.toString("utf-8");
+		expect(result).toEqual(expected);
+	});
 
-			expect(result).toEqual(expected);
-		},
-	);
+	test.concurrent("can format fixture with tailwind stylesheet option", async () => {
+		const tailwind4Dir = path.resolve(
+			__dirname,
+			"fixtures",
+			"runtimeConfig",
+			"tailwind4",
+		);
+		const content = fs
+			.readFileSync(path.resolve(tailwind4Dir, "index.blade.php"))
+			.toString("utf-8");
 
-	test.concurrent(
-		"can format fixture with sort html attributes option as vuejs",
-		async () => {
-			const content = fs
-				.readFileSync(path.resolve(fixturesDir, "vuejs_sort.blade.php"))
-				.toString("utf-8");
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			filepath: path.resolve(tailwind4Dir, "index.blade.php"),
+			// @ts-expect-error
+			sortTailwindcssClasses: true,
+			tailwindStylesheet: path.resolve(
+				tailwind4Dir,
+				"resources",
+				"css",
+				"app.css",
+			),
+		});
 
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				sortHtmlAttributes: "vuejs",
-			});
+		const expected = fs
+			.readFileSync(path.resolve(tailwind4Dir, "formatted.index.blade.php"))
+			.toString("utf-8");
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(formattedFixturesDir, "formatted.vuejs_sort.blade.php"),
-				)
-				.toString("utf-8");
+		expect(result).toEqual(expected);
+	});
 
-			expect(result).toEqual(expected);
-		},
-	);
+	test.concurrent("ignores tailwind stylesheet option without sort option", async () => {
+		const content = '<div class="p-4 m-2"></div>\n';
+
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// @ts-expect-error
+			tailwindStylesheet: path.resolve(__dirname, "does-not-exist.css"),
+		});
+
+		expect(result).toEqual(content);
+	});
+
+	test.concurrent("can format fixture with no php syntax check option", async () => {
+		const content = fs
+			.readFileSync(path.resolve(fixturesDir, "no_php_syntax_check.blade.php"))
+			.toString("utf-8");
+
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			noPhpSyntaxCheck: true,
+		});
+
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					formattedFixturesDir,
+					"formatted.no_php_syntax_check.blade.php",
+				),
+			)
+			.toString("utf-8");
+
+		expect(result).toEqual(expected);
+	});
+
+	test.concurrent("can format fixture with custom html attributes order option", async () => {
+		const content = fs
+			.readFileSync(
+				path.resolve(fixturesDir, "custom_html_attributes_order.blade.php"),
+			)
+			.toString("utf-8");
+
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			sortHtmlAttributes: "custom",
+			customHtmlAttributesOrder: "id, aria-.+, class, src",
+		});
+
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					formattedFixturesDir,
+					"formatted.custom_html_attributes_order.blade.php",
+				),
+			)
+			.toString("utf-8");
+
+		expect(result).toEqual(expected);
+	});
+
+	test.concurrent("can format fixture with sort html attributes option as vuejs", async () => {
+		const content = fs
+			.readFileSync(path.resolve(fixturesDir, "vuejs_sort.blade.php"))
+			.toString("utf-8");
+
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			sortHtmlAttributes: "vuejs",
+		});
+
+		const expected = fs
+			.readFileSync(
+				path.resolve(formattedFixturesDir, "formatted.vuejs_sort.blade.php"),
+			)
+			.toString("utf-8");
+
+		expect(result).toEqual(expected);
+	});
 
 	test.concurrent("can format fixture with single quote option", async () => {
 		const content = fs
@@ -320,81 +345,75 @@ describe("option test", () => {
 		expect(result).toEqual(expected);
 	});
 
-	test.concurrent(
-		"can format fixture with trailing comma php option",
-		async () => {
-			const content = fs
-				.readFileSync(
-					path.resolve(
-						__dirname,
-						"fixtures",
-						"runtimeConfig",
-						"trailingCommaPhp",
-						"index.blade.php",
-					),
-				)
-				.toString("utf-8");
+	test.concurrent("can format fixture with trailing comma php option", async () => {
+		const content = fs
+			.readFileSync(
+				path.resolve(
+					__dirname,
+					"fixtures",
+					"runtimeConfig",
+					"trailingCommaPhp",
+					"index.blade.php",
+				),
+			)
+			.toString("utf-8");
 
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				trailingCommaPHP: false,
-			});
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			trailingCommaPHP: false,
+		});
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						__dirname,
-						"fixtures",
-						"runtimeConfig",
-						"trailingCommaPhp",
-						"formatted.index.blade.php",
-					),
-				)
-				.toString("utf-8");
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					__dirname,
+					"fixtures",
+					"runtimeConfig",
+					"trailingCommaPhp",
+					"formatted.index.blade.php",
+				),
+			)
+			.toString("utf-8");
 
-			expect(result).toEqual(expected);
-		},
-	);
+		expect(result).toEqual(expected);
+	});
 
-	test.concurrent(
-		"can format fixture with component prefix option",
-		async () => {
-			const content = fs
-				.readFileSync(
-					path.resolve(
-						__dirname,
-						"fixtures",
-						"runtimeConfig",
-						"componentPrefix",
-						"index.blade.php",
-					),
-				)
-				.toString("utf-8");
+	test.concurrent("can format fixture with component prefix option", async () => {
+		const content = fs
+			.readFileSync(
+				path.resolve(
+					__dirname,
+					"fixtures",
+					"runtimeConfig",
+					"componentPrefix",
+					"index.blade.php",
+				),
+			)
+			.toString("utf-8");
 
-			const result = await prettier.format(content, {
-				plugins: [plugin],
-				parser: "blade",
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
-				componentPrefix: "foo",
-			});
+		const result = await prettier.format(content, {
+			plugins: [plugin],
+			parser: "blade",
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-expect-error
+			componentPrefix: "foo",
+		});
 
-			const expected = fs
-				.readFileSync(
-					path.resolve(
-						__dirname,
-						"fixtures",
-						"runtimeConfig",
-						"componentPrefix",
-						"formatted.index.blade.php",
-					),
-				)
-				.toString("utf-8");
+		const expected = fs
+			.readFileSync(
+				path.resolve(
+					__dirname,
+					"fixtures",
+					"runtimeConfig",
+					"componentPrefix",
+					"formatted.index.blade.php",
+				),
+			)
+			.toString("utf-8");
 
-			expect(result).toEqual(expected);
-		},
-	);
+		expect(result).toEqual(expected);
+	});
 });

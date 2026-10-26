@@ -29,6 +29,7 @@ export const defaultOptions = {
  * @property {Object} endWithNewLine - Whether to end output with newline.
  * @property {Object} sortTailwindcssClasses - Whether to sort Tailwindcss classes automatically. This option respects `tailwind.config.js`.
  * @property {Object} tailwindcssConfigPath - Path to custom Tailwindcss config. This option is available only when `sortTailwindcssClasses` is present.
+ * @property {Object} tailwindStylesheet - Path to the Tailwind CSS v4 entry stylesheet. Classes are sorted with Tailwind CSS v4 when present. This option is available only when `sortTailwindcssClasses` is present.
  * @property {Object} sortHtmlAttributes - Sort HTML Attributes. [none|alphabetical|code-guide|idiomatic|vuejs|custom]
  * @property {Object} customHtmlAttributesOrder - Comma separated custom HTML attributes order. e.g. "id, aria-.+, class, src". To enable this you must specify sort html attributes option as `custom`. You can use regex for attribute names.
  * @property {Object} noPhpSyntaxCheck - Whether to disable PHP syntax checking.
@@ -78,6 +79,14 @@ export const options = {
 		description:
 			"Path to custom Tailwindcss config. This option is available only when `sortTailwindcssClasses` is present.",
 		since: "1.5.7",
+	},
+	tailwindStylesheet: {
+		type: "string",
+		category: "Blade",
+		default: "",
+		description:
+			"Path to the Tailwind CSS v4 entry stylesheet (e.g. `resources/css/app.css`). Classes are sorted with Tailwind CSS v4 when present. This option is available only when `sortTailwindcssClasses` is present.",
+		since: "1.17.0",
 	},
 	sortHtmlAttributes: {
 		type: "string",

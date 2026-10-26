@@ -38,7 +38,7 @@ export const parsers: { [k: string]: Parser } = {
 		 * @returns The start location of the node.
 		 */
 
-		// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+		// biome-ignore lint/suspicious/noExplicitAny: AST nodes come from blade-formatter and are untyped
 		locStart(node: any) {
 			return node.start;
 		},
@@ -47,7 +47,7 @@ export const parsers: { [k: string]: Parser } = {
 		 * @param node The AST node.
 		 * @returns The end location of the node.
 		 */
-		// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+		// biome-ignore lint/suspicious/noExplicitAny: AST nodes come from blade-formatter and are untyped
 		locEnd(node: any) {
 			return node.end;
 		},

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+	--color-brand: #ff2d20;
+}
+
+@utility content-auto {
+	content-visibility: auto;
+}
