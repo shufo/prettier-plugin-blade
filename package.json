@@ -22,6 +22,7 @@
     "vitest": "^4.0.0"
   },
   "main": "dist/index.cjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "cross-env NODE_ENV=production ESM_BUILD=true node build/build.js && cross-env NODE_ENV=production node build/build.js",
     "watch": "ESM_BUILD=true node build/build.js",
@@ -38,6 +39,7 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "default": "./dist/index.js"
