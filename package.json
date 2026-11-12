@@ -6,7 +6,7 @@
   "version": "1.16.3",
   "dependencies": {
     "blade-formatter": "1.44.6",
-    "prettier": "3.9.10"
+    "prettier": "3.10.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
